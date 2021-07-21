@@ -6,12 +6,12 @@ body {
   font-size: .8em;
 }
 .spec-header {
-  background-color: rgb(101, 105, 105);
+  background-color: darkgray;
   margin-bottom: 3px;
   font-weight: bold;
 }
 .spec-sub-header {
-  background-color: lightgreen;
+  background-color: gainsboro;
   margin-left: 1px;
   margin-right: 1px;
   margin-bottom: 2px;
