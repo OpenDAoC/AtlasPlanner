@@ -6,7 +6,7 @@ body {
   font-size: .8em;
 }
 .spec-header {
-  background-color: green;
+  background-color: rgb(101, 105, 105);
   margin-bottom: 3px;
   font-weight: bold;
 }
