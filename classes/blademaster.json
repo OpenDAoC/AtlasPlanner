@@ -1,0 +1,176 @@
+{
+          "realmName": "Blademaster",
+          "className": "Hero",
+          "multiplier": 2.0,
+          "races": [
+            "Celt",
+            "Elf",
+            "Firbolg"
+          ],
+          "current_level": 50,
+          "abilities": [
+            { "level": 1, "name": "Staff" },
+            { "level": 1, "name": "Cloth Armor" },
+            { "level": 1, "name": "Leather Armor" },
+            { "level": 1, "name": "Shields (Small)" },
+            { "level": 1, "name": "Evade I" },
+            { "level": 1, "name": "Blades" },
+            { "level": 1, "name": "Blunt" },
+            { "level": 1, "name": "Piercing" },
+            { "level": 1, "name": "Reinforced Armor" },
+            { "level": 2, "name": "Parry" },
+            { "level": 5, "name": "Shields (Medium)" },
+            { "level": 5, "name": "Blades" },
+            { "level": 5, "name": "Blunt" },
+            { "level": 5, "name": "Piercing" },
+            { "level": 5, "name": "Shields" },
+            { "level": 5, "name": "Celtic Dual" },
+            { "level": 10, "name": "Short Bows" },
+            { "level": 15, "name": "Protect I" },
+            { "level": 15, "name": "Evade II" },
+            { "level": 19, "name": "Intercept" },
+            { "level": 20, "name": "Triple Wield" },
+            { "level": 23, "name": "Protect II" },
+            { "level": 25, "name": "Evade III" },
+            { "level": 30, "name": "Flurry" },
+            { "level": 32, "name": "Protect III" },
+            { "level": 35, "name": "Advanced Evade" },
+            { "level": 40, "name": "Charge" }
+          ],
+          "specializations": [
+            {
+              "name": "Parry",
+              "points": 1
+            },
+            {
+              "name": "Blades",
+              "points": 1,
+              "spec_skills": [
+                {
+                  "name": "Blade Styles",
+                  "skills": [
+                    { "level": 2, "name": "Shining Blade", "opening": "Any", "fatigue": "High", "damage": 0.036, "attack": "No Bonus", "defense": "No Bonus" },
+                    { "level": 4, "name": "Return Blade", "opening": "You Parry", "fatigue": "Low", "damage": 0.859, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 16% for 20 seconds.", "followup": "Lunging Blade" },
+                    { "level": 6, "name": "Taunting Blade", "opening": "Any", "fatigue": "Medium", "damage": 0.571, "attack": "Medium Bonus", "defense": "Medium Penalty", "special": "Taunt" },
+                    { "level": 8, "name": "Enervating Blade", "opening": "Any", "fatigue": "Medium", "damage": 0.000, "attack": "No Bonus", "defense": "Medium Bonus", "special": "Detaunt" },
+                    { "level": 10, "name": "Glowing Blade", "opening": "To Side of Target", "fatigue": "Medium", "damage": 0.626, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Snare", "special_text": "Target moves 60% slower for 14 seconds." },
+                    { "level": 12, "name": "Lunging Blade", "opening": "Return Blade", "fatigue": "Medium", "damage": 0.844, "attack": "Medium Bonus", "defense": "Low Bonus", "special": "Bleed", "special_text": "Bleed for 5 body damage every 4.0 seconds for 30 seconds." },
+                    { "level": 15, "name": "Auroric Blade", "opening": "Glowing Blade", "fatigue": "Low", "damage": 0.850, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 19% for 20 seconds." },
+                    { "level": 18, "name": "Fire Blade", "opening": "Any", "fatigue": "High", "damage": 0.456, "attack": "Low Bonus", "defense": "Low Penalty", "followup": "Spectrum Blade" },
+                    { "level": 21, "name": "Horizon Blade", "opening": "You Block", "fatigue": "Low", "damage": 0.867, "attack": "Medium Bonus", "defense": "Low Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 4 seconds." },
+                    { "level": 25, "name": "Kinetic Blade", "opening": "Lunging Blade", "fatigue": "Medium", "damage": 0.905, "attack": "Medium Bonus", "defense": "No Bonus" },
+                    { "level": 29, "name": "Dancing Blade", "opening": "Horizon Blade", "fatigue": "Low", "damage": 0.859, "attack": "High Bonus", "defense": "No Bonus", "special": "Bleed", "special_text": "Bleed for 8 body damage every 4.0 seconds for 40 seconds." },
+                    { "level": 34, "name": "Revenging Blade", "opening": "Behind Target", "fatigue": "Medium", "damage": 0.729, "attack": "Medium Bonus", "defense": "Medium Penalty", "followup": "Brilliant Blade" },
+                    { "level": 39, "name": "Spectrum Blade", "opening": "Fire Blade", "fatigue": "Medium", "damage": 0.759, "attack": "Low Bonus", "defense": "Medium Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 30% for 20 seconds." },
+                    { "level": 44, "name": "Prismatic Blade", "opening": "Dancing Blade", "fatigue": "Low", "damage": 0.912, "attack": "Medium Bonus", "defense": "No Bonus" },
+                    { "level": 50, "name": "Brilliant Blade", "opening": "Revening Blade", "fatigue": "Medium", "damage": 0.972, "attack": "Very High Bonus", "defense": "No Bonus" }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Blunt",
+              "points": 1,
+              "spec_skills": [
+                {
+                  "name": "Blunt Styles",
+                  "skills": [
+                    { "level": 2, "name": "Contusions", "opening": "Any", "fatigue": "High", "damage": 0.039, "attack": "No Bonus", "defense": "No Bonus" },
+                    { "level": 4, "name": "Bruiser", "opening": "You Block", "fatigue": "Low", "damage": 0.880, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 2 seconds." },
+                    { "level": 6, "name": "Blunt Trauma", "opening": "Any", "fatigue": "Medium", "damage": 0.000, "attack": "No Bonus", "defense": "Medium Bonus", "special": "Detaunt", "followup": "Impact" },
+                    { "level": 8, "name": "Slam", "opening": "Any", "fatigue": "Medium", "damage": 0.575, "attack": "Medium Bonus", "defense": "Medium Penalty", "special": "Taunt" },
+                    { "level": 10, "name": "Side Bash", "opening": "To Side of Target", "fatigue": "Medium", "damage": 0.604, "attack": "Low Bonus", "defense": "No Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 19% for 20 seconds." },
+                    { "level": 12, "name": "Impact", "opening": "Bruiser", "fatigue": "Low", "damage": 0.880, "attack": "Medium Bonus", "defense": "Low Penalty", "special": "", "special_text": "", "followup": "" },
+                    { "level": 15, "name": "Windfall", "opening": "Impact", "fatigue": "Low", "damage": 0.880, "attack": "High Bonus", "defense": "Low Bonus", "special": "Slowed", "special_text": "Target's attack speed is reduced by 22% for 20 seconds." },
+                    { "level": 18, "name": "Force of Might", "opening": "Any", "fatigue": "High", "damage": 0.448, "attack": "Low Bonus", "defense": "No Bonus", "followup": "Bonecrusher" },
+                    { "level": 21, "name": "Unstoppable Force", "opening": "Sidebash", "fatigue": "Medium", "damage": 0.838, "attack": "Medium Bonus", "defense": "Low Bonus", "special": "Snare", "special_text": "Target moves 60% slower for 19 seconds." },
+                    { "level": 25, "name": "Back Crush", "opening": "Behind target", "fatigue": "Medium", "damage": 0.721, "attack": "Medium Bonus", "defense": "Medium Penalty", "followup": "Mauler" },
+                    { "level": 29, "name": "Bonecrusher", "opening": "Windfall", "fatigue": "Low", "damage": 0.880, "attack": "Medium Bonus", "defense": "Low Bonus", "special": "Bleed", "special_text": "Bleed for 7 body damage every 4.0 seconds for 40 seconds.", "followup": "Crushing Blow" },
+                    { "level": 34, "name": "Mauler", "opening": "Unstoppable Force", "fatigue": "Medium", "damage": 0.877, "attack": "Medium Bonus", "defense": "Medium Bonus" },
+                    { "level": 39, "name": "Stunning Blow", "opening": "You Parry", "fatigue": "Low", "damage": 0.880, "attack": "Medium Bonus", "defense": "Low Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 30% for 20 seconds.", "followup": "Devastating Blow" },
+                    { "level": 44, "name": "Crushing Blow", "opening": "Back Crush", "fatigue": "Medium", "damage": 0.838, "attack": "Very High Bonus", "defense": "Low Bonus" },
+                    { "level": 50, "name": "Devastating Blow", "opening": "Stunning Blow", "fatigue": "Medium", "damage": 0.880, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 10 seconds." }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Piercing",
+              "points": 1,
+              "spec_skills": [
+                {
+                  "name": "Piercing Styles",
+                  "skills": [
+                    { "level": 2, "name": "Dragonfly", "opening": "Any", "fatigue": "High", "damage": 0.035, "attack": "No Bonus", "defense": "No Bonus" },
+                    { "level": 4, "name": "Wasp's Sting", "opening": "Behind Target", "fatigue": "Low", "damage": 0.586, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Bleed", "special_text": "Bleed for 3 body damage every 4.0 seconds for 20 seconds.", "followup" : "Hornet's Sting" },
+                    { "level": 6, "name": "Bumblebee's Sting", "opening": "Any", "fatigue": "Medium", "damage": 0.572, "attack": "Medium Bonus", "defense": "High Penalty", "special": "Taunt" },
+                    { "level": 8, "name": "Hornet's Sting", "opening": "Wasp's Sting", "fatigue": "Medium", "damage": 0.858, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 18% for 20 seconds." },
+                    { "level": 10, "name": "Scorpion", "opening": "Any", "fatigue": "Medium", "damage": 0.000, "attack": "No Bonus", "defense": "Medium Bonus", "special": "Detaunt"},
+                    { "level": 12, "name": "Black Widow", "opening": "Any", "fatigue": "High", "damage": 0.391, "attack": "Low Bonus", "defense": "Low Penalty", "followup": "Sidewinder" },
+                    { "level": 15, "name": "Tarantula", "opening": "You Block", "fatigue": "Low", "damage": 0.880, "attack": "Medium Bonus", "defense": "Low Bonus", "special": "Bleed", "special_text": "Bleed for 6 body damage every 4.0 seconds for 35 seconds.", "followup": "Viper's Bite" },
+                    { "level": 18, "name": "Sidewinder", "opening": "Black Widow", "fatigue": "Medium", "damage": 0.670, "attack": "Medium Bonus", "defense": "Low Bonus", "followup": "Asp's Bite" },
+                    { "level": 21, "name": "Copperhead", "opening": "To Side of Target", "fatigue": "Medium", "damage": 0.663, "attack": "Medium Bonus", "defense": "Low Penalty", "special": "Snare", "special_text": "Target moves 60% slower for 15 seconds.", "followup": "Cobra's Bite" },
+                    { "level": 25, "name": "Diamondback", "opening": "You Evade", "fatigue": "Low", "damage": 0.880, "attack": "Medium Bonus", "defense": "Medium Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 5 seconds.", "followup": "Dragonspider" },
+                    { "level": 29, "name": "Viper's Bite", "opening": "Tarantula", "fatigue": "Medium", "damage": 0.940, "attack": "Medium Bonus", "defense": "Medium Bonus" },
+                    { "level": 34, "name": "Asp's Bite", "opening": "Sidewinder", "fatigue": "Low", "damage": 0.858, "attack": "Very High Bonus", "defense": "Medium Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 22% for 20 seconds." },
+                    { "level": 39, "name": "Cobra's Bite", "opening": "Copperhead", "fatigue": "Low", "damage": 0.914, "attack": "High Bonus", "defense": "Low Bonus" },
+                    { "level": 44, "name": "Dragonspider", "opening": "Diamondback", "fatigue": "Medium", "damage": 0.880, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Bleed", "special_text": "Bleed for 10 body damage every 4.0 seconds for 40 seconds.", "followup": "Wyvern's Bite" },
+                    { "level": 50, "name": "Wyvern's Bite", "opening": "Dragonspider", "fatigue": "Medium", "damage": 0.914, "attack": "High Bonus", "defense": "Low Bonus", "special": "Bleed", "special_text": "Bleed for 11 body damage every 4.0 seconds for 40 seconds." }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Shields",
+              "points": 1,
+              "spec_skills": [
+                {
+                  "name": "Shield Abilities",
+                  "skills": [
+                    { "level": 5, "name": "Guard I" }
+                  ]
+                },
+                {
+                  "name": "Shield Styles",
+                  "skills": [
+                    { "level": 3, "name": "Numb", "opening": "Any", "fatigue": "High", "damage": 0.047, "attack": "No Bonus", "defense": "No Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 2 seconds." },
+                    { "level": 8, "name": "Stun", "opening": "You Block", "fatigue": "High", "damage": 0.840, "attack": "No Bonus", "defense": "No Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 3 seconds." },
+                    { "level": 13, "name": "Disable", "opening": "To Side of Target", "fatigue": "High", "damage": 0.645, "attack": "No Bonus", "defense": "No Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 4 seconds."},
+                    { "level": 18, "name": "Incapacitate", "opening": "You Block", "fatigue": "Very High", "damage": 0.859, "attack": "No Bonus", "defense": "Medium Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 5 seconds." },
+                    { "level": 23, "name": "Paralyze", "opening": "Behind Target", "fatigue": "High", "damage": 0.683, "attack": "No Bonus", "defense": "No Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 6 seconds."},
+                    { "level": 29, "name": "Bash", "opening": "You Block", "fatigue": "High", "damage": 0.850, "attack": "No Bonus", "defense": "No Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 7 seconds." },
+                    { "level": 35, "name": "Mangle", "opening": "To Side of Target", "fatigue": "High", "damage": 0.730, "attack": "No Bonus", "defense": "No Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 8 seconds."},
+                    { "level": 42, "name": "Slam", "opening": "Any", "fatigue": "Very High", "damage": 0.759, "attack": "No Bonus", "defense": "No Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 9 seconds." },
+                    { "level": 50, "name": "Brutalize", "opening": "You Block", "fatigue": "Medium", "damage": 0.850, "attack": "No Bonus", "defense": "No Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 10 seconds." }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Celtic Dual",
+              "points": 1,
+              "spec_skills": [
+                {
+                  "name": "Celtic Dual Styles",
+                  "skills": [
+                    { "level": 2, "name": "Misty Gloom", "opening": "Any", "fatigue": "High", "damage": 0.035, "attack": "No Bonus", "defense": "No Bonus" },
+                    { "level": 4, "name": "Blinding Rain", "opening": "You Evade", "fatigue": "Low", "damage": 0.875, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Bleed", "special_text": "Bleed for 3 body damage every 4.0 seconds for 20 seconds.", "followup" : "Blizzaes" },
+                    { "level": 6, "name": "Squall", "opening": "Any", "fatigue": "Medium", "damage": 0.574, "attack": "Low Bonus", "defense": "Medium Penalty", "special": "Taunt" },
+                    { "level": 8, "name": "Snow Shower", "opening": "Behind Target", "fatigue": "Medium", "damage": 0.644, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Snare", "special_text": "Target's moves 60% slower for 12 seconds.", "followup": "Gale, Thunderstorm" },
+                    { "level": 10, "name": "Gale", "opening": "Snow Shower", "fatigue": "Low", "damage": 0.875, "attack": "Medium Bonus", "defense": "Low Penalty", "special": "Bleed", "special_text": "Bleed for 5 body damage every 4.0 seconds for 20 seconds." },
+                    { "level": 12, "name": "Blizzard", "opening": "Blinding Rain", "fatigue": "Low", "damage": 0.910, "attack": "Medium Bonus", "defense": "Medium Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 21% for 20 seconds." },
+                    { "level": 15, "name": "Thunderstorm", "opening": "Snow Shower", "fatigue": "Low", "damage": 0.875, "attack": "Medium Bonus", "defense": "High Bonus", "special": "Detaunt" },
+                    { "level": 18, "name": "Ice Storm", "opening": "To Side of Target", "fatigue": "Medium", "damage": 0.763, "attack": "Medium Bonus", "defense": "No Bonus", "followup": "Asp's Bite", "special_text": "Target cannot move or take any other action for 4 seconds." },
+                    { "level": 21, "name": "Hurricane", "opening": "Any", "fatigue": "High", "damage": 0.483, "attack": "Low Bonus", "defense": "Medium Penalty" },
+                    { "level": 25, "name": "Tornado", "opening": "You Parry", "fatigue": "Low", "damage": 0.875, "attack": "High Bonus", "defense": "Medium Bonus", "special": "Snare", "special_text": "Target's moves 60% slower for 23 seconds.", "followup": "Meteor Shower" },
+                    { "level": 29, "name": "Tempest", "opening": "Ice Storm", "fatigue": "None", "damage": 0.973, "attack": "Medium Bonus", "defense": "No Bonus",  "special": "Bleed", "special_text": "Bleed for 15 body damage every 4.0 seconds for 20 seconds.", "followup": "Supernova" },
+                    { "level": 34, "name": "Meteor Shower", "opening": "Tornado", "fatigue": "Low", "damage": 0.875, "attack": "Medium Bonus", "defense": "No Bonus", "followup": "Twin Star" },
+                    { "level": 39, "name": "Solar Flare", "opening": "Hurricane", "fatigue": "Medium", "damage": 0.812, "attack": "Low Bonus", "defense": "Low Bonus" },
+                    { "level": 44, "name": "Twin Star", "opening": "Meteor Shower", "fatigue": "Medium", "damage": 0.875, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Bleed", "special_text": "Bleed for 25 body damage every 4.0 seconds for 40 seconds." },
+                    { "level": 50, "name": "Supernova", "opening": "Tempest", "fatigue": "Medium", "damage": 1.267, "attack": "High Bonus", "defense": "Low Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 34% for 20 seconds." }
+                  ]
+                }
+              ]
+            }
+          ]
+        }

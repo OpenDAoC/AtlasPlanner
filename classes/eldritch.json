@@ -1,0 +1,188 @@
+{
+          "realmName": "Hibernia",
+          "className": "Eldritch",
+          "multiplier": 1.0,
+          "races": [
+            "Elf",
+            "Lurikeen"
+          ],
+          "current_level": 50,
+          "abilities": [
+            { "level": 1, "name": "Way of the Sun" },
+            { "level": 1, "name": "Way of the Moon" },
+            { "level": 1, "name": "Staff" },
+            { "level": 1, "name": "Cloth Armor" },
+            { "level": 5, "name": "Quickcast" },
+            { "level": 5, "name": "Shadow Control" },
+            { "level": 5, "name": "Vacuumancy" },
+            { "level": 5, "name": "Void Mastery" }
+          ],
+          "specializations": [
+            { 
+                "name": "Way of the Sun",
+                "spec_name": "Shadow Control",
+                "points": 1,
+                "base_skills": [
+                  { 
+                    "name": "Damage",
+                      "skills": [
+                      { "level": 1, "name": "Gleam Ray", "value": "5 D", "type": "Heat", "cost": 2, "range": 1500, "cast": 2.6 },
+                      { "level": 2, "name": "Gleam Streak", "value": "9 D", "type": "Heat", "cost": 2, "range": 1500, "cast": 2.6 },
+                      { "level": 3, "name": "Gleam Blast", "value": "13 D", "type": "Heat", "cost": 3, "range": 1500, "cast": 2.6 },
+                      { "level": 6, "name": "Moon Ray", "value": "25 D", "type": "Heat", "cost": 4, "range": 1500, "cast": 2.6 },
+                      { "level": 9, "name": "Moon Streak", "value": "37 D", "type": "Heat", "cost": 5, "range": 1500, "cast": 2.6 },
+                      { "level": 13, "name": "Moon Blast", "value": "49 D", "type": "Heat", "cost": 6, "range": 1500, "cast": 2.6 },
+                      { "level": 17, "name": "Sun Ray", "value": "64 D", "type": "Heat", "cost": 8, "range": 1500, "cast": 2.6 },
+                      { "level": 24, "name": "Sun Streak", "value": "88 D", "type": "Heat", "cost": 15, "range": 1500, "cast": 2.6 },
+                      { "level": 33, "name": "Sun Blast", "value": "120 D", "type": "Heat", "cost": 21, "range": 1500, "cast": 2.6 },
+                      { "level": 41, "name": "Aurora Ray", "value": "148 D", "type": "Heat", "cost": 26, "range": 1500, "cast": 2.6 },
+                      { "level": 50, "name": "Aurora Blast", "value": "179 D", "type": "Heat", "cost": 33, "range": 1500, "cast": 2.6 }
+                    ]
+                  },
+                  { 
+                    "name": "Stun",
+                      "skills": [
+                      { "level": 5, "name": "Prismatic Flare", "value": "3 sec", "type": "Heat", "cost": 4, "range": 1500, "duration": 3, "cast": 2.5 },
+                      { "level": 15, "name": "Prismatic Flash", "value": "5 sec", "type": "Heat", "cost": 9, "range": 1500, "duration": 5, "cast": 2.5 },
+                      { "level": 26, "name": "Prismatic Shimmer", "value": "6 sec", "type": "Heat", "cost": 16, "range": 1500, "duration": 6, "cast": 2.5 },
+                      { "level": 36, "name": "Prismatic Sheen", "value": "8 sec", "type": "Heat", "cost": 23, "range": 1500, "duration": 8, "cast": 2.5 },
+                      { "level": 46, "name": "Prismatic Strobe", "value": "9 sec", "type": "Heat", "cost": 30, "range": 1500, "duration": 9, "cast": 2.5 }
+                    ]
+                  }
+                ],
+                "spec_skills": [
+                  { 
+                    "name": "Damage",
+                      "skills": [
+                      { "level": 1, "name": "Shadowburst", "value": "5 D", "type": "Cold", "cost": 2, "range": 1500, "cast": 2.8 },
+                      { "level": 5, "name": "Shadowblast", "value": "26 D", "type": "Cold", "cost": 4, "range": 1500, "cast": 2.8 },
+                      { "level": 8, "name": "Shadowcharge", "value": "41 D", "type": "Cold", "cost": 5, "range": 1500, "cast": 2.8 },
+                      { "level": 12, "name": "Shadowshock", "value": "56 D", "type": "Cold", "cost": 8, "range": 1500, "cast": 2.8 },
+                      { "level": 16, "name": "Shadowsmash", "value": "77 D", "type": "Cold", "cost": 10, "range": 1500, "cast": 2.8 },
+                      { "level": 22, "name": "Shadowcrash", "value": "102 D", "type": "Cold", "cost": 13, "range": 1500, "cast": 2.8 },
+                      { "level": 28, "name": "Shadowforce", "value": "133 D", "type": "Cold", "cost": 17, "range": 1500, "cast": 2.8 },
+                      { "level": 35, "name": "Shadowcrush", "value": "163 D", "type": "Cold", "cost": 22, "range": 1500, "cast": 2.8 },
+                      { "level": 45, "name": "Shadowdoom", "value": "209 D", "type": "Cold", "cost": 29, "range": 1500, "cast": 2.8 }
+                    ]
+                  },
+                  { 
+                    "name": "Debuff (Dexterity/Quickness)",
+                      "skills": [
+                      { "level": 3, "name": "Negate Coordination", "value": "-18 DEX/QUI", "cost": 2, "range": 1500, "duration": 60, "recast": 5 },
+                      { "level": 6, "name": "Nullify Coordination", "value": "-21 DEX/QUI", "cost": 3, "range": 1500, "duration": 60, "recast": 5 },
+                      { "level": 9, "name": "Obliviate Coordination", "value": "-25 DEX/QUI", "cost": 4, "range": 1500, "duration": 60, "recast": 5 },
+                      { "level": 13, "name": "Destroy Coordination", "value": "-30 DEX/QUI", "cost": 6, "range": 1500, "duration": 60, "recast": 5 },
+                      { "level": 18, "name": "Abrogate Coordination", "value": "-46 DEX/QUI", "cost": 8, "range": 1500, "duration": 60, "recast": 5 },
+                      { "level": 25, "name": "Blank Coordination", "value": "-45 DEX/QUI", "cost": 12, "range": 1500, "duration": 60, "recast": 5 },
+                      { "level": 36, "name": "Obliterate Coordination", "value": "-57 DEX/QUI", "cost": 18, "range": 1500, "duration": 60, "recast": 5 },
+                      { "level": 46, "name": "Extinguish Coordination", "value": "-79 DEX/QUI", "cost": 24, "range": 1500, "duration": 60, "recast": 5 }
+                    ]
+                  },
+                  { 
+                    "name": "Debuff (Mesmerise, AOE)",
+                      "skills": [
+                      { "level": 4, "name": "Paralyzing Wind", "value": "10 sec", "cost": 3, "range": 1500, "area": 350, "duration": 10, "cast": 3.0 },
+                      { "level": 15, "name": "Paralyzing Veil", "value": "15 sec", "cost": 3, "range": 1500, "area": 350, "duration": 15, "cast": 3.0 },
+                      { "level": 26, "name": "Paralyzing Cloak", "value": "21 sec", "cost": 3, "range": 1500, "area": 350, "duration": 21, "cast": 3.0 },
+                      { "level": 37, "name": "Paralyzing Sphere", "value": "26 sec", "cost": 3, "range": 1500, "area": 350, "duration": 26, "cast": 3.0 },
+                      { "level": 47, "name": "Paralyzing Cloud", "value": "31 sec", "cost": 3, "range": 1500, "area": 350, "duration": 31, "cast": 3.0 }
+                    ]
+                  },
+                  { 
+                    "name": "Nearsight",
+                      "skills": [
+                      { "level": 10, "name": "Negate Sight", "value": "25%", "cost": 4, "range": 2300, "duration": 120, "cast": 2.0 },
+                      { "level": 19, "name": "Nullify Sight", "value": "35%", "cost": 9, "range": 2300, "duration": 120, "cast": 2.0 },
+                      { "level": 24, "name": "Obliviate Sight", "value": "45%", "cost": 12, "range": 2300, "duration": 120, "cast": 2.0 },
+                      { "level": 32, "name": "Destroy Sight", "value": "55%", "cost": 16, "range": 2300, "duration": 120, "cast": 2.0 },
+                      { "level": 40, "name": "Abrogate Sight", "value": "65%", "cost": 20, "range": 2300, "duration": 120, "cast": 2.0 }
+                    ]
+                  }
+                ]
+            },
+            {
+              "name": "Way of the Moon",
+              "spec_name": "Vacuumancy",
+              "points": 1,
+              "base_skills": [
+                {
+                  "name": "Shield (Self)",
+                  "skills": [
+                    { "level": 1, "name": "Lesser Powerward", "value": "13 AF", "cost": 2, "duration": 1200, "cast": 3.0 },
+                    { "level": 3, "name": "Powerward", "value": "22 AF", "cost": 3, "duration": 1200, "cast": 3.0 },
+                    { "level": 5, "name": "Lesser Powerbarrier", "value": "32 AF", "cost": 4, "duration": 1200, "cast": 3.0 },
+                    { "level": 9, "name": "Powerbarrier", "value": "51 AF", "cost": 6, "duration": 1200, "cast": 3.0 },
+                    { "level": 13, "name": "Lesser Powerfield", "value": "71 AF", "cost": 8, "duration": 1200, "cast": 3.0 },
+                    { "level": 18, "name": "Powerfield", "value": "95 AF", "cost": 11, "duration": 1200, "cast": 3.0 },
+                    { "level": 24, "name": "Powershield", "value": "124 AF", "cost": 15, "duration": 1200, "cast": 3.0 },
+                    { "level": 31, "name": "Greater Powershield", "value": "158 AF", "cost": 19, "duration": 1200, "cast": 3.0 },
+                    { "level": 40, "name": "Greater Powerguard", "value": "201 AF", "cost": 25, "duration": 1200, "cast": 3.0 },
+                    { "level": 50, "name": "Supreme Powerguard", "value": "250 AF", "cost": 33, "duration": 1200, "cast": 3.0 }
+                  ]
+                },
+                {
+                  "name": "Shield (Self)",
+                  "skills": [
+                    { "level": 2, "name": "Aura of Turning", "value": "0.5 DPS", "cost": 2, "range": 1000, "duration": 600, "cast": 4.0 },
+                    { "level": 4, "name": "Greater Aura of Turning", "value": "1 DPS", "cost": 3, "range": 1000, "duration": 600, "cast": 4.0 },
+                    { "level": 8, "name": "Aura of Redirection", "value": "1 DPS", "cost": 5, "range": 1000, "duration": 600, "cast": 4.0 },
+                    { "level": 14, "name": "Greater Aura of Redirection", "value": "1 DPS", "cost": 9, "range": 1000, "duration": 600, "cast": 4.0 },
+                    { "level": 22, "name": "Aura of Reflection", "value": "2 DPS", "cost": 13, "range": 1000, "duration": 600, "cast": 4.0 },
+                    { "level": 33, "name": "Greater Aura of Reflection", "value": "3 DPS", "cost": 21, "range": 1000, "duration": 600, "cast": 4.0 },
+                    { "level": 44, "name": "Aura of Global Feedback", "value": "4 DPS", "cost": 28, "range": 1000, "duration": 600, "cast": 4.0 }
+                  ]
+                },
+                {
+                  "name": "Bladeturn (Self)",
+                  "skills": [
+                    { "level": 19, "name": "Barrier of Negation", "cost": "8%", "duration": 1200, "cast": 4.0 }
+                  ]
+                },
+                {
+                  "name": "Absorb (Self)",
+                  "skills": [
+                    { "level": 30, "name": "Ward of Power", "cost": 19, "duration": 1200, "cast": 3.0 },
+                    { "level": 41, "name": "Barrier of Power", "cost": 26, "duration": 1200, "cast": 3.0 }
+                  ]
+                }
+              ],
+              "spec_skills": [
+                {
+                  "name": "Damage and Snare",
+                  "skills": [
+                    { "level": 1, "name": "Lesser Ensnaring Blast", "value": "5 D 40%", "type": "Energy", "cost": 2, "range": 1500, "duration": 30, "cast": 3.0 },
+                    { "level": 5, "name": "Ensnaring Blast", "value": "21 D 40%", "type": "Energy", "cost": 4, "range": 1500, "duration": 30, "cast": 3.0 },
+                    { "level": 9, "name": "Greater Ensnaring Blast", "value": "37 D 40%", "type": "Energy", "cost": 6, "range": 1500, "duration": 30, "cast": 3.0 },
+                    { "level": 13, "name": "Entangling Blast", "value": "49 D 40%", "type": "Energy", "cost": 8, "range": 1500, "duration": 30, "cast": 3.0 },
+                    { "level": 17, "name": "Greater Entangling Blast", "value": "64 D 40%", "type": "Energy", "cost": 10, "range": 1500, "duration": 30, "cast": 3.0 },
+                    { "level": 23, "name": "Webbing Blast", "value": "85 D 40%", "type": "Energy", "cost": 14, "range": 1500, "duration": 30, "cast": 3.0 },
+                    { "level": 33, "name": "Greater Webbing Blast", "value": "120 D 40%", "type": "Energy", "cost": 21, "range": 1500, "duration": 30, "cast": 3.0 },
+                    { "level": 41, "name": "Demobalizing Blast", "value": "148 D 40%", "type": "Energy", "cost": 26, "range": 1500, "duration": 30, "cast": 3.0 },
+                    { "level": 50, "name": "Greater Demobalizing Blast", "value": "179 D 40%", "type": "Energy", "cost": 33, "range": 1500, "duration": 30, "cast": 3.0 }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Way of the Eclipse",
+              "spec_name": "Void Mastery",
+              "points": 1,
+              "base_skills": [
+                {
+                  "name": "Damage over Time",
+                  "skills": [
+                    { "level": 1, "name": "Illusory Ache", "value": "2 D x 4", "type": "Energy", "cost": 1, "range": 1500, "duration": 20, "cast": 3.0 }
+                  ]
+                }
+              ],
+              "spec_skills": [
+                {
+                  "name": "Mesmerise",
+                  "skills": [
+                    { "level": 1, "name": "Enfeeble Mind", "value": "16 sec", "type": "Energy", "cost": 2, "range": 1500, "duration": 16, "cast": 3.0 }
+                  ]
+                }
+              ]
+            }
+          ]
+        }

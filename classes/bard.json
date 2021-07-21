@@ -1,0 +1,386 @@
+{
+          "realmName": "Hibernia",
+          "className": "Bard",
+          "multiplier": 1.5,
+          "races": [
+            "Celt",
+            "Firbolg"
+          ],
+          "current_level": 50,
+          "abilities": [
+            { "level": 1, "name": "Regrowth" },
+            { "level": 1, "name": "Nurture" },
+            { "level": 1, "name": "Staff" },
+            { "level": 1, "name": "Cloth Armor" },
+            { "level": 1, "name": "Leather Armor" },
+            { "level": 1, "name": "Shields (Small)" },
+            { "level": 1, "name": "Blades" },
+            { "level": 1, "name": "Blunt" },
+            { "level": 5, "name": "Regrowth Spec" },
+            { "level": 5, "name": "Nurture Spec" },
+            { "level": 5, "name": "Music" },
+            { "level": 5, "name": "Music Spec" },
+            { "level": 5, "name": "Blades" },
+            { "level": 5, "name": "Blunt" },
+            { "level": 10, "name": "Evade I" },
+            { "level": 15, "name": "Reinforced Armor" },
+            { "level": 26, "name": "Evade II" }
+          ],
+          "specializations": [
+            { 
+                "name": "Regrowth",
+                "spec_name": "Regrowth Specialization",
+                "points": 1,
+                "base_skills": [
+                  { 
+                    "name": "Minor Heal",
+                      "skills": [
+                      { "level": 1, "name": "Minor Revigoration", "value": "6 HP", "cost": 1, "range": 2000, "cast": 2.2 },
+                      { "level": 3, "name": "Minor Renewal", "value": "11 HP", "cost": 2, "range": 2000, "cast": 2.2 },
+                      { "level": 5, "name": "Minor Revivification", "value": "16 HP", "cost": 3, "range": 2000, "cast": 2.2 },
+                      { "level": 8, "name": "Minor Resurgence", "value": "23 HP", "cost": 4, "range": 2000, "cast": 2.2 },
+                      { "level": 11, "name": "Minor Revival", "value": "31 HP", "cost": 5, "range": 2000, "cast": 2.2 },
+                      { "level": 14, "name": "Minor Regeneration", "value": "38 HP", "cost": 6, "range": 2000, "cast": 2.2 },
+                      { "level": 18, "name": "Minor Regrowth", "value": "48 HP", "cost": 8, "range": 2000, "cast": 2.2 },
+                      { "level": 23, "name": "Minor Restoration", "value": "60 HP", "cost": 10, "range": 2000, "cast": 2.2 },
+                      { "level": 29, "name": "Minor Resuscitation", "value": "75 HP", "cost": 12, "range": 2000, "cast": 2.2 },
+                      { "level": 37, "name": "Minor Resascence", "value": "95 HP", "cost": 14, "range": 2000, "cast": 2.2 },
+                      { "level": 47, "name": "Minor Apotheosis", "value": "119 HP", "cost": 17, "range": 2000, "cast": 2.2 }
+                    ]
+                  },
+                  { 
+                    "name": "Heal",
+                    "skills": [
+                      { "level": 4, "name": "Renewal", "value": "26 HP", "cost": 4, "range": 2000, "cast": 2.8 },
+                      { "level": 6, "name": "Revivification", "value": "36 HP", "cost": 6, "range": 2000, "cast": 2.8 },
+                      { "level": 9, "name": "Resurgence", "value": "50 HP", "cost": 9, "range": 2000, "cast": 2.8 },
+                      { "level": 12, "name": "Revival", "value": "65 HP", "cost": 11, "range": 2000, "cast": 2.8 },
+                      { "level": 16, "name": "Regeneration", "value": "85 HP", "cost": 15, "range": 2000, "cast": 2.8 },
+                      { "level": 21, "name": "Regrowth", "value": "109 HP", "cost": 19, "range": 2000, "cast": 2.8 },
+                      { "level": 27, "name": "Restoration", "value": "138 HP", "cost": 25, "range": 2000, "cast": 2.8 },
+                      { "level": 31, "name": "Resuscitation", "value": "158 HP", "cost": 28, "range": 2000, "cast": 2.8 },
+                      { "level": 36, "name": "Resascence", "value": "183 HP", "cost": 33, "range": 2000, "cast": 2.8 },
+                      { "level": 46, "name": "Apotheosis", "value": "231 HP", "cost": 42, "range": 2000, "cast": 2.8 }
+                    ]
+                  },
+                  { 
+                    "name": "Resurrection",
+                    "skills": [
+                      { "level": 10, "name": "Minor Resurrection", "value": "10% HP, 0% PP", "cost": "25%+", "range": 1500, "cast": 4 }
+                    ]
+                  },
+                  { 
+                    "name": "Minor Group Heal",
+                    "skills": [
+                      { "level": 15, "name": "Group Revigoration", "value": "33 HP", "cost": 17, "range": 2000, "cast": 3.0 },
+                      { "level": 25, "name": "Group Regrowth", "value": "53 HP", "cost": 21, "range": 2000, "cast": 3.0 },
+                      { "level": 35, "name": "Group Resascence", "value": "73 HP", "cost": 24, "range": 2000, "cast": 3.0 },
+                      { "level": 45, "name": "Group Apotheosis", "value": "93 HP", "cost": 25, "range": 2000, "cast": 3.0 }
+                    ]
+                  }
+                ],
+                "spec_skills": [
+                  {
+                    "name": "Major Heal",
+                    "skills": [
+                      { "level": 5, "name": "Major Resurgence", "value": "55 HP", "cost": 10, "range": 2000, "cast": 3.2 },
+                      { "level": 8, "name": "Major Revival", "value": "82 HP", "cost": 15, "range": 2000, "cast": 3.2 },
+                      { "level": 11, "name": "Major Regeneration", "value": "109 HP", "cost": 20, "range": 2000, "cast": 3.2 },
+                      { "level": 15, "name": "Major Regrowth", "value": "145 HP", "cost": 25, "range": 2000, "cast": 3.2 },
+                      { "level": 20, "name": "Major Restoration", "value": "190 HP", "cost": 32, "range": 2000, "cast": 3.2 },
+                      { "level": 26, "name": "Major Resuscitation", "value": "244 HP", "cost": 40, "range": 2000, "cast": 3.2 },
+                      { "level": 33, "name": "Major Resascence", "value": "307 HP", "cost": 48, "range": 2000, "cast": 3.2 },
+                      { "level": 42, "name": "Major Apotheosis", "value": "387 HP", "cost": 57, "range": 2000, "cast": 3.2 }
+                    ]
+                  },
+                  {
+                    "name": "Health Regeneration (Group, Song)",
+                    "skills": [
+                      { "level": 6, "name": "Chant of Healing", "value": "6 HP", "duration": 6, "range": 2000, "cast": 3 },
+                      { "level": 14, "name": "Song of Healing", "value": "13 HP", "duration": 6, "range": 2000, "cast": 3 },
+                      { "level": 25, "name": "Psalm of Healing", "value": "22 HP", "duration": 6, "range": 2000, "cast": 3 },
+                      { "level": 35, "name": "Hymn of Healing", "value": "30 HP", "duration": 6, "range": 2000, "cast": 3 },
+                      { "level": 45, "name": "Euphony of Healing", "value": "38 HP", "duration": 6, "range": 2000, "cast": 3 }
+                    ]
+                  },
+                  {
+                    "name": "Cure Disease",
+                    "skills": [
+                      { "level": 7, "name": "Cure Disease", "cost": "6%", "range": 1500, "cast": 3.2 }
+                    ]
+                  },
+                  {
+                    "name": "Cure Poison",
+                    "skills": [
+                      { "level": 9, "name": "Cure Poison", "cost": "6%", "range": 1500, "cast": 3.2 }
+                    ]
+                  },
+                  {
+                    "name": "Resurrection",
+                    "skills": [
+                      { "level": 16, "name": "Lesser Reconstitution", "value": "30% HP, 10% PP", "cost": "25%+", "range": 1500, "cast": 4 }
+                    ]
+                  },
+                  {
+                    "name": "Group Heal",
+                    "skills": [
+                      { "level": 17, "name": "Tones of Health", "value": "109 HP", "cost": 46, "range": 2000, "cast": 3.7 },
+                      { "level": 27, "name": "Notes of Health", "value": "169 HP", "cost": 67, "range": 2000, "cast": 3.7 },
+                      { "level": 37, "name": "Tunes of Health", "value": "229 HP", "cost": 84, "range": 2000, "cast": 3.7 },
+                      { "level": 47, "name": "Chimes of Health", "value": "289 HP", "cost": 98, "range": 2000, "cast": 3.7 }
+                    ]
+                  }
+                ]
+            },
+            {
+              "name": "Nurture",
+              "spec_name": "Nurture Specialization",
+              "points": 1,
+              "base_skills": [
+                {
+                  "name": "Buff (Armor)",
+                  "skills": [
+                    { "level": 2, "name": "Minor Bark Skin", "value": "12 AF", "range": 1000, "cast": 3.0 },
+                    { "level": 4, "name": "Lesser Bark Skin", "value": "14 AF", "range": 1000, "cast": 3.0 },
+                    { "level": 6, "name": "Bark Skin", "value": "16 AF", "range": 1000, "cast": 3.0 },
+                    { "level": 9, "name": "Major Bark Skin", "value": "19 AF", "range": 1000, "cast": 3.0 },
+                    { "level": 12, "name": "Greater Bark Skin", "value": "22 AF", "range": 1000, "cast": 3.0 },
+                    { "level": 17, "name": "Superior Bark Skin", "value": "27 AF", "range": 1000, "cast": 3.0 },
+                    { "level": 21, "name": "Skin of the Redwood", "value": "31 AF", "range": 1000, "cast": 3.0 },
+                    { "level": 26, "name": "Greater Skin of the Redwood", "value": "36 AF", "range": 1000, "cast": 3.0 },
+                    { "level": 32, "name": "Major Skin of the Redwood", "value": "42 AF", "range": 1000, "cast": 3.0 },
+                    { "level": 45, "name": "Superior Skin of the Redwood", "value": "55 AF", "range": 1000, "cast": 3.0 }
+                  ]
+                },
+                {
+                  "name": "Buff (Strength)",
+                  "skills": [
+                    { "level": 3, "name": "Strength of the Oak", "value": "12 STR", "range": 1000, "cast": 3.0 },
+                    { "level": 7, "name": "Strength of the Redwood", "value": "15 STR", "range": 1000, "cast": 3.0 },
+                    { "level": 14, "name": "Vigor of the Oak", "value": "21 STR", "range": 1000, "cast": 3.0 },
+                    { "level": 20, "name": "Vigor of the Redwood", "value": "26 STR", "range": 1000, "cast": 3.0 },
+                    { "level": 30, "name": "Force of the Oak", "value": "34 STR", "range": 1000, "cast": 3.0 },
+                    { "level": 41, "name": "Force of the Redwood", "value": "42 STR", "range": 1000, "cast": 3.0 },
+                    { "level": 50, "name": "Might of the Redwood", "value": "50 STR", "range": 1000, "cast": 3.0 }
+                  ]
+                },
+                {
+                  "name": "Buff (Constitution)",
+                  "skills": [
+                    { "level": 5, "name": "Oak's Stoutness", "value": "14 CON", "range": 1000, "cast": 3.0 },
+                    { "level": 11, "name": "Oak's Stamina", "value": "18 CON", "range": 1000, "cast": 3.0 },
+                    { "level": 15, "name": "Oak's Girth", "value": "22 CON", "range": 1000, "cast": 3.0 },
+                    { "level": 24, "name": "Redwood's Stoutness", "value": "29 CON", "range": 1000, "cast": 3.0 },
+                    { "level": 33, "name": "Redwood's Stamina", "value": "36 CON", "range": 1000, "cast": 3.0 },
+                    { "level": 43, "name": "Redwood's Girth", "value": "44 CON", "range": 1000, "cast": 3.0 }
+                  ]
+                },
+                {
+                  "name": "Buff (Dexterity)",
+                  "skills": [
+                    { "level": 8, "name": "Dexterity of the Ferret", "value": "16 DEX", "range": 1000, "cast": 3.0 },
+                    { "level": 13, "name": "Dexterity of the Rabbit", "value": "20 DEX", "range": 1000, "cast": 3.0 },
+                    { "level": 19, "name": "Dexterity of the Badger", "value": "25 DEX", "range": 1000, "cast": 3.0 },
+                    { "level": 28, "name": "Dextierty of the Lynx", "value": "32 DEX", "range": 1000, "cast": 3.0 },
+                    { "level": 38, "name": "Dexterity of the Bear", "value": "40 DEX", "range": 1000, "cast": 3.0 },
+                    { "level": 48, "name": "Dexterity of the Wolf", "value": "48 DEX", "range": 1000, "cast": 3.0 }
+                  ]
+                }
+              ],
+              "spec_skills": [
+                {
+                  "name": "Fatigue Regeneration (Group, Song)",
+                  "skills": [
+                    { "level": 2, "name": "Rhythm of Hibernia", "value": "1 FAT Regen", "range": 2000, "duration": 5, "cast": 3.0 },
+                    { "level": 12, "name": "Rhythm of Earth", "value": "2 FAT Regen", "range": 2000, "duration": 5, "cast": 3.0 },
+                    { "level": 22, "name": "Rhythm of Nature", "value": "3 FAT Regen", "range": 2000, "duration": 5, "cast": 3.0 },
+                    { "level": 32, "name": "Rhythm of the World", "value": "4 FAT Regen", "range": 2000, "duration": 5, "cast": 3.0 },
+                    { "level": 42, "name": "Rhythm of the Cosmos", "value": "5 FAT Regen", "range": 2000, "duration": 5, "cast": 3.0 }
+                  ]
+                },
+                {
+                  "name": "Speed (Group, Song)",
+                  "skills": [
+                    { "level": 2, "name": "Clear Path", "value": "+144% Movement Speed", "range": 2000, "duration": 6, "cast": 3.0 },
+                    { "level": 12, "name": "Clear Trail", "value": "+159% Movement Speed", "range": 2000, "duration": 6, "cast": 3.0 },
+                    { "level": 22, "name": "Clear Road", "value": "+174% Movement Speed", "range": 2000, "duration": 6, "cast": 3.0 },
+                    { "level": 32, "name": "Clear Field", "value": "+189% Movement Speed", "range": 2000, "duration": 6, "cast": 3.0 },
+                    { "level": 42, "name": "Clear Horizon", "value": "+204% Movement Speed", "range": 2000, "duration": 6, "cast": 3.0 }
+                  ]
+                },
+                {
+                  "name": "Power Regeneration (Group, Song)",
+                  "skills": [
+                    { "level": 10, "name": "Rhyme of Earth", "value": "1 PP Regen", "range": 2000, "duration": 6, "cast": 3.0 },
+                    { "level": 21, "name": "Rhyme of Nature", "value": "2 PP Regen", "range": 2000, "duration": 6, "cast": 3.0 },
+                    { "level": 30, "name": "Rhyme of the World", "value": "3 PP Regen", "range": 2000, "duration": 6, "cast": 3.0 },
+                    { "level": 39, "name": "Rhyme of the Cosmos", "value": "4 PP Regen", "range": 2000, "duration": 6, "cast": 3.0 },
+                    { "level": 50, "name": "Rhyme of Creation", "value": "5 PP Regen", "range": 2000, "duration": 6, "cast": 3.0 }
+                  ]
+                }
+              ]
+            },
+            { 
+                "name": "Music",
+                "spec_name": "Music Specialization",
+                "points": 1,
+                "base_skills": [
+                  { 
+                    "name": "Mesmerise",
+                      "skills": [
+                      { "level": 1, "name": "Mesmerizing Melody", "value": "16 sec", "type": "Body", "cost": 2, "range": 1500, "duration": 16, "cast": 2.5 },
+                      { "level": 5, "name": "Entrancing Melody", "value": "21 sec", "type": "Body", "cost": 4, "range": 1500, "duration": 21, "cast": 2.5 },
+                      { "level": 10, "name": "Paralyzing Melody", "value": "28 sec", "type": "Body", "cost": 6, "range": 1500, "duration": 28, "cast": 2.5 },
+                      { "level": 16, "name": "Fascinating Melody", "value": "35 sec", "type": "Body", "cost": 10, "range": 1500, "duration": 35, "cast": 2.5 },
+                      { "level": 21, "name": "Mesmerizing Hymn", "value": "42 sec", "type": "Body", "cost": 13, "range": 1500, "duration": 42, "cast": 2.5 },
+                      { "level": 28, "name": "Entrancing Hymn", "value": "51 sec", "type": "Body", "cost": 17, "range": 1500, "duration": 51, "cast": 2.5 },
+                      { "level": 36, "name": "Paralyzing Hymn", "value": "61 sec", "type": "Body", "cost": 23, "range": 1500, "duration": 61, "cast": 2.5 },
+                      { "level": 43, "name": "Fascinating Hymn", "value": "70 sec", "type": "Body", "cost": 27, "range": 1500, "duration": 70, "cast": 2.5 }
+                    ]
+                  },
+                  { 
+                    "name": "Amnesia",
+                    "skills": [
+                      { "level": 2, "name": "Minor Lullaby", "value": "70%", "cost": 2, "range": 2300, "recast": 5 }
+                    ]
+                  },
+                  { 
+                    "name": "Amnesia (AOE)",
+                    "skills": [
+                      { "level": 12, "name": "Lesser Lullaby", "value": "77%", "cost": 8, "range": 2300, "recast": 10 },
+                      { "level": 22, "name": "Lullaby", "value": "84%", "cost": 13, "range": 2300, "recast": 10 },
+                      { "level": 32, "name": "Greater Lullaby", "value": "91%", "cost": 20, "range": 2300, "recast": 10 },
+                      { "level": 42, "name": "Superior Lullaby", "value": "100%", "cost": 27, "range": 2300, "recast": 10 }
+                    ]
+                  },
+                  { 
+                    "name": "Remove Mesmerisation",
+                    "skills": [
+                      { "level": 24, "name": "Clarifying Harmonies", "cost": "6%", "range": 1500, "cast": 3.0 }
+                    ]
+                  }
+                ],
+                "spec_skills": [
+                  {
+                    "name": "Damage (Instant)",
+                    "skills": [
+                      { "level": 1, "name": "Concussive Shout", "value": "4 D", "type": "Body", "cost": 2, "range": 700, "recast": 10 },
+                      { "level": 4, "name": "Concussive Blow", "value": "12 D", "type": "Body", "cost": 2, "range": 700, "recast": 10 },
+                      { "level": 7, "name": "Concussive Yell", "value": "21 D", "type": "Body", "cost": 2, "range": 700, "recast": 10 },
+                      { "level": 12, "name": "Concussive Holler", "value": "32 D", "type": "Body", "cost": 2, "range": 700, "recast": 10 },
+                      { "level": 18, "name": "Concussive Scream", "value": "49 D", "type": "Body", "cost": 2, "range": 700, "recast": 10 },
+                      { "level": 25, "name": "Concussive Whoop", "value": "66 D", "type": "Body", "cost": 2, "range": 700, "recast": 10 },
+                      { "level": 34, "name": "Concussive Shriek", "value": "89 D", "type": "Body", "cost": 2, "range": 700, "recast": 10 },
+                      { "level": 44, "name": "Concussive Roar", "value": "114 D", "type": "Body", "cost": 2, "range": 700, "recast": 10 }
+                    ]
+                  },
+                  {
+                    "name": "Confusion",
+                    "skills": [
+                      { "level": 3, "name": "Confounding Cadence", "value": "70% 0%", "type": "Body", "cost": 3, "range": 1350, "duration": 60, "cast": 3.5 },
+                      { "level": 8, "name": "Befuddling Cadence", "value": "85% 0%", "type": "Body", "cost": 5, "range": 1350, "duration": 60, "cast": 3.5 },
+                      { "level": 14, "name": "Confusing Cadence", "value": "100% 0%", "type": "Body", "cost": 9, "range": 1350, "duration": 60, "cast": 3.5 },
+                      { "level": 20, "name": "Mystifying Cadence", "value": "100% 15%", "type": "Body", "cost": 12, "range": 1350, "duration": 60, "cast": 3.5 },
+                      { "level": 26, "name": "Confounding Ballad", "value": "100% 30%", "type": "Body", "cost": 16, "range": 1350, "duration": 60, "cast": 3.5 },
+                      { "level": 32, "name": "Befuddling Ballad", "value": "100% 45%", "type": "Body", "cost": 20, "range": 1350, "duration": 60, "cast": 3.5 },
+                      { "level": 38, "name": "Confusing Ballad", "value": "100% 60%", "type": "Body", "cost": 24, "range": 1350, "duration": 60, "cast": 3.5 },
+                      { "level": 48, "name": "Mystifying Ballad", "value": "100% 75%", "type": "Body", "cost": 31, "range": 1350, "duration": 60, "cast": 3.5}
+                    ]
+                  },
+                  {
+                    "name": "Mesmerise (AOE)",
+                    "skills": [
+                      { "level": 10, "name": "Captivate Audience", "value": "28 sec", "type": "Body", "cost": 6, "range": 1500, "area": 350, "duration": 28, "cast": 3.0 },
+                      { "level": 16, "name": "Captivate Crowd", "value": "35 sec", "type": "Body", "cost": 10, "range": 1500, "area": 350, "duration": 35, "cast": 3.0 },
+                      { "level": 21, "name": "Captivate Swarms", "value": "42 sec", "type": "Body", "cost": 13, "range": 1500, "area": 350, "duration": 42, "cast": 3.0 },
+                      { "level": 28, "name": "Captivate Multitude", "value": "51 sec", "type": "Body", "cost": 17, "range": 1500, "area": 350, "duration": 51, "cast": 3.0 },
+                      { "level": 36, "name": "Captivate Army", "value": "61 sec", "type": "Body", "cost": 23, "range": 1500, "area": 350, "duration": 61, "cast": 3.0 },
+                      { "level": 43, "name": "Captivate Legions", "value": "70 sec", "type": "Body", "cost": 27, "range": 1500, "area": 350, "duration": 70, "cast": 3.0 }
+                    ]
+                  },
+                  {
+                    "name": "Mesmerise (Instant)",
+                    "skills": [
+                      { "level": 29, "name": "Hypnotic Harmony", "value": "22 sec", "type": "Body", "cost": 18, "range": 1500, "duration": 22, "cast": 600 }
+                    ]
+                  },
+                  {
+                    "name": "Mesmerise (AOE, Instant)",
+                    "skills": [
+                      { "level": 37, "name": "Deluding Harmony", "value": "26 sec", "type": "Body", "cost": 23, "range": 1500, "area": 150, "duration": 26, "cast": 600 },
+                      { "level": 47, "name": "Entrancing Harmony", "value": "31 sec", "type": "Body", "cost": 30, "range": 1500, "area": 300, "duration": 26, "cast": 600 }
+                    ]
+                  },
+                  {
+                    "name": "Resistance (Group, Song)",
+                    "skills": [
+                      { "level": 25, "name": "Hymn of Body Guarding", "value": "+10 BODY", "range": 1500, "duration": 5, "recast": 8 },
+                      { "level": 26, "name": "Hymn of Spirit Guarding", "value": "+10 SPIRIT", "range": 1500, "duration": 5, "recast": 8 },
+                      { "level": 27, "name": "Hymn of Energy Guarding", "value": "+10 ENERGY", "range": 1500, "duration": 5, "recast": 8 },
+                      { "level": 28, "name": "Hymn of Heat Guarding", "value": "+10 HEAT", "range": 1500, "duration": 5, "recast": 8 },
+                      { "level": 29, "name": "Hymn of Cold Guarding", "value": "+10 COLD", "range": 1500, "duration": 5, "recast": 8 },
+                      { "level": 30, "name": "Hymn of Earth Guarding", "value": "+10 MATTER", "range": 1500, "duration": 5, "recast": 8 },
+                      { "level": 44, "name": "Hymn of Body Protection", "value": "+20 BODY", "range": 1500, "duration": 5, "recast": 8 },
+                      { "level": 45, "name": "Hymn of Spirit Protection", "value": "+20 SPIRIT", "range": 1500, "duration": 5, "recast": 8 },
+                      { "level": 46, "name": "Hymn of Energy Protection", "value": "+20 ENERGY", "range": 1500, "duration": 5, "recast": 8 },
+                      { "level": 47, "name": "Hymn of Body Protection", "value": "+20 HEAT", "range": 1500, "duration": 5, "recast": 8 },
+                      { "level": 48, "name": "Hymn of Spirit Protection", "value": "+20 COLD", "range": 1500, "duration": 5, "recast": 8 },
+                      { "level": 49, "name": "Hymn of Energy Protection", "value": "+20 MATTER", "range": 1500, "duration": 5, "recast": 8 }
+                    ]
+                  }
+                ]
+            },
+            {
+              "name": "Blades",
+              "points": 1,
+              "spec_skills": [
+                {
+                  "name": "Blade Styles",
+                  "skills": [
+                    { "level": 2, "name": "Shining Blade", "opening": "Any", "fatigue": "High", "damage": 0.036, "attack": "No Bonus", "defense": "No Bonus" },
+                    { "level": 4, "name": "Return Blade", "opening": "You Parry", "fatigue": "Low", "damage": 0.859, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 16% for 20 seconds.", "followup": "Lunging Blade" },
+                    { "level": 6, "name": "Taunting Blade", "opening": "Any", "fatigue": "Medium", "damage": 0.571, "attack": "Medium Bonus", "defense": "Medium Penalty", "special": "Taunt" },
+                    { "level": 8, "name": "Enervating Blade", "opening": "Any", "fatigue": "Medium", "damage": 0.000, "attack": "No Bonus", "defense": "Medium Bonus", "special": "Detaunt" },
+                    { "level": 10, "name": "Glowing Blade", "opening": "To Side of Target", "fatigue": "Medium", "damage": 0.626, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Snare", "special_text": "Target moves 60% slower for 14 seconds." },
+                    { "level": 12, "name": "Lunging Blade", "opening": "Return Blade", "fatigue": "Medium", "damage": 0.844, "attack": "Medium Bonus", "defense": "Low Bonus", "special": "Bleed", "special_text": "Bleed for 5 body damage every 4.0 seconds for 30 seconds." },
+                    { "level": 15, "name": "Auroric Blade", "opening": "Glowing Blade", "fatigue": "Low", "damage": 0.850, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 19% for 20 seconds." },
+                    { "level": 18, "name": "Fire Blade", "opening": "Any", "fatigue": "High", "damage": 0.456, "attack": "Low Bonus", "defense": "Low Penalty", "followup": "Spectrum Blade" },
+                    { "level": 21, "name": "Horizon Blade", "opening": "You Block", "fatigue": "Low", "damage": 0.867, "attack": "Medium Bonus", "defense": "Low Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 4 seconds." },
+                    { "level": 25, "name": "Kinetic Blade", "opening": "Lunging Blade", "fatigue": "Medium", "damage": 0.905, "attack": "Medium Bonus", "defense": "No Bonus" },
+                    { "level": 29, "name": "Dancing Blade", "opening": "Horizon Blade", "fatigue": "Low", "damage": 0.859, "attack": "High Bonus", "defense": "No Bonus", "special": "Bleed", "special_text": "Bleed for 8 body damage every 4.0 seconds for 40 seconds." },
+                    { "level": 34, "name": "Revenging Blade", "opening": "Behind Target", "fatigue": "Medium", "damage": 0.729, "attack": "Medium Bonus", "defense": "Medium Penalty", "followup": "Brilliant Blade" },
+                    { "level": 39, "name": "Spectrum Blade", "opening": "Fire Blade", "fatigue": "Medium", "damage": 0.759, "attack": "Low Bonus", "defense": "Medium Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 30% for 20 seconds." },
+                    { "level": 44, "name": "Prismatic Blade", "opening": "Dancing Blade", "fatigue": "Low", "damage": 0.912, "attack": "Medium Bonus", "defense": "No Bonus" },
+                    { "level": 50, "name": "Brilliant Blade", "opening": "Revening Blade", "fatigue": "Medium", "damage": 0.972, "attack": "Very High Bonus", "defense": "No Bonus" }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Blunt",
+              "points": 1,
+              "spec_skills": [
+                {
+                  "name": "Blunt Styles",
+                  "skills": [
+                    { "level": 2, "name": "Contusions", "opening": "Any", "fatigue": "High", "damage": 0.039, "attack": "No Bonus", "defense": "No Bonus" },
+                    { "level": 4, "name": "Bruiser", "opening": "You Block", "fatigue": "Low", "damage": 0.880, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 2 seconds." },
+                    { "level": 6, "name": "Blunt Trauma", "opening": "Any", "fatigue": "Medium", "damage": 0.000, "attack": "No Bonus", "defense": "Medium Bonus", "special": "Detaunt", "followup": "Impact" },
+                    { "level": 8, "name": "Slam", "opening": "Any", "fatigue": "Medium", "damage": 0.575, "attack": "Medium Bonus", "defense": "Medium Penalty", "special": "Taunt" },
+                    { "level": 10, "name": "Side Bash", "opening": "To Side of Target", "fatigue": "Medium", "damage": 0.604, "attack": "Low Bonus", "defense": "No Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 19% for 20 seconds." },
+                    { "level": 12, "name": "Impact", "opening": "Bruiser", "fatigue": "Low", "damage": 0.880, "attack": "Medium Bonus", "defense": "Low Penalty", "special": "", "special_text": "", "followup": "" },
+                    { "level": 15, "name": "Windfall", "opening": "Impact", "fatigue": "Low", "damage": 0.880, "attack": "High Bonus", "defense": "Low Bonus", "special": "Slowed", "special_text": "Target's attack speed is reduced by 22% for 20 seconds." },
+                    { "level": 18, "name": "Force of Might", "opening": "Any", "fatigue": "High", "damage": 0.448, "attack": "Low Bonus", "defense": "No Bonus", "followup": "Bonecrusher" },
+                    { "level": 21, "name": "Unstoppable Force", "opening": "Sidebash", "fatigue": "Medium", "damage": 0.838, "attack": "Medium Bonus", "defense": "Low Bonus", "special": "Snare", "special_text": "Target moves 60% slower for 19 seconds." },
+                    { "level": 25, "name": "Back Crush", "opening": "Behind target", "fatigue": "Medium", "damage": 0.721, "attack": "Medium Bonus", "defense": "Medium Penalty", "followup": "Mauler" },
+                    { "level": 29, "name": "Bonecrusher", "opening": "Windfall", "fatigue": "Low", "damage": 0.880, "attack": "Medium Bonus", "defense": "Low Bonus", "special": "Bleed", "special_text": "Bleed for 7 body damage every 4.0 seconds for 40 seconds.", "followup": "Crushing Blow" },
+                    { "level": 34, "name": "Mauler", "opening": "Unstoppable Force", "fatigue": "Mediumm", "damage": 0.877, "attack": "Medium Bonus", "defense": "Medium Bonus" },
+                    { "level": 39, "name": "Stunning Blow", "opening": "You Parry", "fatigue": "Low", "damage": 0.880, "attack": "Medium Bonus", "defense": "Low Bonus", "special": "Slowed", "special_text": "Target's attack speed reduced by 30% for 20 seconds.", "followup": "Devastating Blow" },
+                    { "level": 44, "name": "Crushing Blow", "opening": "Back Crush", "fatigue": "Medium", "damage": 0.838, "attack": "Very High Bonus", "defense": "Low Bonus" },
+                    { "level": 50, "name": "Devastating Blow", "opening": "Stunning Blow", "fatigue": "Medium", "damage": 0.880, "attack": "Medium Bonus", "defense": "No Bonus", "special": "Stun", "special_text": "Target cannot move or take any other action for 10 seconds." }
+                  ]
+                }
+              ]
+            }
+          ]
+        }

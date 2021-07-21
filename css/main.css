@@ -1,0 +1,60 @@
+body {
+  font-family: "Arial";
+  margin-bottom: 150px;
+}
+.content {
+  font-size: .8em;
+}
+.spec-header {
+  background-color: green;
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+.spec-sub-header {
+  background-color: lightgreen;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: 2px;
+}
+.spec-skill {
+  margin: 2px;
+}
+.spec-skill > div > span {
+  float: left;
+  text-align: right;
+  width: 20px;
+}
+.skill {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.input-sm {
+  height: 16px;
+  line-height: 16px;
+}
+select.input-sm {
+  margin-bottom: 2px;
+}
+.panel {
+  margin-bottom: 0px;
+}
+.earned {
+  color: blue;
+  font-weight:bold;
+}
+.skill-tooltip {
+  font-size: .8em;
+  background-color: lightgrey;
+  padding: 5px;
+  border: 1px solid black;
+}
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+#skillTooltip {
+  width: 150px;
+}
+#skillTooltip > p {
+  margin: 0 0 0 0;
+}
