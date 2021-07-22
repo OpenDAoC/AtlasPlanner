@@ -233,8 +233,7 @@
           activeSkill: {}
         },
         created: function() {
-          this._class = (this.$route.query.class == null) ? 'warden' : this.$route.query.class;
-          this._version = (this.$route.query.version == null) ? 'uthgard' : this.$route.query.version;
+          this._class = (this.$route.query.class == null) ? 'armsman' : this.$route.query.class;
 
           this.fetchData();
         },
