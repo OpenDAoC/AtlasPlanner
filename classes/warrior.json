@@ -559,120 +559,124 @@
 				]
 			}]
 		},
-		{
-			"name": "Shields",
-			"points": 1,
-			"spec_skills": [{
-					"name": "Shield Abilities",
-					"skills": [{
-						"level": 5,
-						"name": "Guard I"
-					}]
-				},
-				{
-					"name": "Shield Styles",
-					"skills": [{
-							"level": 3,
-							"name": "Numb",
-							"opening": "Any",
-							"fatigue": "High",
-							"damage": 0.047,
-							"attack": "No Bonus",
-							"defense": "No Bonus",
-							"special": "Stun",
-							"special_text": "Target cannot move or take any other action for 2 seconds."
-						},
-						{
-							"level": 8,
-							"name": "Stun",
-							"opening": "You Block",
-							"fatigue": "High",
-							"damage": 0.840,
-							"attack": "No Bonus",
-							"defense": "No Bonus",
-							"special": "Stun",
-							"special_text": "Target cannot move or take any other action for 3 seconds."
-						},
-						{
-							"level": 13,
-							"name": "Disable",
-							"opening": "To Side of Target",
-							"fatigue": "High",
-							"damage": 0.645,
-							"attack": "No Bonus",
-							"defense": "No Bonus",
-							"special": "Stun",
-							"special_text": "Target cannot move or take any other action for 4 seconds."
-						},
-						{
-							"level": 18,
-							"name": "Incapacitate",
-							"opening": "You Block",
-							"fatigue": "Very High",
-							"damage": 0.859,
-							"attack": "No Bonus",
-							"defense": "Medium Bonus",
-							"special": "Stun",
-							"special_text": "Target cannot move or take any other action for 5 seconds."
-						},
-						{
-							"level": 23,
-							"name": "Paralyze",
-							"opening": "Behind Target",
-							"fatigue": "High",
-							"damage": 0.683,
-							"attack": "No Bonus",
-							"defense": "No Bonus",
-							"special": "Stun",
-							"special_text": "Target cannot move or take any other action for 6 seconds."
-						},
-						{
-							"level": 29,
-							"name": "Bash",
-							"opening": "You Block",
-							"fatigue": "High",
-							"damage": 0.850,
-							"attack": "No Bonus",
-							"defense": "No Bonus",
-							"special": "Stun",
-							"special_text": "Target cannot move or take any other action for 7 seconds."
-						},
-						{
-							"level": 35,
-							"name": "Mangle",
-							"opening": "To Side of Target",
-							"fatigue": "High",
-							"damage": 0.730,
-							"attack": "No Bonus",
-							"defense": "No Bonus",
-							"special": "Stun",
-							"special_text": "Target cannot move or take any other action for 8 seconds."
-						},
-						{
-							"level": 42,
-							"name": "Slam",
-							"opening": "Any",
-							"fatigue": "Very High",
-							"damage": 0.759,
-							"attack": "No Bonus",
-							"defense": "No Bonus",
-							"special": "Stun",
-							"special_text": "Target cannot move or take any other action for 9 seconds."
-						},
-						{
-							"level": 50,
-							"name": "Brutalize",
-							"opening": "You Block",
-							"fatigue": "Medium",
-							"damage": 0.850,
-							"attack": "No Bonus",
-							"defense": "No Bonus",
-							"special": "Stun",
-							"special_text": "Target cannot move or take any other action for 10 seconds."
-						}
-					]
-				}
-			]
-		}
+      {
+         "name":"Shields",
+         "points":1,
+         "spec_skills":[
+            {
+               "name":"Shield Abilities",
+               "skills":[
+                  {
+                     "level":5,
+                     "name":"Guard I"
+                  }
+               ]
+            },
+            {
+               "name":"Shield Styles",
+               "skills":[
+                  {
+                     "level":3,
+                     "name":"Numb",
+                     "opening":"Any",
+                     "fatigue":"High",
+                     "damage":0.047,
+                     "attack":"No Bonus",
+                     "defense":"No Bonus",
+                     "special":"Stun",
+                     "special_text":"Target cannot move or take any other action for 2 seconds."
+                  },
+                  {
+                     "level":8,
+                     "name":"Stun",
+                     "opening":"You Block",
+                     "fatigue":"High",
+                     "damage":0.840,
+                     "attack":"No Bonus",
+                     "defense":"No Bonus",
+                     "special":"Stun",
+                     "special_text":"Target cannot move or take any other action for 3 seconds."
+                  },
+                  {
+                     "level":13,
+                     "name":"Disable",
+                     "opening":"To Side of Target",
+                     "fatigue":"High",
+                     "damage":0.645,
+                     "attack":"No Bonus",
+                     "defense":"No Bonus",
+                     "special":"Stun",
+                     "special_text":"Target cannot move or take any other action for 4 seconds."
+                  },
+                  {
+                     "level":18,
+                     "name":"Incapacitate",
+                     "opening":"You Block",
+                     "fatigue":"Very High",
+                     "damage":0.859,
+                     "attack":"No Bonus",
+                     "defense":"Medium Bonus",
+                     "special":"Stun",
+                     "special_text":"Target cannot move or take any other action for 5 seconds."
+                  },
+                  {
+                     "level":23,
+                     "name":"Paralyze",
+                     "opening":"Behind Target",
+                     "fatigue":"High",
+                     "damage":0.683,
+                     "attack":"No Bonus",
+                     "defense":"No Bonus",
+                     "special":"Stun",
+                     "special_text":"Target cannot move or take any other action for 6 seconds."
+                  },
+                  {
+                     "level":29,
+                     "name":"Bash",
+                     "opening":"You Block",
+                     "fatigue":"High",
+                     "damage":0.850,
+                     "attack":"No Bonus",
+                     "defense":"No Bonus",
+                     "special":"Stun",
+                     "special_text":"Target cannot move or take any other action for 7 seconds."
+                  },
+                  {
+                     "level":35,
+                     "name":"Mangle",
+                     "opening":"To Side of Target",
+                     "fatigue":"High",
+                     "damage":0.730,
+                     "attack":"No Bonus",
+                     "defense":"No Bonus",
+                     "special":"Stun",
+                     "special_text":"Target cannot move or take any other action for 8 seconds."
+                  },
+                  {
+                     "level":42,
+                     "name":"Slam",
+                     "opening":"Any",
+                     "fatigue":"Very High",
+                     "damage":0.759,
+                     "attack":"No Bonus",
+                     "defense":"No Bonus",
+                     "special":"Stun",
+                     "special_text":"Target cannot move or take any other action for 9 seconds."
+                  },
+                  {
+                     "level":50,
+                     "name":"Brutalize",
+                     "opening":"You Block",
+                     "fatigue":"Medium",
+                     "damage":0.850,
+                     "attack":"No Bonus",
+                     "defense":"No Bonus",
+                     "special":"Stun",
+                     "special_text":"Target cannot move or take any other action for 10 seconds."
+                  }
+               ]
+            }
+         ]
+      }
 	]
 }
