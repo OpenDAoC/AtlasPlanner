@@ -510,7 +510,7 @@
                     "attack":"Low Bonus",
                     "defense":"No Bonus",
                     "special":"Slowed",
-                    "special_text":"Target's attack speed reduced by ?% for 20 seconds.",
+                    "special_text":"Target's attack speed reduced by 20% for 20 seconds.",
                     "followup":"Bone Crusher"
                  },
                  {
@@ -596,7 +596,7 @@
                     "attack":"Medium Bonus",
                     "defense":"No Bonus",
                     "special":"Slowed",
-                    "special_text":"Target's attack speed reduced by ?% for 20 seconds."
+                    "special_text":"Target's attack speed reduced by 20% for 20 seconds."
                  },
                  {
                     "level":50,
@@ -670,7 +670,7 @@
                     "attack":"Low Bonus",
                     "defense":"No Bonus",
                     "special":"Slowed",
-                    "special_text":"Target's attack speed reduced by ?% for 20 seconds"
+                    "special_text":"Target's attack speed reduced by 20% for 20 seconds"
                  },
                  {
                     "level":12,
@@ -714,7 +714,7 @@
                     "attack":"Medium Bonus",
                     "defense":"No Bonus",
                     "special":"Slowed",
-                    "special_text":"Target's attack speed reduced by ?% for 20 seconds"
+                    "special_text":"Target's attack speed reduced by 20% for 20 seconds"
                  },
                  {
                     "level":25,
@@ -969,7 +969,7 @@
                     "attack":"Low Bonus",
                     "defense":"No Bonus",
                     "special":"Slowed",
-                    "special_text":"Target's attack speed reduced by ?% for 20 seconds.",
+                    "special_text":"Target's attack speed reduced by 20% for 20 seconds.",
                     "followup":"Bone Splitter"
                  },
                  {
@@ -1037,7 +1037,7 @@
                     "attack":"Medium Bonus",
                     "defense":"No Bonus",
                     "special":"Slowed",
-                    "special_text":"Target's attack speed reduced by ?% for 20 seconds"
+                    "special_text":"Target's attack speed reduced by 20% for 20 seconds"
                  },
                  {
                     "level":39,
@@ -1048,7 +1048,7 @@
                     "attack":"Low Bonus",
                     "defense":"No Bonus",
                     "special":"Snare",
-                    "special_text":"Target moves 60% slower for ? seconds."
+                    "special_text":"Target moves 60% slower for 11 seconds."
                  },
                  {
                     "level":44,
