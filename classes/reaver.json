@@ -1,0 +1,1399 @@
+{
+	"realmName": "Albion",
+	"className": "Reaver",
+	"multiplier": 2.0,
+	"races": [
+		"Briton",
+		"Inconnu",
+		"Saracen"
+	],
+	"current_level": 50,
+	"abilities": [{
+			"level": 1,
+			"name": "Staff"
+		},
+		{
+			"level": 1,
+			"name": "Slash"
+		},
+		{
+			"level": 1,
+			"name": "Crush"
+		},
+		{
+			"level": 1,
+			"name": "Thrust"
+		},
+		{
+			"level": 1,
+			"name": "Cloth Armor"
+		},
+		{
+			"level": 1,
+			"name": "Leather Armor"
+		},
+		{
+			"level": 1,
+			"name": "Studded Armor"
+		},
+		{
+			"level": 1,
+			"name": "Shields (Small)"
+		},
+		{
+			"level": 5,
+			"name": "Shields"
+		},
+		{
+			"level": 5,
+			"name": "Shields (Medium)"
+		},
+		{
+			"level": 5,
+			"name": "Flexible"
+		},
+		{
+			"level": 5,
+			"name": "Parry"
+		},
+		{
+			"level": 5,
+			"name": "Soulrending"
+		},
+		{
+			"level": 9,
+			"name": "Protect I"
+		},
+		{
+			"level": 10,
+			"name": "Chain Armor"
+		},
+		{
+			"level": 15,
+			"name": "Evade I"
+		},
+		{
+			"level": 17,
+			"name": "Shields (Large)"
+		},
+		{
+			"level": 20,
+			"name": "Protect II"
+		},
+		{
+			"level": 30,
+			"name": "Protect III"
+		}
+	],
+	"specializations": [{
+		"name": "Soulrending",
+		"points": 1,
+		"spec_skills": [{
+				"name": "DoT (Insta)",
+				"skills": [{
+						"level": 1,
+						"name": "Spirit Wrench",
+						"value": "2 dmg x 6.0 sec",
+						"power": 2,
+						"range": 1500,
+						"duration": "24.0 sec",
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 6,
+						"name": "Spirit Ill",
+						"value": "5 dmg x 6.0 sec",
+						"power": 4,
+						"range": 1500,
+						"duration": "24.0 sec",
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 12,
+						"name": "Spirit Rot",
+						"value": "7 dmg x 6.0 sec",
+						"power": 8,
+						"range": 1500,
+						"duration": "24.0 sec",
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 18,
+						"name": "Spirit Decay",
+						"value": "10 dmg x 6.0 sec",
+						"power": 11,
+						"range": 1500,
+						"duration": "24.0 sec",
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 23,
+						"name": "Soul Toxin",
+						"value": "12 dmg x 6.0 sec",
+						"power": 14,
+						"range": 1500,
+						"duration": "24.0 sec",
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 29,
+						"name": "Soul Blight",
+						"value": "14 dmg x 6.0 sec",
+						"power": 18,
+						"range": 1500,
+						"duration": "24.0 sec",
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 35,
+						"name": "Soul Venom",
+						"value": "17 dmg x 6.0 sec",
+						"power": 22,
+						"range": 1500,
+						"duration": "24.0 sec",
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 42,
+						"name": "Soul Poison",
+						"value": "20 dmg x 6.0 sec",
+						"power": 27,
+						"range": 1500,
+						"duration": "24.0 sec",
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 49,
+						"name": "Soul Bane",
+						"value": "23 dmg x 6.0 sec",
+						"power": 32,
+						"range": 1500,
+						"duration": "24.0 sec",
+						"recast": "30.0 sec",
+						"type": "spirit"
+					}
+				]
+			},
+			{
+				"name": "Lifedrain (Insta)",
+				"skills": [{
+						"level": 1,
+						"name": "Vigor Siphon",
+						"value": "4 dmg (70% returned)",
+						"power": 2,
+						"range": 1000,
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 4,
+						"name": "Puissance Siphon",
+						"value": "12 dmg (70% returned)",
+						"power": 3,
+						"range": 1000,
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 8,
+						"name": "Energy Siphon",
+						"value": "24 dmg (70% returned)",
+						"power": 5,
+						"range": 1000,
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 13,
+						"name": "Health Siphon",
+						"value": "35 dmg (70% returned)",
+						"power": 8,
+						"range": 1000,
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 19,
+						"name": "Vitality Siphon",
+						"value": "52 dmg (70% returned)",
+						"power": 12,
+						"range": 1000,
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 26,
+						"name": "Essence Siphon",
+						"value": "69 dmg (70% returned)",
+						"power": 16,
+						"range": 1000,
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 32,
+						"name": "Spirit Siphon",
+						"value": "83 dmg (70% returned)",
+						"power": 20,
+						"range": 1000,
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 41,
+						"name": "Life Siphon",
+						"value": "106 dmg (80% returned)",
+						"power": 26,
+						"range": 1000,
+						"recast": "30.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 50,
+						"name": "Soul Siphon",
+						"value": "128 dmg (90% returned)",
+						"power": 33,
+						"range": 1000,
+						"recast": "30.0 sec",
+						"type": "spirit"
+					}
+				]
+			},
+			{
+				"name": "PBAOE Damage Pulse",
+				"skills": [{
+						"level": 2,
+						"name": "Bashing Aura",
+						"value": "3 dmg",
+						"power": "1/1",
+						"area": 350,
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 5,
+						"name": "Wracking Aura",
+						"value": "6 dmg",
+						"power": "2/2",
+						"area": 350,
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 10,
+						"name": "Annulling Aura",
+						"value": "10 dmg",
+						"power": "4/4",
+						"area": 350,
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 14,
+						"name": "Crushing Aura",
+						"value": "13 dmg",
+						"power": "6/5",
+						"area": 350,
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 21,
+						"name": "Demolishing Aura",
+						"value": "19 dmg",
+						"power": "8/8",
+						"area": 350,
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 26,
+						"name": "Eradicating Aura",
+						"value": "24 dmg",
+						"power": "10/9",
+						"area": 350,
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 33,
+						"name": "Decimating Aura",
+						"value": "29 dmg",
+						"power": "14/12",
+						"area": 350,
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 40,
+						"name": "Shattering Aura",
+						"value": "35 dmg",
+						"power": "16/14",
+						"area": 350,
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 14,
+						"name": "Murder Aura",
+						"value": "43 dmg",
+						"power": "22/17",
+						"area": 350,
+						"recast": "8.0 sec",
+						"type": "spirit"
+					}
+				]
+			},
+			{
+				"name": "PBAOE Melee Damage Debuff",
+				"skills": [{
+						"level": 3,
+						"name": "Arthritic Curse",
+						"value": "3%",
+						"power": "2/2",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 8,
+						"name": "Crippling Curse",
+						"value": "6%",
+						"power": "3/3",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 13,
+						"name": "Paralyzing Curse",
+						"value": "9%",
+						"power": "5/5",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 20,
+						"name": "Cramping Curse",
+						"value": "12%",
+						"power": "8/7",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 27,
+						"name": "Shackling Curse",
+						"value": "15%",
+						"power": "11/10",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 35,
+						"name": "Confining Curse",
+						"value": "3%",
+						"power": "14/12",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 45,
+						"name": "Aching Curse",
+						"value": "21%",
+						"power": "19/16",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					}
+				]
+			},
+			{
+				"name": "PBAOE Abs Debuff",
+				"skills": [{
+						"level": 5,
+						"name": "Aura of Foreboding",
+						"value": "5%",
+						"power": "2/2",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 10,
+						"name": "Aura of Darkness",
+						"value": "7%",
+						"power": "4/4",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 17,
+						"name": "Aura of Destiny",
+						"value": "9%",
+						"power": "6/6",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 25,
+						"name": "Aura of Fate",
+						"value": "11%",
+						"power": "10/9",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 35,
+						"name": "Aura of Death",
+						"value": "13%",
+						"power": "14/12",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 47,
+						"name": "Aura of the Inevitable",
+						"value": "15%",
+						"power": "20/16",
+						"area": 350,
+						"duration": "10.0 sec",
+						"recast": "8.0 sec",
+						"type": "spirit"
+					}
+				]
+			},
+			{
+				"name": "Self Offensive Lifedrain Proc",
+				"skills": [{
+						"level": 3,
+						"name": "Obligation to Arawn",
+						"value": "4 dmg, 30% returned",
+						"power": 3,
+						"duration": "20 min",
+						"cast": "3.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 7,
+						"name": "Payment to Arawn",
+						"value": "7 dmg, 30% returned",
+						"power": 5,
+						"duration": "20 min",
+						"cast": "3.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 12,
+						"name": "Reparation to Arawn",
+						"value": "12 dmg, 30% returned",
+						"power": 8,
+						"duration": "20 min",
+						"cast": "3.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 21,
+						"name": "Credit to Arawn",
+						"value": "21 dmg, 40% returned",
+						"power": 13,
+						"duration": "20 min",
+						"cast": "3.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 31,
+						"name": "Restitution to Arawn",
+						"value": "27 dmg, 40% returned",
+						"power": 19,
+						"duration": "20 min",
+						"cast": "3.0 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 45,
+						"name": "Debt to Arawn",
+						"value": "41 dmg, 50% returned",
+						"power": 29,
+						"duration": "20 min",
+						"cast": "3.0 sec",
+						"type": "spirit"
+					}
+				]
+			},
+			{
+				"name": "Self Dmg Add (Insta)",
+				"skills": [{
+						"level": 4,
+						"name": "Surge of Infliction",
+						"value": "2.0 dps",
+						"power": "12%",
+						"duration": "30.0 sec",
+						"recast": "150 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 9,
+						"name": "Surge of Destruction",
+						"value": "4.0 dps",
+						"power": "12%",
+						"duration": "30.0 sec",
+						"recast": "150 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 15,
+						"name": "Surge of Mutilation",
+						"value": "5.0 dps",
+						"power": "12%",
+						"duration": "30.0 sec",
+						"recast": "150 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 22,
+						"name": "Surge of Maiming",
+						"value": "8.0 dps",
+						"power": "12%",
+						"duration": "30.0 sec",
+						"recast": "150 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 29,
+						"name": "Surge of Ruin",
+						"value": "10.0 dps",
+						"power": "12%",
+						"duration": "30.0 sec",
+						"recast": "150 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 36,
+						"name": "Surge of Wrecking",
+						"value": "12.0 dps",
+						"power": "12%",
+						"duration": "30.0 sec",
+						"recast": "150 sec",
+						"type": "spirit"
+					},
+					{
+						"level": 44,
+						"name": "Surge of Cataclysm",
+						"value": "15.0 dps",
+						"power": "12%",
+						"duration": "30.0 sec",
+						"recast": "150 sec",
+						"type": "spirit"
+					}
+				]
+			},
+			{
+				"name": "Parry",
+				"points": 1
+			},
+			{
+				"name": "Thrust",
+				"points": 1,
+				"spec_skills": [{
+					"name": "Thrust Styles",
+					"skills": [{
+							"level": 2,
+							"name": "Thistle",
+							"opening": "Any",
+							"fatigue": "High",
+							"damage": 0.044,
+							"attack": "No Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 4,
+							"name": "Ratfang",
+							"opening": "You Evade",
+							"fatigue": "Low",
+							"damage": 0.874,
+							"attack": "Medium Bonus",
+							"defense": "Low Bonus",
+							"special": "Stun",
+							"special_text": "Target cannot move or take any other action for 2 seconds.",
+							"followup": "Wolftooth"
+						},
+						{
+							"level": 6,
+							"name": "Puncture",
+							"opening": "Any",
+							"fatigue": "High",
+							"damage": 0.309,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 3 body damage every 4.0 seconds for 20 seconds"
+						},
+						{
+							"level": 8,
+							"name": "Sting",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.573,
+							"attack": "Medium Bonus",
+							"defense": "High Penalty",
+							"special": "Taunt"
+						},
+						{
+							"level": 10,
+							"name": "Wolftooth",
+							"opening": "Ratfang",
+							"fatigue": "Medium",
+							"damage": 0.871,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Snare",
+							"special_text": "Target moves 60% slower for 12 seconds.",
+							"followup": "Liontooth"
+						},
+						{
+							"level": 12,
+							"name": "Bloody Dance",
+							"opening": "Puncture",
+							"fatigue": "Medium",
+							"damage": 0.649,
+							"attack": "Medium Bonus",
+							"defense": "Low Penalty",
+							"special": "Bleed",
+							"special_text": "Bleed for 4 body damage every 4.0 seconds for 25 seconds."
+						},
+						{
+							"level": 15,
+							"name": "Beartooth",
+							"opening": "You Block",
+							"fatigue": "Low",
+							"damage": 0.871,
+							"attack": "High Bonus",
+							"defense": "No Bonus",
+							"special": "Stun",
+							"special_text": "Target cannot move or take any other action for 6 seconds."
+						},
+						{
+							"level": 18,
+							"name": "Tranquillize",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.000,
+							"attack": "No Bonus",
+							"defense": "Medium Bonus",
+							"special": "Detaunt",
+							"followup": "Wyvernfang"
+						},
+						{
+							"level": 21,
+							"name": "Lunge",
+							"opening": "Puncture",
+							"fatigue": "Medium",
+							"damage": 0.680,
+							"attack": "High Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 25,
+							"name": "Ricochet",
+							"opening": "Target blocked",
+							"fatigue": "Low",
+							"damage": 0.874,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 5 body damage every 4.0 seconds for 30 seconds."
+						},
+						{
+							"level": 29,
+							"name": "Pierce",
+							"opening": "Behind target",
+							"fatigue": "Medium",
+							"damage": 0.737,
+							"attack": "High Bonus",
+							"defense": "Medium Penalty",
+							"special": "Bleed",
+							"special_text": "Bleed for 6 body damage every 4.0 seconds for 35 seconds."
+						},
+						{
+							"level": 34,
+							"name": "Liontooth",
+							"opening": "Wolftooth",
+							"fatigue": "Low",
+							"damage": 0.874,
+							"attack": "Medium Bonus",
+							"defense": "Low Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 9 body damage every 4.0 seconds for 40 seconds."
+						},
+						{
+							"level": 39,
+							"name": "Basiliskfang",
+							"opening": "To Side of target",
+							"fatigue": "Medium",
+							"damage": 0.781,
+							"attack": "Low Bonus",
+							"defense": "Low Bonus",
+							"special": "Slowed",
+							"special_text": "Target's attack speed reduced by 20% for 20 seconds."
+						},
+						{
+							"level": 44,
+							"name": "Wyvernfang",
+							"opening": "Tranquillize",
+							"fatigue": "Low",
+							"damage": 0.876,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Snare",
+							"special_text": "Target moves 60% slower for 27 seconds."
+						},
+						{
+							"level": 50,
+							"name": "Dragonfang",
+							"opening": "You evade",
+							"fatigue": "Low",
+							"damage": 0.874,
+							"attack": "High Bonus",
+							"defense": "Low Penalty",
+							"special": "Stun",
+							"special_text": "Target cannot move or take any other action for 9 seconds."
+						}
+					]
+				}]
+			},
+			{
+				"name": "Slash",
+				"points": 1,
+				"spec_skills": [{
+					"name": "Slash Styles",
+					"skills": [{
+							"level": 2,
+							"name": "Ruby Slash",
+							"opening": "Any",
+							"fatigue": "High",
+							"damage": 0.044,
+							"attack": "No Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 4,
+							"name": "Cross Slash",
+							"opening": "To Side of Target",
+							"fatigue": "Low",
+							"damage": 0.600,
+							"attack": "Medium Bonus",
+							"defense": "Medium Bonus",
+							"followup": "Bloodletter"
+						},
+						{
+							"level": 6,
+							"name": "Uppercut",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.341,
+							"attack": "Low Bonus",
+							"defense": "No Bonus",
+							"followup": "Opal Slash, Cleave"
+						},
+						{
+							"level": 8,
+							"name": "Enrage",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.572,
+							"attack": "No Bonus",
+							"defense": "Medium Penalty",
+							"special": "Taunt",
+							"followup": "Sapphire Slash"
+						},
+						{
+							"level": 10,
+							"name": "Bloodletter",
+							"opening": "Cross Slash",
+							"fatigue": "Medium",
+							"damage": 0.457,
+							"attack": "High Bonus",
+							"defense": "Medium Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 3 body damage every 4.0 seconds for 20 seconds."
+						},
+						{
+							"level": 12,
+							"name": "Reflect",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.000,
+							"attack": "No Bonus",
+							"defense": "Medium Bonus",
+							"special": "Detaunt"
+						},
+						{
+							"level": 15,
+							"name": "Opal Slash",
+							"opening": "Uppercut",
+							"fatigue": "Medium",
+							"damage": 0.457,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 4 body damage every 4.0 seconds for 25 seconds."
+						},
+						{
+							"level": 18,
+							"name": "Riposte",
+							"opening": "You Block",
+							"fatigue": "Low",
+							"damage": 0.882,
+							"attack": "Medium Bonus",
+							"defense": "Medium Bonus",
+							"followup": "Befuddler"
+						},
+						{
+							"level": 21,
+							"name": "Side Slicer",
+							"opening": "To Side of Target",
+							"fatigue": "Low",
+							"damage": 0.572,
+							"attack": "No Bonus",
+							"defense": "No Bonus",
+							"special": "Snare",
+							"special_text": "Target moves 60% slower for 12 seconds."
+						},
+						{
+							"level": 25,
+							"name": "Cleave",
+							"opening": "Uppercut",
+							"fatigue": "Low",
+							"damage": 0.855,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 29,
+							"name": "Amethyst Slash",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.555,
+							"attack": "Very High Bonus",
+							"defense": "No Bonus",
+							"followup": "Diamond Slash"
+						},
+						{
+							"level": 34,
+							"name": "Befuddler",
+							"opening": "Riposte",
+							"fatigue": "Medium",
+							"damage": 0.882,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Stun",
+							"special_text": "Target cannot move or take any other action for 5 seconds."
+						},
+						{
+							"level": 39,
+							"name": "Back Slash",
+							"opening": "Behind target",
+							"fatigue": "High",
+							"damage": 0.815,
+							"attack": "High Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 44,
+							"name": "Sapphire Slash",
+							"opening": "Enrage",
+							"fatigue": "Low",
+							"damage": 0.867,
+							"attack": "Medium Bonus",
+							"defense": "High Penalty",
+							"special": "Bleed",
+							"special_text": "Bleed for 7 body damage every 4.0 seconds for 40 seconds."
+						},
+						{
+							"level": 50,
+							"name": "Diamond Slash",
+							"opening": "Amethyst Slash",
+							"fatigue": "High",
+							"damage": 0.844,
+							"attack": "Very High Bonus",
+							"defense": "No Bonus"
+						}
+					]
+				}]
+			},
+			{
+				"name": "Crush",
+				"points": 1,
+				"spec_skills": [{
+					"name": "Crush Styles",
+					"skills": [{
+							"level": 2,
+							"name": "Daze",
+							"opening": "Any",
+							"fatigue": "High",
+							"damage": 0.034,
+							"attack": "No Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 4,
+							"name": "Back Crush",
+							"opening": "Behind target",
+							"fatigue": "Low",
+							"damage": 0.604,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Stun",
+							"special_text": "Target cannot move or take any other action for 2 seconds.",
+							"followup": "Bruiser"
+						},
+						{
+							"level": 6,
+							"name": "Maul",
+							"opening": "Any",
+							"fatigue": "High",
+							"damage": 0.361,
+							"attack": "High Bonus",
+							"defense": "Low Penalty",
+							"followup": "Blackjack"
+						},
+						{
+							"level": 8,
+							"name": "Bludgeon",
+							"opening": "Any",
+							"fatigue": "Low",
+							"damage": 0.576,
+							"attack": "Medium Bonus",
+							"defense": "Medium Penalty",
+							"special": "Taunt",
+							"followup": "Contusions"
+						},
+						{
+							"level": 10,
+							"name": "Bruiser",
+							"opening": "Back Crush",
+							"fatigue": "Medium",
+							"damage": 0.633,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 3 body damage every 4.0 seconds for 20 seconds."
+						},
+						{
+							"level": 12,
+							"name": "Concussion",
+							"opening": "You Parry",
+							"fatigue": "Medium",
+							"damage": 0.424,
+							"attack": "Low Bonus",
+							"defense": "No Bonus",
+							"special": "Slowed",
+							"special_text": "Target's attack speed reduced by 20% for 20 seconds.",
+							"followup": "Bone Crusher"
+						},
+						{
+							"level": 15,
+							"name": "Contusions",
+							"opening": "Bludgeon",
+							"fatigue": "Medium",
+							"damage": 0.649,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Stun",
+							"special_text": "Target cannot move or take any other action for 6 seconds."
+						},
+						{
+							"level": 18,
+							"name": "Blackjack",
+							"opening": "Maul",
+							"fatigue": "High",
+							"damage": 0.649,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Stun",
+							"special_text": "Target cannot move or take any other action for 2 seconds."
+						},
+						{
+							"level": 21,
+							"name": "Protector",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.000,
+							"attack": "No Bonus",
+							"defense": "High Bonus",
+							"special": "Detaunt"
+						},
+						{
+							"level": 25,
+							"name": "Divine Hammer",
+							"opening": "Behind target",
+							"fatigue": "Medium",
+							"damage": 0.700,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 29,
+							"name": "Skull Breaker",
+							"opening": "You Block",
+							"fatigue": "Low",
+							"damage": 0.898,
+							"attack": "High Bonus",
+							"defense": "Low Penalty",
+							"followup": "Body Masher"
+						},
+						{
+							"level": 34,
+							"name": "Side Crush",
+							"opening": "To Side of Target",
+							"fatigue": "Medium",
+							"damage": 0.751,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 8 body damage every 4.0 seconds for 40 seconds.",
+							"followup": "Devastate"
+						},
+						{
+							"level": 39,
+							"name": "Bone Crusher",
+							"opening": "Concussion",
+							"fatigue": "Low",
+							"damage": 0.854,
+							"attack": "Medium Bonus",
+							"defense": "Medium Bonus",
+							"special": "Snare",
+							"special_text": "Target moves 60% slower for 23 seconds."
+						},
+						{
+							"level": 44,
+							"name": "Body Masher",
+							"opening": "Skull Breaker",
+							"fatigue": "Medium",
+							"damage": 0.740,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Slowed",
+							"special_text": "Target's attack speed reduced by 20% for 20 seconds."
+						},
+						{
+							"level": 50,
+							"name": "Devastate",
+							"opening": "Side Crush",
+							"fatigue": "High",
+							"damage": 0.864,
+							"attack": "High Bonus",
+							"defense": "Medium Penalty"
+						}
+					]
+				}]
+			},
+			{
+				"name": "Shields",
+				"points": 1,
+				"spec_skills": [{
+						"name": "Shield Abilities",
+						"skills": [{
+							"level": 5,
+							"name": "Guard I"
+						}]
+					},
+					{
+						"name": "Shield Styles",
+						"skills": [{
+								"level": 3,
+								"name": "Numb",
+								"opening": "Any",
+								"fatigue": "High",
+								"damage": 0.047,
+								"attack": "No Bonus",
+								"defense": "No Bonus",
+								"special": "Stun",
+								"special_text": "Target cannot move or take any other action for 2 seconds."
+							},
+							{
+								"level": 8,
+								"name": "Stun",
+								"opening": "You Block",
+								"fatigue": "High",
+								"damage": 0.840,
+								"attack": "No Bonus",
+								"defense": "No Bonus",
+								"special": "Stun",
+								"special_text": "Target cannot move or take any other action for 3 seconds."
+							},
+							{
+								"level": 13,
+								"name": "Disable",
+								"opening": "To Side of Target",
+								"fatigue": "High",
+								"damage": 0.645,
+								"attack": "No Bonus",
+								"defense": "No Bonus",
+								"special": "Stun",
+								"special_text": "Target cannot move or take any other action for 4 seconds."
+							},
+							{
+								"level": 18,
+								"name": "Incapacitate",
+								"opening": "You Block",
+								"fatigue": "Very High",
+								"damage": 0.859,
+								"attack": "No Bonus",
+								"defense": "Medium Bonus",
+								"special": "Stun",
+								"special_text": "Target cannot move or take any other action for 5 seconds."
+							},
+							{
+								"level": 23,
+								"name": "Paralyze",
+								"opening": "Behind Target",
+								"fatigue": "High",
+								"damage": 0.683,
+								"attack": "No Bonus",
+								"defense": "No Bonus",
+								"special": "Stun",
+								"special_text": "Target cannot move or take any other action for 6 seconds."
+							},
+							{
+								"level": 29,
+								"name": "Bash",
+								"opening": "You Block",
+								"fatigue": "High",
+								"damage": 0.850,
+								"attack": "No Bonus",
+								"defense": "No Bonus",
+								"special": "Stun",
+								"special_text": "Target cannot move or take any other action for 7 seconds."
+							},
+							{
+								"level": 35,
+								"name": "Mangle",
+								"opening": "To Side of Target",
+								"fatigue": "High",
+								"damage": 0.730,
+								"attack": "No Bonus",
+								"defense": "No Bonus",
+								"special": "Stun",
+								"special_text": "Target cannot move or take any other action for 8 seconds."
+							},
+							{
+								"level": 42,
+								"name": "Slam",
+								"opening": "Any",
+								"fatigue": "Very High",
+								"damage": 0.759,
+								"attack": "No Bonus",
+								"defense": "No Bonus",
+								"special": "Stun",
+								"special_text": "Target cannot move or take any other action for 6 seconds."
+							},
+							{
+								"level": 50,
+								"name": "Brutalize",
+								"opening": "You Block",
+								"fatigue": "Medium",
+								"damage": 0.850,
+								"attack": "No Bonus",
+								"defense": "No Bonus",
+								"special": "Stun",
+								"special_text": "Target cannot move or take any other action for 10 seconds."
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Flexible",
+				"points": 1,
+				"spec_skills": [{
+					"name": "Flexible Styles",
+					"skills": [{
+							"level": 2,
+							"name": "Blacksnake",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.047,
+							"attack": "No Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 4,
+							"name": "Kingsnake",
+							"opening": "You Parry",
+							"fatigue": "Low",
+							"damage": 0.876,
+							"attack": "Medium Bonus",
+							"defense": "Low Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 3 body damage every 4.0 seconds for 20 seconds"
+						},
+						{
+							"level": 6,
+							"name": "Diamondback",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.574,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Taunt"
+						},
+						{
+							"level": 8,
+							"name": "Asp",
+							"opening": "Behind Target",
+							"fatigue": "High",
+							"damage": 0.874,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Increased melee range"
+						},
+						{
+							"level": 10,
+							"name": "Viper",
+							"opening": "You Block",
+							"fatigue": "Low",
+							"damage": 0.876,
+							"attack": "Medium Bonus",
+							"defense": "Low Bonus",
+							"special": "Stunned",
+							"special_text": "Target is stunned for 5.0 seconds."
+						},
+						{
+							"level": 12,
+							"name": "Copperhead",
+							"opening": "Viper",
+							"fatigue": "Low",
+							"damage": 0.876,
+							"attack": "Medium Bonus",
+							"defense": "Medium Bonus",
+							"special": "Slowed",
+							"special_text": "Target's attack speed reduced by 18% for 20 seconds."
+						},
+						{
+							"level": 15,
+							"name": "Tigersnake",
+							"opening": "Kingsnake",
+							"fatigue": "Low",
+							"damage": 0.876,
+							"attack": "High Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 18,
+							"name": "Indigosnake",
+							"opening": "To side of target",
+							"fatigue": "Medium",
+							"damage": 0.610,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Lifedrain",
+							"special_text": "Deals 58 spirit damage and returns 60% of damage dealt."
+						},
+						{
+							"level": 21,
+							"name": "Boomslang",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.000,
+							"attack": "No Bonus",
+							"defense": "Very High Bonus",
+							"special": "Detaunt"
+						},
+						{
+							"level": 25,
+							"name": "Python",
+							"opening": "Any",
+							"fatigue": "Very High",
+							"damage": 0.231,
+							"attack": "Low Bonus",
+							"defense": "Low Bonus",
+							"special": "PBAOE Str Debuff",
+							"special_text": "Decreases strength by 30 in a 250 unit radius."
+						},
+						{
+							"level": 29,
+							"name": "Taipan",
+							"opening": "Copperhead",
+							"fatigue": "Low",
+							"damage": 0.923,
+							"attack": "High Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 34,
+							"name": "Constrictor",
+							"opening": "Indigosnake",
+							"fatigue": "Low",
+							"damage": 1.160,
+							"attack": "Very High Bonus",
+							"defense": "No Bonus",
+							"special": "Snare",
+							"special_text": "Target is snared by 60% for 27.0 seconds."
+						},
+						{
+							"level": 39,
+							"name": "Anaconda",
+							"opening": "Tigersnake",
+							"fatigue": "Medium",
+							"damage": 0.996,
+							"attack": "High Bonus",
+							"defense": "Low Bonus",
+							"special": "Stun",
+							"special_text": "Target is stunned for 9.0 seconds."
+						},
+						{
+							"level": 44,
+							"name": "Cobra",
+							"opening": "Taipan",
+							"fatigue": "Low",
+							"damage": 0.923,
+							"attack": "High Bonus",
+							"defense": "No Bonus",
+							"special": "Lifedrain",
+							"special_text": "Deals 153 spirit damage and returns 100% of damage dealt."
+						},
+						{
+							"level": 50,
+							"name": "Leviathan",
+							"opening": "Behind Target",
+							"fatigue": "Medium",
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "DD Proc",
+							"special_text": "Deals 153 cold damage to target."
+						}
+					]
+				}]
+			}
+		]
+	}]
+}

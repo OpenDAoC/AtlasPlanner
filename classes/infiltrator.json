@@ -1,0 +1,999 @@
+{
+	"realmName": "Albion",
+	"className": "Infiltrator",
+	"multiplier": 2.5,
+	"races": [
+		"Briton",
+		"Inconnu",
+		"Saracen"
+	],
+	"current_level": 50,
+	"abilities": [{
+			"level": 1,
+			"name": "Staff"
+		},
+		{
+			"level": 1,
+			"name": "Slash"
+		},
+		{
+			"level": 1,
+			"name": "Thrust"
+		},
+		{
+			"level": 1,
+			"name": "Stealth"
+		},
+		{
+			"level": 1,
+			"name": "Cloth Armor"
+		},
+		{
+			"level": 1,
+			"name": "Leather Armor"
+		},
+		{
+			"level": 1,
+			"name": "Evade I"
+		},
+		{
+			"level": 5,
+			"name": "Shields (Small)"
+		},
+		{
+			"level": 5,
+			"name": "Dual Wield"
+		},
+		{
+			"level": 5,
+			"name": "Critical Strike"
+		},
+		{
+			"level": 5,
+			"name": "Envenom"
+		},
+		{
+			"level": 5,
+			"name": "Distractions"
+		},
+		{
+			"level": 5,
+			"name": "Evade II"
+		},
+		{
+			"level": 10,
+			"name": "Evade III"
+		},
+		{
+			"level": 20,
+			"name": "Evade IV"
+		},
+		{
+			"level": 30,
+			"name": "Evade V"
+		},
+		{
+			"level": 40,
+			"name": "Evade VI"
+		},
+		{
+			"level": 50,
+			"name": "Evade VII"
+		}
+	],
+	"specializations": [{
+		"name": "Envenom",
+		"points": 1,
+		"spec_skills": [{
+				"name": "DoT Poison",
+				"skills": [{
+						"level": 1,
+						"name": "Minor Lethal Poison",
+						"value": "9 dmg x 4.0 sec",
+						"type": "body",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 5,
+						"name": "Lesser Lethal Poison",
+						"value": "12 dmg x 4.0 sec",
+						"type": "body",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 10,
+						"name": "Lethal Poison",
+						"value": "16 dmg x 4.0 sec",
+						"type": "body",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 15,
+						"name": "Major Lethal Poison",
+						"value": "21 dmg x 4.0 sec",
+						"type": "body",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 20,
+						"name": "Greater Lethal Poison",
+						"value": "26 dmg x 4.0 sec",
+						"type": "body",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 25,
+						"name": "Minor Lethal Venom",
+						"value": "31 dmg x 4.0 sec",
+						"type": "body",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 30,
+						"name": "Lesser Lethal Poison",
+						"value": "37 dmg x 4.0 sec",
+						"type": "body",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 35,
+						"name": "Major Lethal Poison",
+						"value": "43 dmg x 4.0 sec",
+						"type": "body",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 40,
+						"name": "Greater Lethal Poison",
+						"value": "50 dmg x 4.0 sec",
+						"type": "body",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 45,
+						"name": "Insidious Lethal Poison",
+						"value": "57 dmg x 4.0 sec",
+						"type": "body",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 50,
+						"name": "Lifebane",
+						"value": "64 dmg x 4.0 sec",
+						"type": "body",
+						"duration": "20.0 sec"
+					}
+				]
+			},
+			{
+				"name": "Str Debuff Poison",
+				"skills": [{
+						"level": 2,
+						"name": "Minor Weakening Poison",
+						"value": "18 str",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 6,
+						"name": "Lesser Weakening Poison",
+						"value": "24 str",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 11,
+						"name": "Major Weakening Poison",
+						"value": "33 str",
+						"duration": "20.0 sec"
+					},
+					{
+						"level": 17,
+						"name": "Greater Weakening Poison",
+						"value": "44 str",
+						"duration": "20.0 sec"
+					}
+				]
+			},
+			{
+				"name": "Snare Poison",
+				"skills": [{
+						"level": 3,
+						"name": "Minor Imbalance Poison",
+						"value": "40% snare",
+						"duration": "35.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 8,
+						"name": "Lesser Imbalance Poison",
+						"value": "40% snare",
+						"duration": "44.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 13,
+						"name": "Major Imbalance Poison",
+						"value": "40% snare",
+						"duration": "52.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 18,
+						"name": "Greater Imbalance Poison",
+						"value": "40% snare",
+						"duration": "61.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 23,
+						"name": "Minor Crippling Poison",
+						"value": "40% snare",
+						"duration": "70.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 27,
+						"name": "Lesser Crippling Poison",
+						"value": "40% snare",
+						"duration": "77.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 31,
+						"name": "Major Crippling Poison",
+						"value": "40% snare",
+						"duration": "84.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 42,
+						"name": "Major Crippling Poison",
+						"value": "40% snare",
+						"duration": "103.0 sec",
+						"type": "body"
+					}
+				]
+			},
+			{
+				"name": "Disease Poison",
+				"skills": [{
+						"level": 4,
+						"name": "Minor Infectious Serum",
+						"duration": "60.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 16,
+						"name": "Lesser Infectious Serum",
+						"duration": "90.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 26,
+						"name": "Infectious Serum",
+						"duration": "120.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 38,
+						"name": "Major Infectious Serum",
+						"duration": "150.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 48,
+						"name": "Greater Infectious Serum",
+						"duration": "180.0 sec",
+						"type": "body"
+					}
+				]
+			},
+			{
+				"name": "Weaponskill/Con Debuff Posion",
+				"skills": [{
+						"level": 22,
+						"name": "Minor Enervating Poison",
+						"value": "-55 WS/Con",
+						"duration": "60.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 29,
+						"name": "Lesser Enervating Poison",
+						"value": "-71 WS/Con",
+						"duration": "60.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 37,
+						"name": "Major Enervating Poison",
+						"value": "-91 WS/Con",
+						"duration": "60.0 sec",
+						"type": "body"
+					},
+					{
+						"level": 47,
+						"name": "Greater Enervating Poison",
+						"value": "-118 WS/Con",
+						"duration": "60.0 sec",
+						"type": "body"
+					}
+				]
+			},
+			{
+				"name": "Stealth",
+				"points": 1
+			},
+			{
+				"name": "Thrust",
+				"points": 1,
+				"spec_skills": [{
+					"name": "Thrust Styles",
+					"skills": [{
+							"level": 2,
+							"name": "Thistle",
+							"opening": "Any",
+							"fatigue": "High",
+							"damage": 0.044,
+							"attack": "No Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 4,
+							"name": "Ratfang",
+							"opening": "You Evade",
+							"fatigue": "Low",
+							"damage": 0.874,
+							"attack": "Medium Bonus",
+							"defense": "Low Bonus",
+							"special": "Stun",
+							"special_text": "Target cannot move or take any other action for 2 seconds.",
+							"followup": "Wolftooth"
+						},
+						{
+							"level": 6,
+							"name": "Puncture",
+							"opening": "Any",
+							"fatigue": "High",
+							"damage": 0.309,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 3 body damage every 4.0 seconds for 20 seconds"
+						},
+						{
+							"level": 8,
+							"name": "Sting",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.573,
+							"attack": "Medium Bonus",
+							"defense": "High Penalty",
+							"special": "Taunt"
+						},
+						{
+							"level": 10,
+							"name": "Wolftooth",
+							"opening": "Ratfang",
+							"fatigue": "Medium",
+							"damage": 0.871,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Snare",
+							"special_text": "Target moves 60% slower for 12 seconds.",
+							"followup": "Liontooth"
+						},
+						{
+							"level": 12,
+							"name": "Bloody Dance",
+							"opening": "Puncture",
+							"fatigue": "Medium",
+							"damage": 0.649,
+							"attack": "Medium Bonus",
+							"defense": "Low Penalty",
+							"special": "Bleed",
+							"special_text": "Bleed for 4 body damage every 4.0 seconds for 25 seconds."
+						},
+						{
+							"level": 15,
+							"name": "Beartooth",
+							"opening": "You Block",
+							"fatigue": "Low",
+							"damage": 0.871,
+							"attack": "High Bonus",
+							"defense": "No Bonus",
+							"special": "Stun",
+							"special_text": "Target cannot move or take any other action for 6 seconds."
+						},
+						{
+							"level": 18,
+							"name": "Tranquillize",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.000,
+							"attack": "No Bonus",
+							"defense": "Medium Bonus",
+							"special": "Detaunt",
+							"followup": "Wyvernfang"
+						},
+						{
+							"level": 21,
+							"name": "Lunge",
+							"opening": "Puncture",
+							"fatigue": "Medium",
+							"damage": 0.680,
+							"attack": "High Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 25,
+							"name": "Ricochet",
+							"opening": "Target blocked",
+							"fatigue": "Low",
+							"damage": 0.874,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 5 body damage every 4.0 seconds for 30 seconds."
+						},
+						{
+							"level": 29,
+							"name": "Pierce",
+							"opening": "Behind target",
+							"fatigue": "Medium",
+							"damage": 0.737,
+							"attack": "High Bonus",
+							"defense": "Medium Penalty",
+							"special": "Bleed",
+							"special_text": "Bleed for 6 body damage every 4.0 seconds for 35 seconds."
+						},
+						{
+							"level": 34,
+							"name": "Liontooth",
+							"opening": "Wolftooth",
+							"fatigue": "Low",
+							"damage": 0.874,
+							"attack": "Medium Bonus",
+							"defense": "Low Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 9 body damage every 4.0 seconds for 40 seconds."
+						},
+						{
+							"level": 39,
+							"name": "Basiliskfang",
+							"opening": "To Side of target",
+							"fatigue": "Medium",
+							"damage": 0.781,
+							"attack": "Low Bonus",
+							"defense": "Low Bonus",
+							"special": "Slowed",
+							"special_text": "Target's attack speed reduced by 20% for 20 seconds."
+						},
+						{
+							"level": 44,
+							"name": "Wyvernfang",
+							"opening": "Tranquillize",
+							"fatigue": "Low",
+							"damage": 0.876,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Snare",
+							"special_text": "Target moves 60% slower for 27 seconds."
+						},
+						{
+							"level": 50,
+							"name": "Dragonfang",
+							"opening": "You evade",
+							"fatigue": "Low",
+							"damage": 0.874,
+							"attack": "High Bonus",
+							"defense": "Low Penalty",
+							"special": "Stun",
+							"special_text": "Target cannot move or take any other action for 9 seconds."
+						}
+					]
+				}]
+			},
+			{
+				"name": "Slash",
+				"points": 1,
+				"spec_skills": [{
+					"name": "Slash Styles",
+					"skills": [{
+							"level": 2,
+							"name": "Ruby Slash",
+							"opening": "Any",
+							"fatigue": "High",
+							"damage": 0.044,
+							"attack": "No Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 4,
+							"name": "Cross Slash",
+							"opening": "To Side of Target",
+							"fatigue": "Low",
+							"damage": 0.600,
+							"attack": "Medium Bonus",
+							"defense": "Medium Bonus",
+							"followup": "Bloodletter"
+						},
+						{
+							"level": 6,
+							"name": "Uppercut",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.341,
+							"attack": "Low Bonus",
+							"defense": "No Bonus",
+							"followup": "Opal Slash, Cleave"
+						},
+						{
+							"level": 8,
+							"name": "Enrage",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.572,
+							"attack": "No Bonus",
+							"defense": "Medium Penalty",
+							"special": "Taunt",
+							"followup": "Sapphire Slash"
+						},
+						{
+							"level": 10,
+							"name": "Bloodletter",
+							"opening": "Cross Slash",
+							"fatigue": "Medium",
+							"damage": 0.457,
+							"attack": "High Bonus",
+							"defense": "Medium Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 3 body damage every 4.0 seconds for 20 seconds."
+						},
+						{
+							"level": 12,
+							"name": "Reflect",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.000,
+							"attack": "No Bonus",
+							"defense": "Medium Bonus",
+							"special": "Detaunt"
+						},
+						{
+							"level": 15,
+							"name": "Opal Slash",
+							"opening": "Uppercut",
+							"fatigue": "Medium",
+							"damage": 0.457,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Bleed",
+							"special_text": "Bleed for 4 body damage every 4.0 seconds for 25 seconds."
+						},
+						{
+							"level": 18,
+							"name": "Riposte",
+							"opening": "You Block",
+							"fatigue": "Low",
+							"damage": 0.882,
+							"attack": "Medium Bonus",
+							"defense": "Medium Bonus",
+							"followup": "Befuddler"
+						},
+						{
+							"level": 21,
+							"name": "Side Slicer",
+							"opening": "To Side of Target",
+							"fatigue": "Low",
+							"damage": 0.572,
+							"attack": "No Bonus",
+							"defense": "No Bonus",
+							"special": "Snare",
+							"special_text": "Target moves 60% slower for 12 seconds."
+						},
+						{
+							"level": 25,
+							"name": "Cleave",
+							"opening": "Uppercut",
+							"fatigue": "Low",
+							"damage": 0.855,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 29,
+							"name": "Amethyst Slash",
+							"opening": "Any",
+							"fatigue": "Medium",
+							"damage": 0.555,
+							"attack": "Very High Bonus",
+							"defense": "No Bonus",
+							"followup": "Diamond Slash"
+						},
+						{
+							"level": 34,
+							"name": "Befuddler",
+							"opening": "Riposte",
+							"fatigue": "Medium",
+							"damage": 0.882,
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Stun",
+							"special_text": "Target cannot move or take any other action for 5 seconds."
+						},
+						{
+							"level": 39,
+							"name": "Back Slash",
+							"opening": "Behind target",
+							"fatigue": "High",
+							"damage": 0.815,
+							"attack": "High Bonus",
+							"defense": "No Bonus"
+						},
+						{
+							"level": 44,
+							"name": "Sapphire Slash",
+							"opening": "Enrage",
+							"fatigue": "Low",
+							"damage": 0.867,
+							"attack": "Medium Bonus",
+							"defense": "High Penalty",
+							"special": "Bleed",
+							"special_text": "Bleed for 7 body damage every 4.0 seconds for 40 seconds."
+						},
+						{
+							"level": 50,
+							"name": "Diamond Slash",
+							"opening": "Amethyst Slash",
+							"fatigue": "High",
+							"damage": 0.844,
+							"attack": "Very High Bonus",
+							"defense": "No Bonus"
+						}
+					]
+				}]
+			},
+			{
+				"name": "Critical Strike",
+				"points": 1,
+				"spec_skills": [{
+					"name": "Critical Strike Styles",
+					"skills": [{
+							"level": 2,
+							"name": "Backstab",
+							"opening": "Stealthed from behind target",
+							"fatigue": "Medium",
+							"damage": 0.000,
+							"attack": "Medium Bonus",
+							"defense": "Medium Penalty",
+							"special": "Stun",
+							"special_text": "Stuns target for 2.0 sec."
+						},
+						{
+							"level": 4,
+							"name": "Eviscerate",
+							"opening": "Backstab",
+							"fatigue": "Medium",
+							"damage": 0.617,
+							"attack": "Low Bonus",
+							"defense": "Low Penalty",
+							"special": "Combat speed reduction",
+							"special_text": "Decreases target's combat speed by 16% for 20.0 sec.",
+							"followup": "Kidney Rupture"
+						},
+						{
+							"level": 6,
+							"name": "Kidney Rupture",
+							"opening": "Eviscerate",
+							"fatigue": "Low",
+							"damage": 0.669,
+							"attack": "Low Bonus",
+							"defense": "Medium Penalty",
+							"special": "Bleed",
+							"special_text": "Deals 4 body dmg x 4.0 sec for 25.0 sec."
+						},
+						{
+							"level": 8,
+							"name": "Pincer",
+							"opening": "To side of target",
+							"fatigue": "Medium",
+							"damage": 0.877,
+							"attack": "High Bonus",
+							"defense": "High Penalty"
+						},
+						{
+							"level": 10,
+							"name": "Backstab II",
+							"opening": "Stealthed behind target",
+							"fatigue": "High",
+							"damage": 0.000,
+							"attack": "High Bonus",
+							"defense": "Medium Penalty",
+							"special": "Stun",
+							"special_text": "Target is stunned for 3.0 sec."
+						},
+						{
+							"level": 12,
+							"name": "Hamstring",
+							"opening": "You Evade",
+							"fatigue": "Low",
+							"damage": 1.100,
+							"attack": "Medium Bonus",
+							"defense": "Medium Bonus",
+							"special": "Bleed",
+							"special_text": "Deals 5 body dmg x 4.0 sec for 30.0 sec.",
+							"followup": "Leaper"
+						},
+						{
+							"level": 15,
+							"name": "Thigh Cut",
+							"opening": "Backstab II",
+							"fatigue": "Medium",
+							"damage": 1.040,
+							"attack": "Medium Bonus",
+							"defense": "Low Penalty"
+						},
+						{
+							"level": 18,
+							"name": "Garrote",
+							"opening": "Any",
+							"fatigue": "High",
+							"damage": 0.721,
+							"attack": "Medium Bonus",
+							"defense": "Medium Penalty",
+							"special": "Snare",
+							"special_text": "Target is snared by 60% for 12.0 sec"
+						},
+						{
+							"level": 21,
+							"name": "Perforate Artery",
+							"opening": "Stealthed in front of target",
+							"fatigue": "Medium",
+							"damage": 0.000,
+							"attack": "High Bonus",
+							"defense": "Medium Penalty",
+							"special": "Bleed",
+							"special_text": "Deals 7 body dmg x 4.0 sec for 40.0 sec."
+						},
+						{
+							"level": 25,
+							"name": "Achilles' Heel",
+							"opening": "Garrote",
+							"fatigue": "Medium",
+							"damage": "High",
+							"attack": "Medium Bonus",
+							"defense": "No Bonus",
+							"special": "Combat speed reduction",
+							"special_text": "Target's combat speed is reduced by 22% for 20.0 sec."
+						},
+						{
+							"level": 29,
+							"name": "Leaper",
+							"opening": "Hamstring",
+							"fatigue": "Medium",
+							"damage": 1.306,
+							"attack": "High Bonus",
+							"defense": "Low Bonus",
+							"special": "Bleed",
+							"special_text": "Deals 7 body dmg x 4.0 sec for 40.0 sec.",
+							"followup": "Rib Separation"
+						},
+						{
+							"level": 34,
+							"name": "Creeping Death",
+							"opening": "Perforate Artery",
+							"fatigue": "Low",
+							"damage": 1.070,
+							"attack": "High Bonus",
+							"defense": "No Bonus",
+							"special": "Stun",
+							"special_text": "Target is stunned for 7.0 sec.",
+							"followup": "Stunning Stab"
+						},
+						{
+							"level": 39,
+							"name": "Stunning Stab",
+							"opening": "Creeping Death",
+							"fatigue": "Low",
+							"damage": 1.204,
+							"attack": "Very High Bonus",
+							"defense": "Low Bonus",
+							"special": "Bleed",
+							"special_text": "Deals 10 body dmg x 4.0 sec for 40.0 sec."
+						},
+						{
+							"level": 44,
+							"name": "Rib Separation",
+							"opening": "Leaper",
+							"fatigue": "Low",
+							"damage": 1.289,
+							"attack": "High Bonus",
+							"defense": "No Bonus",
+							"special": "Snare",
+							"special_text": "Target is snared by 60% for 27 seconds.",
+							"followup": "Ripper"
+						},
+						{
+							"level": 50,
+							"name": "Ripper",
+							"opening": "Rib Separation",
+							"fatigue": "Low",
+							"damage": 1.072,
+							"attack": "High Bonus",
+							"defense": "Low Bonus",
+							"special": "Bleed",
+							"special_text": "Deals 11 body dmg x 4.0 sec for 40.0 sec."
+						}
+					]
+				}]
+			},
+			{
+       "name":"Dual Wield",
+       "points":1,
+       "spec_skills":[
+          {
+             "name":"Dual Wield Styles",
+             "skills":[
+				 {
+					 "level":2,
+					 "name":"Twin Spikes",
+					 "opening":"Any",
+					 "fatigue":"Medium",
+					 "damage":0.048,
+					 "attack":"No Bonus",
+					 "defense":"No Bonus"
+				 },
+				 {
+					 "level":4,
+					 "name":"Twin Return",
+					 "opening":"You Evade",
+					 "fatigue":"Low",
+					 "damage":0.859,
+					 "attack":"Medium Bonus",
+					 "defense":"Low Bonus",
+					 "special":"Bleed",
+					 "special_text":"Bleed for 3 body damage every 4.0 seconds for 20 seconds.",
+					 "followup":"Orbit"
+				 },
+				 {
+					 "level":6,
+					 "name":"Shadow's Edge",
+					 "opening":"Behind target",
+					 "fatigue":"Medium",
+					 "damage":0.630,
+					 "attack":"Medium Bonus",
+					 "defense":"No Bonus",
+					 "followup":"Eclipse, Penumbra"
+				 },
+				 {
+					 "level":8,
+					 "name":"Inflame",
+					 "opening":"Any",
+					 "fatigue":"Medium",
+					 "damage":0.571,
+					 "attack":"No Bonus",
+					 "defense":"Medium Penalty",
+					 "special":"Taunt"
+				 },
+				 {
+					 "level":10,
+					 "name":"Orbit",
+					 "opening":"Twin Return",
+					 "fatigue":"Medium",
+					 "damage":0.859,
+					 "attack":"Medium Bonus",
+					 "defense":"No Bonus",
+					 "special":"Snare",
+					 "special_text":"Target moves 60% slower for 12 seconds."
+				 },
+				 {
+					 "level":12,
+					 "name":"Eclipse",
+					 "opening":"Shadow's Edge",
+					 "fatigue":"Medium",
+					 "damage":0.875,
+					 "attack":"Medium Bonus",
+					 "defense":"No Bonus",
+					 "special":"Slowed",
+					 "special_text":"Target's attack speed reduced by ?% for 20 seconds."
+				 },
+				 {
+					 "level":15,
+					 "name":"Misty Gloom",
+					 "opening":"Any",
+					 "fatigue":"High",
+					 "damage":0.426,
+					 "attack":"Low Bonus",
+					 "defense":"No Bonus"
+				 },
+				 {
+					 "level":18,
+					 "name":"Obscure",
+					 "opening":"Any",
+					 "fatigue":"Medium",
+					 "damage":0.000,
+					 "attack":"No Bonus",
+					 "defense":"High Bonus",
+					 "special":"Detaunt"
+				 },
+				 {
+					 "level":21,
+					 "name":"Penumbra",
+					 "opening":"Shadow's Edge",
+					 "fatigue":"Medium",
+					 "damage":0.886,
+					 "attack":"High Bonus",
+					 "defense":"No Bonus"
+				 },
+				 {
+					 "level":25,
+					 "name":"Reflection",
+					 "opening":"You Parry",
+					 "fatigue":"Low",
+					 "damage":0.859,
+					 "attack":"Low Bonus",
+					 "defense":"Low Bonus",
+					 "followup":"Hypnotic Darkness"
+				 },
+				 {
+					 "level":29,
+					 "name":"Flank",
+					 "opening":"To Side of Target",
+					 "fatigue":"Medium",
+					 "damage":0.859,
+					 "attack":"No Bonus",
+					 "defense":"Medium Bonus",
+					 "special":"Snare",
+					 "special_text":"Target moves 60% slower for 12 seconds.",
+					 "followup":"Shadow's Rain"
+				 },
+				 {
+					 "level":34,
+					 "name":"Dark Tendrils",
+					 "opening":"Any",
+					 "fatigue":"Low",
+					 "damage":0.859,
+					 "attack":"Medium Bonus",
+					 "defense":"No Bonus",
+					 "special":"Bleed",
+					 "special_text":"Bleed for 15 body damage every 4.0 seconds for 40 seconds."
+				 },
+				 {
+					 "level":39,
+					 "name":"Shadow's Rain",
+					 "opening":"Flank",
+					 "fatigue":"Medium",
+					 "damage":1.024,
+					 "attack":"Medium Bonus",
+					 "defense":"Low Bonus",
+					 "special":"Slowed",
+					 "special_text":"Target's attack speed reduced by ?% for 20 seconds."
+				 },
+				 {
+					 "level":44,
+					 "name":"Hypnotic Darkness",
+					 "opening":"Reflection",
+					 "fatigue":"Medium",
+					 "damage":0.910,
+					 "attack":"High Bonus",
+					 "defense":"No Bonus",
+					 "special":"Stun",
+					 "special_text":"Target cannot move or take any other action for 7 seconds."
+				 },
+				 {
+					 "level":50,
+					 "name":"Dual Shadows",
+					 "opening":"In Front of Target",
+					 "fatigue":"Medium",
+					 "damage":0.790,
+					 "attack":"Medium Bonus",
+					 "defense":"Medium Penalty",
+					 "special":"Bleed",
+					 "special_text":"Bleed for 25 body damage every 4.0 seconds for 40 seconds."
+				 }
+					]
+				}]
+			}
+		]
+	}]
+}
