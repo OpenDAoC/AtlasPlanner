@@ -1,0 +1,1777 @@
+{
+	"realmName": "Albion",
+	"className": "Sorcerer",
+	"multiplier": 1.0,
+	"races": [
+		"Briton",
+		"Saracen",
+		"Inconnu",
+		"Avalonian"
+	],
+	"current_level": 50,
+	"abilities": [{
+			"level": 1,
+			"name": "Staff"
+		},
+		{
+			"level": 1,
+			"name": "Cloth Armor"
+		},
+		{
+			"level": 1,
+			"name": "Matter"
+		},
+		{
+			"level": 1,
+			"name": "Body Destruction"
+		},
+		{
+			"level": 5,
+			"name": "Quickcast"
+		},
+		{
+			"level": 5,
+			"name": "Telekinesis"
+		},
+		{
+			"level": 5,
+			"name": "Disorientation"
+		},
+		{
+			"level": 5,
+			"name": "Mind Twisting"
+		},
+		{
+			"level": 5,
+			"name": "Domination"
+		}
+	],
+	"specializations": [{
+			"name": "Matter",
+			"points": 1,
+			"spec_skills": [{
+					"name": "Self AF Shield",
+					"skills": [{
+							"level": 1,
+							"name": "Ward Blow",
+							"value": "13 AF",
+							"cost": 2,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 4,
+							"name": "Fend Blow",
+							"value": "27 AF",
+							"cost": 3,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 6,
+							"name": "Dampen Blow",
+							"value": "37 AF",
+							"cost": 4,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 9,
+							"name": "Deflect Blow",
+							"value": "51 AF",
+							"cost": 6,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 14,
+							"name": "Ward Offense",
+							"value": "75 AF",
+							"cost": 9,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 20,
+							"name": "Fend Offense",
+							"value": "104 AF",
+							"cost": 12,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 28,
+							"name": "Dampen Offense",
+							"value": "143 AF",
+							"cost": 17,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 38,
+							"name": "Deflect Offense",
+							"value": "191 AF",
+							"cost": 24,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 48,
+							"name": "Nullify Offense",
+							"value": "250 AF",
+							"cost": 31,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						}
+					]
+				},
+				{
+					"name": "DoT",
+					"skills": [{
+							"level": 2,
+							"name": "Corrosive Mist",
+							"value": "4.0 dps X 4.0 sec",
+							"type": "matter",
+							"cost": 2,
+							"range": 1500,
+							"duration": "20 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 3,
+							"name": "Corrosive Fog",
+							"value": "6.0 dps X 4.0 sec",
+							"type": "matter",
+							"cost": 3,
+							"range": 1500,
+							"duration": "20 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 5,
+							"name": "Corrosive Cloud",
+							"value": "9.0 dps X 4.0 sec",
+							"type": "matter",
+							"cost": 4,
+							"range": 1500,
+							"duration": "20 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 7,
+							"name": "Corrosive Smoke",
+							"value": "13.0 dps X 4.0 sec",
+							"type": "matter",
+							"cost": 5,
+							"range": 1500,
+							"duration": "20 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 10,
+							"name": "Dissolving Mist",
+							"value": "17.0 dps X 4.0 sec",
+							"type": "matter",
+							"cost": 6,
+							"range": 1500,
+							"duration": "20 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 13,
+							"name": "Dissolving Fog",
+							"value": "23.0 dps X 4.0 sec",
+							"type": "matter",
+							"cost": 8,
+							"range": 1500,
+							"duration": "20 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 16,
+							"name": "Dissolving Cloud",
+							"value": "29.0 dps X 4.0 sec",
+							"type": "matter",
+							"cost": 10,
+							"range": 1500,
+							"duration": "20 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 21,
+							"name": "Dissolving Smoke",
+							"value": "37.0 dps X 4.0 sec",
+							"type": "matter",
+							"cost": 13,
+							"range": 1500,
+							"duration": "20 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 27,
+							"name": "Disintegrating Fog",
+							"value": "49.0 dps X 4.0 sec",
+							"type": "matter",
+							"cost": 17,
+							"range": 1500,
+							"duration": "20 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 35,
+							"name": "Disintegrating Cloud",
+							"value": "63.0 dps X 4.0 sec",
+							"type": "matter",
+							"cost": 22,
+							"range": 1500,
+							"duration": "20 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 44,
+							"name": "Disintegrating Smoke",
+							"value": "79.0 dps X 4.0 sec",
+							"type": "matter",
+							"cost": 28,
+							"range": 1500,
+							"duration": "20 sec",
+							"cast": "3.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Dex Debuff (Instant)",
+					"skills": [{
+							"level": 8,
+							"name": "Mystic Web",
+							"value": "16 dex",
+							"cost": 5,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 12,
+							"name": "Mystic Trap",
+							"value": "19 dex",
+							"cost": 6,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 17,
+							"name": "Mystic Net",
+							"value": "23 dex",
+							"cost": 9,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 23,
+							"name": "Magical Web",
+							"value": "28 dex",
+							"cost": 11,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 29,
+							"name": "Magical Trap",
+							"value": "33 dex",
+							"cost": 14,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 36,
+							"name": "Magical Net",
+							"value": "38 dex",
+							"cost": 17,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 46,
+							"name": "Sorcerous Web",
+							"value": "46 dex",
+							"cost": 22,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Bladeturn (Self)",
+					"skills": [{
+						"level": 19,
+						"name": "Barrier of Warding",
+						"cost": "8%",
+						"duration": "20.0 min",
+						"cast": "4.0 sec"
+					}]
+				},
+				{
+					"name": "ABS Buff (Self)",
+					"skills": [{
+							"level": 30,
+							"name": "Dampening Ward",
+							"cost": "5%",
+							"duration": "20.0 min",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 41,
+							"name": "Nullifying Ward",
+							"cost": "10%",
+							"duration": "20.0 min",
+							"cast": "3.0 sec"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Matter Manipulation",
+			"points": 1,
+			"spec_skills": [{
+					"name": "DoT (spec)",
+					"skills": [{
+							"level": 1,
+							"name": "Lesser Abrasive Force",
+							"value": "2.0 dps X 6.0 sec",
+							"type": "matter",
+							"cost": 2,
+							"range": 1500,
+							"duration": "24 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 3,
+							"name": "Abrasive Force",
+							"value": "6.0 dps X 6.0 sec",
+							"type": "matter",
+							"cost": 3,
+							"range": 1500,
+							"duration": "24 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 5,
+							"name": "Lesser Grinding Force",
+							"value": "9.0 dps X 6.0 sec",
+							"type": "matter",
+							"cost": 4,
+							"range": 1500,
+							"duration": "24 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 7,
+							"name": "Grinding Force",
+							"value": "13.0 dps X 6.0 sec",
+							"type": "matter",
+							"cost": 5,
+							"range": 1500,
+							"duration": "24 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 10,
+							"name": "Lesser Pounding Force",
+							"value": "17.0 dps X 6.0 sec",
+							"type": "matter",
+							"cost": 6,
+							"range": 1500,
+							"duration": "24 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 13,
+							"name": "Pounding Force",
+							"value": "23.0 dps X 6.0 sec",
+							"type": "matter",
+							"cost": 8,
+							"range": 1500,
+							"duration": "24 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 16,
+							"name": "Lesser Crushing Force",
+							"value": "29.0 dps X 6.0 sec",
+							"type": "matter",
+							"cost": 10,
+							"range": 1500,
+							"duration": "24 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 21,
+							"name": "Crushing Force",
+							"value": "37.0 dps X 6.0 sec",
+							"type": "matter",
+							"cost": 13,
+							"range": 1500,
+							"duration": "24 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 27,
+							"name": "Lesser Pulverizing Force",
+							"value": "49.0 dps X 6.0 sec",
+							"type": "matter",
+							"cost": 17,
+							"range": 1500,
+							"duration": "24 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 35,
+							"name": "Pulverizing Force",
+							"value": "63.0 dps X 6.0 sec",
+							"type": "matter",
+							"cost": 22,
+							"range": 1500,
+							"duration": "24 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 44,
+							"name": "Lesser Disintegrating Force",
+							"value": "79.0 dps X 6.0 sec",
+							"type": "matter",
+							"cost": 28,
+							"range": 1500,
+							"duration": "24 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 50,
+							"name": "Disintegrating Force",
+							"value": "89.0 dps X 6.0 sec",
+							"type": "matter",
+							"cost": 33,
+							"range": 1500,
+							"duration": "24 sec",
+							"cast": "3.0 sec"
+						}
+					]
+				},
+				{
+					"name": "D/Q Debuff (Instant)",
+					"skills": [{
+							"level": 4,
+							"name": "Minor Mesh of Force",
+							"value": "19 D/Q",
+							"cost": 3,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 8,
+							"name": "Mesh of Force",
+							"value": "24 D/Q",
+							"cost": 5,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 9,
+							"name": "Major Mesh of Force",
+							"value": "25 D/Q",
+							"cost": 5,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 14,
+							"name": "Minor Net of Force",
+							"value": "31 D/Q",
+							"cost": 7,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 19,
+							"name": "Net of Force",
+							"value": "37 D/Q",
+							"cost": 9,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 25,
+							"name": "Major Net of Force",
+							"value": "45 D/Q",
+							"cost": 12,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 36,
+							"name": "Minor Web of Force",
+							"value": "57 D/Q",
+							"cost": 17,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 46,
+							"name": "Major Web of Force",
+							"value": "69 D/Q",
+							"cost": 22,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						}
+					]
+				},
+				{
+					"name": "AOE D/Q Debuff (Instant)",
+					"skills": [{
+							"level": 15,
+							"name": "Constricting Field",
+							"value": "33 D/Q",
+							"cost": 12,
+							"duration": "60 sec",
+							"area": "350 units",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 23,
+							"name": "Restraining Field",
+							"value": "42 D/Q",
+							"cost": 19,
+							"duration": "60 sec",
+							"area": "350 units",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 34,
+							"name": "Major Constricting Field",
+							"value": "55 D/Q",
+							"cost": 28,
+							"duration": "60 sec",
+							"area": "350 units",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 45,
+							"name": "Major Restraining Field",
+							"value": "69 D/Q",
+							"cost": 38,
+							"duration": "60 sec",
+							"area": "350 units",
+							"range": "1500",
+							"recast": "5.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Direct Damage Plus Snare",
+					"skills": [{
+							"level": 17,
+							"name": "Lesser Constricting Jolt",
+							"value": "64 dps and 35% snare",
+							"type": "matter",
+							"cost": "10 power",
+							"duration": "30 sec",
+							"range": "1500",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 24,
+							"name": "Constricting Jolt",
+							"value": "88 dps and 35% snare",
+							"type": "matter",
+							"cost": "15 power",
+							"duration": "30 sec",
+							"range": "1500",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 31,
+							"name": "Lesser Constricting Force",
+							"value": "112 dps and 35% snare",
+							"type": "matter",
+							"cost": "19 power",
+							"duration": "30 sec",
+							"range": "1500",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 40,
+							"name": "Constricting Force",
+							"value": "143 dps and 35% snare",
+							"type": "matter",
+							"cost": "25 power",
+							"duration": "30 sec",
+							"range": "1500",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 49,
+							"name": "Major Constricting Blast",
+							"value": "179 dps and 35% snare",
+							"type": "matter",
+							"cost": "32 power",
+							"duration": "30 sec",
+							"range": "1500",
+							"cast": "3.0 sec"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Body Destruction",
+			"points": 1,
+			"spec_skills": [{
+					"name": "Lifedrain",
+					"skills": [{
+							"level": 1,
+							"name": "Minor Vitality Drain",
+							"value": "5.0 damage 30% returned",
+							"cost": 2,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 2,
+							"name": "Lesser Vitality Drain",
+							"value": "9.0 damage 30% returned",
+							"cost": 2,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 3,
+							"name": "Vitality Drain",
+							"value": "13.0 damage 30% returned",
+							"cost": 3,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 5,
+							"name": "Greater Vitality Drain",
+							"value": "21.0 damage 30% returned",
+							"cost": 4,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 7,
+							"name": "Major Vitality Drain",
+							"value": "29.0 damage 30% returned",
+							"cost": 5,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 10,
+							"name": "Minor Essence Consumption",
+							"value": "37.0 damage 30% returned",
+							"cost": 6,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 14,
+							"name": "Lesser Essence Consumption",
+							"value": "52.0 damage 30% returned",
+							"cost": 9,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 18,
+							"name": "Essence Consumption",
+							"value": "68.0 damage 40% returned",
+							"cost": 11,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 23,
+							"name": "Greater Essence Consumption",
+							"value": "85.0 damage 40% returned",
+							"cost": 14,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 28,
+							"name": "Major Essence Consumption",
+							"value": "104.0 damage 50% returned",
+							"cost": 17,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 35,
+							"name": "Increased Essence Consumption",
+							"value": "128.0 damage 50% returned",
+							"cost": 22,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 45,
+							"name": "Superior Essence Consumption",
+							"value": "164.0 damage 60% returned",
+							"cost": 29,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 50,
+							"name": "Essence Devourer",
+							"value": "179.0 damage 60% returned",
+							"cost": 33,
+							"type": "body",
+							"range": "1500",
+							"cast": "2.5 sec"
+						}
+					]
+				},
+				{
+					"name": "Str Debuff (Instant)",
+					"skills": [{
+							"level": 4,
+							"name": "Fatigue Body",
+							"value": "13 Str",
+							"cost": 3,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 8,
+							"name": "Debilitate Body",
+							"value": "16 Str",
+							"cost": 5,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 12,
+							"name": "Weaken Body",
+							"value": "19 Str",
+							"cost": 8,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 17,
+							"name": "Deteriorate Body",
+							"value": "23 Str",
+							"cost": 10,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 22,
+							"name": "Enfeeble Body",
+							"value": "27 Str",
+							"cost": 13,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 29,
+							"name": "Degenerate Body",
+							"value": "33 Str",
+							"cost": 18,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 37,
+							"name": "Cripple Body",
+							"value": "39 Str",
+							"cost": 23,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 46,
+							"name": "Dilapidate Body",
+							"value": "46 Str",
+							"cost": 30,
+							"duration": "60 sec",
+							"range": "1500",
+							"recast": "5.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Root",
+					"skills": [{
+							"level": 6,
+							"name": "Lesser Crippling",
+							"value": "99%",
+							"cost": 3,
+							"duration": "13 sec",
+							"range": "1500",
+							"recast": "2.5 sec"
+						},
+						{
+							"level": 13,
+							"name": "Cripple",
+							"value": "99%",
+							"cost": 6,
+							"duration": "23 sec",
+							"range": "1500",
+							"recast": "2.5 sec"
+						},
+						{
+							"level": 19,
+							"name": "Major Crippling",
+							"value": "99%",
+							"cost": 9,
+							"duration": "31 sec",
+							"range": "1500",
+							"recast": "2.5 sec"
+						},
+						{
+							"level": 26,
+							"name": "Greater Crippling",
+							"value": "99%",
+							"cost": 12,
+							"duration": "41 sec",
+							"range": "1500",
+							"recast": "2.5 sec"
+						},
+						{
+							"level": 31,
+							"name": "Leg Twist",
+							"value": "99%",
+							"cost": 15,
+							"duration": "48 sec",
+							"range": "1500",
+							"recast": "2.5 sec"
+						},
+						{
+							"level": 40,
+							"name": "Greater Leg Twist",
+							"value": "99%",
+							"cost": 20,
+							"duration": "61 sec",
+							"range": "1500",
+							"recast": "2.5 sec"
+						},
+						{
+							"level": 49,
+							"name": "Superior Leg Twist",
+							"value": "99%",
+							"cost": 25,
+							"duration": "73 sec",
+							"range": "1500",
+							"recast": "2.5 sec"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Disorientation",
+			"points": 1,
+			"spec_skills": [{
+					"name": "Direct Damage",
+					"skills": [{
+							"level": 1,
+							"name": "Lesser Mind Jolt",
+							"value": "5.0 dps",
+							"cost": 2,
+							"type": "body",
+							"cast": "2.8 sec",
+							"range": "1500"
+						},
+						{
+							"level": 4,
+							"name": "Mind Jolt",
+							"value": "20.0 dps",
+							"cost": 3,
+							"type": "body",
+							"cast": "2.8 sec",
+							"range": "1500"
+						},
+						{
+							"level": 8,
+							"name": "Lesser Mind Blast",
+							"value": "41.0 dps",
+							"cost": 5,
+							"type": "body",
+							"cast": "2.8 sec",
+							"range": "1500"
+						},
+						{
+							"level": 12,
+							"name": "Mind Blast",
+							"value": "56.0 dps",
+							"cost": 8,
+							"type": "body",
+							"cast": "2.8 sec",
+							"range": "1500"
+						},
+						{
+							"level": 16,
+							"name": "Lesser Mind Scream",
+							"value": "77.0 dps",
+							"cost": 10,
+							"type": "body",
+							"cast": "2.8 sec",
+							"range": "1500"
+						},
+						{
+							"level": 22,
+							"name": "Mind Scream",
+							"value": "102.0 dps",
+							"cost": 13,
+							"type": "body",
+							"cast": "2.8 sec",
+							"range": "1500"
+						},
+						{
+							"level": 28,
+							"name": "Lesser Mind Shriek",
+							"value": "133.0 dps",
+							"cost": 17,
+							"type": "body",
+							"cast": "2.8 sec",
+							"range": "1500"
+						},
+						{
+							"level": 35,
+							"name": "Mind Shriek",
+							"value": "163.0 dps",
+							"cost": 11,
+							"type": "body",
+							"cast": "2.8 sec",
+							"range": "1500"
+						},
+						{
+							"level": 45,
+							"name": "Mind Flay",
+							"value": "209.0 dps",
+							"cost": 29,
+							"type": "body",
+							"cast": "2.8 sec",
+							"range": "1500"
+						}
+					]
+				},
+				{
+					"name": "AOE D/Q Debuff (AOE)",
+					"skills": [{
+							"level": 3,
+							"name": "Minor Imbalance",
+							"value": "18 D/Q",
+							"cost": 3,
+							"duration": "60 sec",
+							"range": "1500",
+							"area": "350 units",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 7,
+							"name": "Lesser Imbalance",
+							"value": "22 D/Q",
+							"cost": 6,
+							"duration": "60 sec",
+							"range": "1500",
+							"area": "350 units",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 15,
+							"name": "Imbalance",
+							"value": "33 D/Q",
+							"cost": 12,
+							"duration": "60 sec",
+							"range": "1500",
+							"area": "350 units",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 21,
+							"name": "Greater Imbalance",
+							"value": "39 D/Q",
+							"cost": 17,
+							"duration": "60 sec",
+							"range": "1500",
+							"area": "350 units",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 29,
+							"name": "Major Imbalance",
+							"value": "49 D/Q",
+							"cost": 24,
+							"duration": "60 sec",
+							"range": "1500",
+							"area": "350 units",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 37,
+							"name": "Critical Imbalance",
+							"value": "58 D/Q",
+							"cost": 31,
+							"duration": "60 sec",
+							"range": "1500",
+							"area": "350 units",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 47,
+							"name": "Superior Imbalance",
+							"value": "70 D/Q",
+							"cost": 40,
+							"duration": "60 sec",
+							"range": "1500",
+							"area": "350 units",
+							"recast": "5.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Root",
+					"skills": [{
+						"level": 20,
+						"name": "Lesser Body Lock",
+						"value": "99%",
+						"cost": 12,
+						"type": "body",
+						"duration": "36 sec",
+						"range": "1500",
+						"cast": "2.5 sec"
+					}]
+				},
+				{
+					"name": "AOE Root",
+					"skills": [{
+							"level": 30,
+							"name": "Body Lock",
+							"value": "99%",
+							"cost": 19,
+							"type": "body",
+							"area": "350 units",
+							"duration": "49 sec",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 39,
+							"name": "Greater Body Lock",
+							"value": "99%",
+							"cost": 25,
+							"type": "body",
+							"area": "350 units",
+							"duration": "60 sec",
+							"range": "1500",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 49,
+							"name": "Superior Body Lock",
+							"value": "99%",
+							"cost": 32,
+							"type": "body",
+							"area": "350 units",
+							"duration": "73 sec",
+							"range": "1500",
+							"cast": "2.5 sec"
+						}
+					]
+				},
+				{
+					"name": "Heat Debuff",
+					"skills": [{
+							"level": 23,
+							"name": "Illusions of Flame",
+							"value": "15% Heat",
+							"cost": 11,
+							"duration": "15.0 sec",
+							"range": "1500",
+							"cast": "2.0 sec"
+						},
+						{
+							"level": 33,
+							"name": "Visions of Flame",
+							"value": "30% Heat",
+							"cost": 16,
+							"duration": "15.0 sec",
+							"range": "1500",
+							"cast": "2.0 sec"
+						},
+						{
+							"level": 44,
+							"name": "Dreams of Flame",
+							"value": "50% Heat",
+							"cost": 22,
+							"duration": "15.0 sec",
+							"range": "1500",
+							"cast": "2.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Cold Debuff",
+					"skills": [{
+							"level": 24,
+							"name": "Illusions of Winter",
+							"value": "15% Cold",
+							"cost": 12,
+							"duration": "15.0 sec",
+							"range": "1500",
+							"cast": "2.0 sec"
+						},
+						{
+							"level": 34,
+							"name": "Visions of Winter",
+							"value": "30% Cold",
+							"cost": 16,
+							"duration": "15.0 sec",
+							"range": "1500",
+							"cast": "2.0 sec"
+						},
+						{
+							"level": 46,
+							"name": "Dreams of Winter",
+							"value": "50% Cold",
+							"cost": 24,
+							"duration": "15.0 sec",
+							"range": "1500",
+							"cast": "2.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Matter Debuff",
+					"skills": [{
+							"level": 27,
+							"name": "Illusions of the Wastes",
+							"value": "15% Matter",
+							"cost": 13,
+							"duration": "15.0 sec",
+							"range": "1500",
+							"cast": "2.0 sec"
+						},
+						{
+							"level": 36,
+							"name": "Visions of the Wastes",
+							"value": "30% Matter",
+							"cost": 18,
+							"duration": "15.0 sec",
+							"range": "1500",
+							"cast": "2.0 sec"
+						},
+						{
+							"level": 48,
+							"name": "Dreams of the Wastes",
+							"value": "50% Matter",
+							"cost": 24,
+							"duration": "15.0 sec",
+							"range": "1500",
+							"cast": "2.0 sec"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mind Twisting",
+			"points": 1,
+			"spec_skills": [{
+					"name": "Single Target Mezz",
+					"skills": [{
+							"level": 1,
+							"name": "Minor Mesmerization",
+							"type": "energy",
+							"cost": 2,
+							"range": "1500",
+							"duration": "16.0 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 5,
+							"name": "Lesser Mesmerization",
+							"type": "energy",
+							"cost": 3,
+							"range": "1500",
+							"duration": "21.0 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 9,
+							"name": "Mesmerization",
+							"type": "energy",
+							"cost": 5,
+							"range": "1500",
+							"duration": "26.0 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 15,
+							"name": "Major Mesmerization",
+							"type": "energy",
+							"cost": 8,
+							"range": "1500",
+							"duration": "34.0 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 23,
+							"name": "Greater Mesmerization",
+							"type": "energy",
+							"cost": 11,
+							"range": "1500",
+							"duration": "44.0 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 31,
+							"name": "Fascination",
+							"type": "energy",
+							"cost": 15,
+							"range": "1500",
+							"duration": "55.0 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 40,
+							"name": "Greater Fascination",
+							"type": "energy",
+							"cost": 19,
+							"range": "1500",
+							"duration": "67.0 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 50,
+							"name": "Superior Fascination",
+							"type": "energy",
+							"cost": 23,
+							"range": "1500",
+							"duration": "80.0 sec",
+							"cast": "3.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Confusion",
+					"skills": [{
+							"level": 2,
+							"name": "Confuse Mind",
+							"value": "70% and 0% ally",
+							"cost": "1",
+							"type": "energy",
+							"range": "1500",
+							"duration": "14.0 sec",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 7,
+							"name": "Befuddle Mind",
+							"value": "85% and 0% ally",
+							"cost": "4",
+							"type": "energy",
+							"range": "1500",
+							"duration": "24.0 sec",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 13,
+							"name": "Obscure Mind",
+							"value": "100% and 0% ally",
+							"cost": "6",
+							"type": "energy",
+							"range": "1500",
+							"duration": "36.0 sec",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 20,
+							"name": "Mystify Mind",
+							"value": "100% and 15% ally",
+							"cost": "9",
+							"type": "energy",
+							"range": "1500",
+							"duration": "50.0 sec",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 27,
+							"name": "Muddle Mind",
+							"value": "100% and 30% ally",
+							"cost": "13",
+							"type": "energy",
+							"range": "1500",
+							"duration": "64.0 sec",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 34,
+							"name": "Perplex Mind",
+							"value": "100% and 45% ally",
+							"cost": "16",
+							"type": "energy",
+							"range": "1500",
+							"duration": "78.0 sec",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 41,
+							"name": "Darken Mind",
+							"value": "100% and 60% ally",
+							"cost": "20",
+							"type": "energy",
+							"range": "1500",
+							"duration": "92.0 sec",
+							"cast": "2.5 sec"
+						},
+						{
+							"level": 48,
+							"name": "Paradox Mind",
+							"value": "100% and 75% ally",
+							"cost": "24",
+							"type": "energy",
+							"range": "1500",
+							"duration": "106.0 sec",
+							"cast": "2.5 sec"
+						}
+					]
+				},
+				{
+					"name": "Speed (Group Pulse)",
+					"skills": [{
+							"level": 6,
+							"name": "Amplify Movement",
+							"value": "124%",
+							"range": "2000",
+							"duration": "6.0 sec (pulse)",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 16,
+							"name": "Amplify Running",
+							"value": "132%",
+							"range": "2000",
+							"duration": "6.0 sec (pulse)",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 26,
+							"name": "Amplify Coordination",
+							"value": "139%",
+							"range": "2000",
+							"duration": "6.0 sec (pulse)",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 36,
+							"name": "Amplify Equilibrium",
+							"value": "147%",
+							"range": "2000",
+							"duration": "6.0 sec (pulse)",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 46,
+							"name": "Amplify Balance",
+							"value": "154%",
+							"range": "2000",
+							"duration": "6.0 sec (pulse)",
+							"cast": "3.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Amnesia (Single Target)",
+					"skills": [{
+						"level": 8,
+						"name": "Inflict Minor Forgetfulness",
+						"value": "70% chance",
+						"range": "2300",
+						"cast": "2.0 sec"
+					}]
+				},
+				{
+					"name": "Amnesia (AOE)",
+					"skills": [{
+							"level": 17,
+							"name": "Inflict Forgetfulness",
+							"value": "77% chance",
+							"range": "2300",
+							"cost": "8 power",
+							"area": "100 units",
+							"cast": "2.0 sec"
+						},
+						{
+							"level": 28,
+							"name": "Inflict Minor Amnesia",
+							"value": "84% chance",
+							"range": "2300",
+							"cost": "16 power",
+							"area": "175 units",
+							"cast": "2.0 sec"
+						},
+						{
+							"level": 37,
+							"name": "Inflict Amnesia",
+							"value": "91% chance",
+							"range": "2300",
+							"cost": "27 power",
+							"area": "250 units",
+							"cast": "2.0 sec"
+						},
+						{
+							"level": 28,
+							"name": "Inflict Oblivion",
+							"value": "100% chance",
+							"range": "2300",
+							"cost": "37 power",
+							"area": "1325 units",
+							"cast": "2.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Demezz",
+					"skills": [{
+						"level": 24,
+						"name": "Clear Mind",
+						"range": "1500",
+						"cost": "6%",
+						"cast": "3.0 sec"
+					}]
+				}
+			]
+		},
+		{
+			"name": "Domination",
+			"points": 1,
+			"spec_skills": [{
+					"name": "Charm",
+					"skills": [{
+							"level": 1,
+							"name": "Persuade Will",
+							"value": "Any mob type",
+							"cost": "25 %",
+							"duration": "special",
+							"cast": "4.0 sec",
+							"range": "1000"
+						},
+						{
+							"level": 7,
+							"name": "Coerce Will",
+							"value": "Any mob type",
+							"cost": "25 %",
+							"duration": "special",
+							"cast": "4.0 sec",
+							"range": "1000"
+						},
+						{
+							"level": 20,
+							"name": "Control Will",
+							"value": "Any mob type",
+							"cost": "25 %",
+							"duration": "special",
+							"cast": "4.0 sec",
+							"range": "1000"
+						},
+						{
+							"level": 32,
+							"name": "Wrest Will",
+							"value": "Any mob type",
+							"cost": "25 %",
+							"duration": "special",
+							"cast": "4.0 sec",
+							"range": "1000"
+						}
+					]
+				},
+				{
+					"name": "Str/Con Debuff (AOE)",
+					"skills": [{
+							"level": 2,
+							"name": "Banish Will",
+							"value": "16 S/C",
+							"cost": 3,
+							"type": "energy",
+							"range": 1500,
+							"area": "350",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 6,
+							"name": "Banish Motivation",
+							"value": "21 S/C",
+							"cost": 5,
+							"type": "energy",
+							"range": 1500,
+							"area": "350",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 11,
+							"name": "Banish Conviction",
+							"value": "27 S/C",
+							"cost": 9,
+							"type": "energy",
+							"range": 1500,
+							"area": "350",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 18,
+							"name": "Banish Dedication",
+							"value": "36 S/C",
+							"cost": 15,
+							"type": "energy",
+							"range": 1500,
+							"area": "350",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 25,
+							"name": "Banish Faith",
+							"value": "45 S/C",
+							"cost": 20,
+							"type": "energy",
+							"range": 1500,
+							"area": "350",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 33,
+							"name": "Banish Confidence",
+							"value": "54 S/C",
+							"cost": 27,
+							"type": "energy",
+							"range": 1500,
+							"area": "350",
+							"recast": "5.0 sec"
+						},
+						{
+							"level": 43,
+							"name": "Banish Hope",
+							"value": "36 S/C",
+							"cost": 36,
+							"type": "energy",
+							"range": 1500,
+							"area": "350",
+							"recast": "5.0 sec"
+						}
+					]
+				},
+				{
+					"name": "AOE Mezz",
+					"skills": [{
+							"level": 4,
+							"name": "Fog of Senility",
+							"area": "350",
+							"range": "1875",
+							"type": "energy",
+							"cost": 3,
+							"duration": "20 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 14,
+							"name": "Blanket of Senility",
+							"area": "350",
+							"range": "1875",
+							"type": "energy",
+							"cost": 7,
+							"duration": "33 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 24,
+							"name": "Cloud of Senility",
+							"area": "350",
+							"range": "1875",
+							"type": "energy",
+							"cost": 12,
+							"duration": "46 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 34,
+							"name": "Veil of Senility",
+							"area": "350",
+							"range": "1875",
+							"type": "energy",
+							"cost": 16,
+							"duration": "59 sec",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 44,
+							"name": "Shroud of Senility",
+							"area": "350",
+							"range": "1875",
+							"type": "energy",
+							"cost": 21,
+							"duration": "72 sec",
+							"cast": "3.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Power Regen",
+					"skills": [{
+							"level": 5,
+							"name": "Comprehension of Power",
+							"value": "1 power regen",
+							"range": "1500",
+							"cost": 4,
+							"duration": "20 min",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 15,
+							"name": "Perception of Power",
+							"value": "2 power regen",
+							"range": "1500",
+							"cost": 9,
+							"duration": "20 min",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 26,
+							"name": "Perspicuity of Power",
+							"value": "3 power regen",
+							"range": "1500",
+							"cost": 16,
+							"duration": "20 min",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 36,
+							"name": "Cognition of Power",
+							"value": "4 power regen",
+							"range": "1500",
+							"cost": 9,
+							"duration": "20 min",
+							"cast": "3.0 sec"
+						},
+						{
+							"level": 46,
+							"name": "Lucidity of Power",
+							"value": "5 power regen",
+							"range": "1500",
+							"cost": 9,
+							"duration": "20 min",
+							"cast": "3.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Mezz Dampening Buff (Self)",
+					"skills": [{
+							"level": 16,
+							"name": "Shield Mind",
+							"value": "10% dampening",
+							"cost": 10,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 27,
+							"name": "Harden Mind",
+							"value": "25% dampening",
+							"cost": 17,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 35,
+							"name": "Steel Mind",
+							"value": "40% dampening",
+							"cost": 22,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 45,
+							"name": "Invulnerable Mind",
+							"value": "55% dampening",
+							"cost": 29,
+							"duration": "20 min",
+							"cast": "4.0 sec"
+						}
+					]
+				},
+				{
+					"name": "Mezz Dampening Chant (Group Pulse)",
+					"skills": [{
+							"level": 29,
+							"name": "Solidarity of Mind",
+							"value": "5% dampening",
+							"cost": 18,
+							"range": "2000 units",
+							"duration": "10.0 sec (pulse)",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 39,
+							"name": "Unity of Mind",
+							"value": "10% dampening",
+							"cost": 25,
+							"range": "2000 units",
+							"duration": "10.0 sec (pulse)",
+							"cast": "4.0 sec"
+						},
+						{
+							"level": 49,
+							"name": "Brotherhood of the Mind",
+							"value": "15% dampening",
+							"cost": 25,
+							"range": "2000 units",
+							"duration": "10.0 sec (pulse)",
+							"cast": "4.0 sec"
+						}
+					]
+				}
+			]
+		}
+	]
+}
