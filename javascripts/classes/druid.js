@@ -23,8 +23,8 @@ Abilities[14]=new abilityPT("Scale Armor",20,126,7,0,0,0)
 //Styles = new Array(0);
 
 Spells = new Array();
+Lines = new Array();
 
-Lines = new Array(40);
 var idx=1;
 Lines[42079]=new linePT('Minor Heal','Heals target for a very small amount of health. Casts quickly and uses little power.',42,0) 
 Spells[idx++]=new spellPT("Minor Revigoration",1,42079,42,"6 HP ",42,"1 PP",'2000','2.2s','','','','') 
@@ -99,6 +99,9 @@ Lines[44098]=new linePT('Spreadheal (Self)','Specialized healing spell that inte
 Spells[idx++]=new spellPT("Regenerating Spirits",30,44098,44,"187 HP ",44,"79 PP",'','3.5s','','','','') 
 Spells[idx++]=new spellPT("Resuscitating Spirits",39,44098,44,"241 HP ",44,"95 PP",'','3.5s','','','','') 
 Spells[idx++]=new spellPT("Reviving Spirits",48,44098,44,"295 HP ",44,"110 PP",'','3.5s','','','','') 
+Lines[44099]=new linePT('Cure Nearsight','Attempts to cure target of nearsight.',44,0) 
+Spells[idx++]=new spellPT("Cure Nearsight I",25,44099,44,'',44,'','1500','6.0s','','','','') 
+Spells[idx++]=new spellPT("Cure Nearsight II",35,44099,44,'',44,'','1500','3.5s','','','','')
 Lines[46003]=new linePT('Shield','Adds to the recipient\'s Armor Factor (AF), resulting in better protection against some forms of attack. It acts in addition to any armor the target is wearing.',46,0) 
 Spells[idx++]=new spellPT("Minor Bark Skin",2,46003,46,"12 AF ",46,"",'1000','3.0s','','','','') 
 Spells[idx++]=new spellPT("Lesser Bark Skin",4,46003,46,"14 AF ",46,"",'1000','3.0s','','','','') 

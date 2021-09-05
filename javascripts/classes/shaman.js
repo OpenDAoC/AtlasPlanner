@@ -23,7 +23,7 @@ Abilities[13]=new abilityPT("Chain Armor",20,104,7,0,0,0)
 
 Spells = new Array()
 
-Lines = new Array(41);
+Lines = new Array();
 
 var idx=1;
 Lines[65079]=new linePT('Minor Heal','Heals target for a very small amount of health. Casts quickly and uses little power.',65,0) 
@@ -83,7 +83,7 @@ Spells[idx++]=new spellPT("Fungal Regeneration",35,67184,67,"108 HP ",67,"70 PP"
 Spells[idx++]=new spellPT("Fungal Restoration",46,67184,67,"141 HP ",67,"94 PP",'2000','4.0s','','','30s','') 
 Lines[67063]=new linePT('Resurrection','Brings target back to life, and restores a portion of their health and power, and eliminates the experience penalty and con loss they would have suffered were they to have /released. (Note that con loss still applies when resurrected on a PvP server.)',67,0) 
 Spells[idx++]=new spellPT("Reception from Valhalla",15,67063,67,"30%H 10%P ",67,"25%+ ",'1500','4.0s','','','','') 
-Lines[67064]=new linePT('Cure Nearsight','Attempts to cure target of nearsight',67,0) 
+Lines[67064]=new linePT('Cure Nearsight','Attempts to cure target of nearsight.',67,0) 
 Spells[idx++]=new spellPT("Cure Nearsight I",25,67064,67,'',67,'','1500','6.0s','','','','') 
 Spells[idx++]=new spellPT("Cure Nearsight II",35,67064,67,'',67,'','1500','3.5s','','','','') 
 Lines[68003]=new linePT('Shield','Adds to the recipient\'s Armor Factor (AF), resulting in better protection against some forms of attack. It acts in addition to any armor the target is wearing.',68,0) 
