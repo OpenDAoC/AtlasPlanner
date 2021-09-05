@@ -1,0 +1,765 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    
+<head>
+        <title>Atlas Character Builder : Cleric</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta name="keywords" content="Atlas, atlas freeshard, daoc, dark, age, camelot, builder, char, character, skill, plan, realm, ability, ra" />
+        <link rel="icon" type="image/png" href="https://www.atlasfreeshard.com/styles/pach/logo.png" sizes="32x32" />
+        <link rel="stylesheet" media="screen" href="../css/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../javascripts/_ra_list.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../javascripts/_ra_classes.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../javascripts/_js_override.js"></script>
+        <script type="text/javascript">
+          parts = location.href.split('?');
+          classID = 28;
+          $(document).ready(function() {
+            evalTotal();
+            clear();
+            showskills();
+            calcSpec(1);
+          });
+        </script>
+<script src="../javascripts/cbuilder2.js"></script>
+<script src="../javascripts/classes/cleric.js"></script>
+
+    </head>
+    <body>
+         
+
+
+
+<div id="container">
+  <h1><a href="../index.html" title="Click to go back to class selection">Atlas Character Builder</a></h1>
+  <div class="cbuilderHeader">
+    <div class="head"> 
+      <h2 class="builder albion">Cleric</h2>
+      <table id="autotrain">
+        
+        <caption title="No autotrain">No Autotrain</caption>
+      </table>
+    </div>
+    <div style="clear:both"></div>
+    </div>
+<div class="tab-container">
+  <div class="tab-item">Skills</div>
+  <div class="tab-item">Realm Abilities</div>
+</div>
+<table class="stats-skills-container">
+  <tbody>
+    <tr>
+      <td class="left-content">
+        <div class="input-block">
+          <h3 class="input-title">Race:</h3> 
+          <span class="input-data"> 
+          <input type="hidden" name="classid" value="8"> 
+          <select id="race" name="raceid" onchange="sRace(this.value)">
+              <option value="5">Avalonian</option>
+              <option value="6">Briton</option>
+              <option value="7">Highlander</option>
+              
+          </select>
+          </span>
+        </div>
+        <div class="input-block">
+          <h3 class="input-title">Current Level :</h3>
+          <span class="input-data"> 
+          <img onclick="bLevel(-1)" src="../images/minus.jpg" 
+              /><img onclick="bLevel(-5)" src="../images/minus.jpg"
+              /><input name="level" id="LEVEL" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50; calcSpec(this.value);" 
+              /><img src="../images/plus.jpg" onclick="bLevel(5)" border="0" 
+              /><img src="../images/plus.jpg" onclick="bLevel(1)" border="0" 
+              />
+          </span>
+        </div>
+        <div class="input-block">
+          <h3 class="input-title">Bonus Points :</h3>
+          <span class="input-data">  
+          <img onclick="bBonus(-1)" src="../images/minus.jpg" 
+             /><img style="" onclick="bBonus(-5)" src="../images/minus.jpg"
+                  /><input name="BONUS" onchange="bBonus(0)" id="BONUS" type="text" class="ibox" value="0"
+                  /><img onclick="bBonus(5)" src="../images/plus.jpg"
+                  /><img onclick="bBonus(1)" src="../images/plus.jpg"
+                  />
+          </span>
+        </div>
+        <div id="skillPointsSummary">
+          <input disabled="disabled" name="skill" id="SKILL" type="text" value="0" /> Total Skill Points
+          <input disabled="disabled" name="spent" id="SPENT" type="text" value="0" /> Skill Points Spent
+          <input disabled="disabled" name="LEFT" id="LEFT" type="text" value="0" /> Skill Points Left
+        </div>
+        <table id="abilities">
+          <thead>
+            <tr>
+              <th>LVL</td>
+              <th>ABILITIES</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="level" id="nav1t2">1</td>
+              <td class="ability">Rejuvenation</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav1t3">1</td>
+              <td class="ability">Enhancement</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t83">1</td>
+              <td class="ability">Staff</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t87">1</td>
+              <td class="ability">Crush</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t99">1</td>
+              <td class="ability">Cloth Armor</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t100">1</td>
+              <td class="ability">Leather Armor</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t102">1</td>
+              <td class="ability">Shields (Small)</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav1t4">5</td>
+              <td class="ability">Smiting</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t77">5</td>
+              <td class="ability">Rejuvenation Spec.</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t79">5</td>
+              <td class="ability">Enhancement Spec.</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t81">5</td>
+              <td class="ability">Smiting Spec.</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t101">10</td>
+              <td class="ability">Studded Armor</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t103">10</td>
+              <td class="ability">Shields (Medium)</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t104">20</td>
+              <td class="ability">Chain Armor</b></td>
+            </tr>
+          </tbody>
+        </table> 
+
+      </td>
+      <td class="right-content" valign="top">
+        <ul id="attributes">
+          <li>POINTS<input class="input-attribute" disabled="disabled" type="text" id="BASE" name="StartPoints" value="30"></li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('STR',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat tertiary">STR</span><span class="tertiary"> T</span><a href="javascript:void(0)" onclick="bAttribute('STR',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="STR" name="STR" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('CON',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat secondary">CON</span><span class="secondary"> S</span><a href="javascript:void(0)" onclick="bAttribute('CON',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="CON" name="CON" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('DEX',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat ">DEX</span><a href="javascript:void(0)" onclick="bAttribute('DEX',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="DEX" name="DEX" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('QUI',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat ">QUI</span><a href="javascript:void(0)" onclick="bAttribute('QUI',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="QUI" name="QUI" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('INT',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat ">INT</span><a href="javascript:void(0)" onclick="bAttribute('INT',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="INT" name="INT" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('PIE',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat primary">PIE</span><span class="primary"> P</span><a href="javascript:void(0)" onclick="bAttribute('PIE',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="PIE" name="PIE" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('EMP',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat ">EMP</span><a href="javascript:void(0)" onclick="bAttribute('EMP',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="EMP" name="EMP" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('CHA',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat ">CHA</span><a href="javascript:void(0)" onclick="bAttribute('CHA',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="CHA" name="CHA" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          </ul>
+        
+        <table class="skills">
+          <!-- SPELLS:-->
+          <thead>
+            <th colspan="4" class="skill-header albion"><!-- 
+           --><span class="skill-name">Rejuvenation</span><!-- 
+           --><span class="skill-spec">&nbsp; 
+                Spec : 
+                <img onclick="bSkill(2,-1)" src="../images/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(2,-5)" src="../images/minus.jpg" align="absmiddle"
+                  /><input name="SKILL2" id="SKILL2" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(2,0);"
+                  /><img onclick="bSkill(2,5)" src="../images/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(2,1)" src="../images/plus.jpg" align="absmiddle" />
+                </span><!-- 
+           --><span class="skill-cost">&nbspCost : <span id="COST2">2</span></span><!-- 
+           --><span class="skill-spent">&nbspSpent : <span id="SPENT2">0</span></span><!-- 
+           --></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Minor Heal<div class="line-info-fftrick"><div id="LINEINFO2079" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC2079" class="line-desc"></div></div><div id="LINE2079"></div></td>
+              <td align="right"><div id="LINED2079">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME2079"></div></td>
+              <td><div id="LINEDESC2079"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT2079"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Heal<div class="line-info-fftrick"><div id="LINEINFO2081" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC2081" class="line-desc"></div></div><div id="LINE2081"></div></td>
+              <td align="right"><div id="LINED2081">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME2081"></div></td>
+              <td><div id="LINEDESC2081"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT2081"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Resurrection<div class="line-info-fftrick"><div id="LINEINFO2063" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC2063" class="line-desc"></div></div><div id="LINE2063"></div></td>
+              <td align="right"><div id="LINED2063">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME2063"></div></td>
+              <td><div id="LINEDESC2063"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT2063"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Minor Group Heal<div class="line-info-fftrick"><div id="LINEINFO2080" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC2080" class="line-desc"></div></div><div id="LINE2080"></div></td>
+              <td align="right"><div id="LINED2080">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME2080"></div></td>
+              <td><div id="LINEDESC2080"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT2080"></div></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr><th colspan="4">Rejuvenation Specialization - Rejuvenation Spec.</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Major Heal<div class="line-info-fftrick"><div id="LINEINFO77082" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC77082" class="line-desc"></div></div><div id="LINE77082"></div></td>
+              <td align="right"><div id="LINED77082">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME77082"></div></td>
+              <td><div id="LINEDESC77082"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT77082"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Cure Poison<div class="line-info-fftrick"><div id="LINEINFO77083" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC77083" class="line-desc"></div></div><div id="LINE77083"></div></td>
+              <td align="right"><div id="LINED77083">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME77083"></div></td>
+              <td><div id="LINEDESC77083"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT77083"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Cure Disease<div class="line-info-fftrick"><div id="LINEINFO77084" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC77084" class="line-desc"></div></div><div id="LINE77084"></div></td>
+              <td align="right"><div id="LINED77084">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME77084"></div></td>
+              <td><div id="LINEDESC77084"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT77084"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Greater Heal<div class="line-info-fftrick"><div id="LINEINFO77094" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC77094" class="line-desc"></div></div><div id="LINE77094"></div></td>
+              <td align="right"><div id="LINED77094">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME77094"></div></td>
+              <td><div id="LINEDESC77094"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT77094"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Heal (Instant)<div class="line-info-fftrick"><div id="LINEINFO77096" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC77096" class="line-desc"></div></div><div id="LINE77096"></div></td>
+              <td align="right"><div id="LINED77096">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME77096"></div></td>
+              <td><div id="LINEDESC77096"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT77096"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Resurrection<div class="line-info-fftrick"><div id="LINEINFO77063" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC77063" class="line-desc"></div></div><div id="LINE77063"></div></td>
+              <td align="right"><div id="LINED77063">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME77063"></div></td>
+              <td><div id="LINEDESC77063"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT77063"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Group Heal<div class="line-info-fftrick"><div id="LINEINFO77095" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC77095" class="line-desc"></div></div><div id="LINE77095"></div></td>
+              <td align="right"><div id="LINED77095">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME77095"></div></td>
+              <td><div id="LINEDESC77095"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT77095"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Group Heal (Instant)<div class="line-info-fftrick"><div id="LINEINFO77097" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC77097" class="line-desc"></div></div><div id="LINE77097"></div></td>
+              <td align="right"><div id="LINED77097">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME77097"></div></td>
+              <td><div id="LINEDESC77097"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT77097"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Spreadheal (Self)<div class="line-info-fftrick"><div id="LINEINFO77098" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC77098" class="line-desc"></div></div><div id="LINE77098"></div></td>
+              <td align="right"><div id="LINED77098">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME77098"></div></td>
+              <td><div id="LINEDESC77098"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT77098"></div></td>
+            </tr>
+          </tbody>
+          <thead>
+            <th colspan="4" class="skill-header albion"><!-- 
+           --><span class="skill-name">Enhancement</span><!-- 
+           --><span class="skill-spec">&nbsp; 
+                Spec : 
+                <img onclick="bSkill(3,-1)" src="../images/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(3,-5)" src="../images/minus.jpg" align="absmiddle"
+                  /><input name="SKILL3" id="SKILL3" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(3,0);"
+                  /><img onclick="bSkill(3,5)" src="../images/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(3,1)" src="../images/plus.jpg" align="absmiddle" />
+                </span><!-- 
+           --><span class="skill-cost">&nbspCost : <span id="COST3">2</span></span><!-- 
+           --><span class="skill-spent">&nbspSpent : <span id="SPENT3">0</span></span><!-- 
+           --></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Shield<div class="line-info-fftrick"><div id="LINEINFO3003" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC3003" class="line-desc"></div></div><div id="LINE3003"></div></td>
+              <td align="right"><div id="LINED3003">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME3003"></div></td>
+              <td><div id="LINEDESC3003"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT3003"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Buff (Strength)<div class="line-info-fftrick"><div id="LINEINFO3037" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC3037" class="line-desc"></div></div><div id="LINE3037"></div></td>
+              <td align="right"><div id="LINED3037">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME3037"></div></td>
+              <td><div id="LINEDESC3037"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT3037"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Buff (Constitution)<div class="line-info-fftrick"><div id="LINEINFO3085" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC3085" class="line-desc"></div></div><div id="LINE3085"></div></td>
+              <td align="right"><div id="LINED3085">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME3085"></div></td>
+              <td><div id="LINEDESC3085"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT3085"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Buff (Dexterity)<div class="line-info-fftrick"><div id="LINEINFO3039" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC3039" class="line-desc"></div></div><div id="LINE3039"></div></td>
+              <td align="right"><div id="LINED3039">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME3039"></div></td>
+              <td><div id="LINEDESC3039"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT3039"></div></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr><th colspan="4">Enhancement Specialization - Enhancement Spec.</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Buff (Strength/Constitution)<div class="line-info-fftrick"><div id="LINEINFO79047" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC79047" class="line-desc"></div></div><div id="LINE79047"></div></td>
+              <td align="right"><div id="LINED79047">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME79047"></div></td>
+              <td><div id="LINEDESC79047"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT79047"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Shield<div class="line-info-fftrick"><div id="LINEINFO79003" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC79003" class="line-desc"></div></div><div id="LINE79003"></div></td>
+              <td align="right"><div id="LINED79003">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME79003"></div></td>
+              <td><div id="LINEDESC79003"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT79003"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Buff (Dexterity/Quickness)<div class="line-info-fftrick"><div id="LINEINFO79048" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC79048" class="line-desc"></div></div><div id="LINE79048"></div></td>
+              <td align="right"><div id="LINED79048">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME79048"></div></td>
+              <td><div id="LINEDESC79048"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT79048"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Buff (Health Regeneration)<div class="line-info-fftrick"><div id="LINEINFO79089" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC79089" class="line-desc"></div></div><div id="LINE79089"></div></td>
+              <td align="right"><div id="LINED79089">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME79089"></div></td>
+              <td><div id="LINEDESC79089"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT79089"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Buff (Acuity)<div class="line-info-fftrick"><div id="LINEINFO79090" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC79090" class="line-desc"></div></div><div id="LINE79090"></div></td>
+              <td align="right"><div id="LINED79090">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME79090"></div></td>
+              <td><div id="LINEDESC79090"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT79090"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Buff (Self, Combat Damage)<div class="line-info-fftrick"><div id="LINEINFO79100" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC79100" class="line-desc"></div></div><div id="LINE79100"></div></td>
+              <td align="right"><div id="LINED79100">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME79100"></div></td>
+              <td><div id="LINEDESC79100"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT79100"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Buff (Group, Body Resistance)<div class="line-info-fftrick"><div id="LINEINFO79086" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC79086" class="line-desc"></div></div><div id="LINE79086"></div></td>
+              <td align="right"><div id="LINED79086">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME79086"></div></td>
+              <td><div id="LINEDESC79086"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT79086"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Buff (Group, Spirit Resistance)<div class="line-info-fftrick"><div id="LINEINFO79087" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC79087" class="line-desc"></div></div><div id="LINE79087"></div></td>
+              <td align="right"><div id="LINED79087">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME79087"></div></td>
+              <td><div id="LINEDESC79087"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT79087"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Buff (Group, Energy Resistance)<div class="line-info-fftrick"><div id="LINEINFO79088" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC79088" class="line-desc"></div></div><div id="LINE79088"></div></td>
+              <td align="right"><div id="LINED79088">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME79088"></div></td>
+              <td><div id="LINEDESC79088"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT79088"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Defensive Proc (Group)<div class="line-info-fftrick"><div id="LINEINFO79099" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC79099" class="line-desc"></div></div><div id="LINE79099"></div></td>
+              <td align="right"><div id="LINED79099">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME79099"></div></td>
+              <td><div id="LINEDESC79099"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT79099"></div></td>
+            </tr>
+          </tbody>
+          <thead>
+            <th colspan="4" class="skill-header albion"><!-- 
+           --><span class="skill-name">Smiting</span><!-- 
+           --><span class="skill-spec">&nbsp; 
+                Spec : 
+                <img onclick="bSkill(4,-1)" src="../images/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(4,-5)" src="../images/minus.jpg" align="absmiddle"
+                  /><input name="SKILL4" id="SKILL4" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(4,0);"
+                  /><img onclick="bSkill(4,5)" src="../images/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(4,1)" src="../images/plus.jpg" align="absmiddle" />
+                </span><!-- 
+           --><span class="skill-cost">&nbspCost : <span id="COST4">2</span></span><!-- 
+           --><span class="skill-spent">&nbspSpent : <span id="SPENT4">0</span></span><!-- 
+           --></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Damage<div class="line-info-fftrick"><div id="LINEINFO4002" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC4002" class="line-desc"></div></div><div id="LINE4002"></div></td>
+              <td align="right"><div id="LINED4002">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME4002"></div></td>
+              <td><div id="LINEDESC4002"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT4002"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Stun<div class="line-info-fftrick"><div id="LINEINFO4091" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC4091" class="line-desc"></div></div><div id="LINE4091"></div></td>
+              <td align="right"><div id="LINED4091">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME4091"></div></td>
+              <td><div id="LINEDESC4091"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT4091"></div></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr><th colspan="4">Smiting Specialization - Smiting Spec.</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Damage Add (Self)<div class="line-info-fftrick"><div id="LINEINFO81004" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC81004" class="line-desc"></div></div><div id="LINE81004"></div></td>
+              <td align="right"><div id="LINED81004">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME81004"></div></td>
+              <td><div id="LINEDESC81004"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT81004"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Mesmerise (PBAOE, Instant)<div class="line-info-fftrick"><div id="LINEINFO81092" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC81092" class="line-desc"></div></div><div id="LINE81092"></div></td>
+              <td align="right"><div id="LINED81092">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME81092"></div></td>
+              <td><div id="LINEDESC81092"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT81092"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Damage<div class="line-info-fftrick"><div id="LINEINFO81002" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC81002" class="line-desc"></div></div><div id="LINE81002"></div></td>
+              <td align="right"><div id="LINED81002">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME81002"></div></td>
+              <td><div id="LINEDESC81002"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT81002"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Damage (PBAOE, Instant)<div class="line-info-fftrick"><div id="LINEINFO81075" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC81075" class="line-desc"></div></div><div id="LINE81075"></div></td>
+              <td align="right"><div id="LINED81075">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME81075"></div></td>
+              <td><div id="LINEDESC81075"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT81075"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Damage (AOE)<div class="line-info-fftrick"><div id="LINEINFO81019" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC81019" class="line-desc"></div></div><div id="LINE81019"></div></td>
+              <td align="right"><div id="LINED81019">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME81019"></div></td>
+              <td><div id="LINEDESC81019"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT81019"></div></td>
+            </tr>
+          </tbody>
+            <!-- SPELLS END-->
+            <!--SKILLS WITH NO STYLES/SPELLS:-->
+            <!-- END OF SKILLS WITH NO STYLES/SPELLS-->
+            <!-- STYLES-->
+          <thead>
+        </table>
+        </table>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="ra-container">
+       <div style='border:1px solid #000000; margin-top:10px;'>
+
+ 
+
+<h3>Realm abilities:</h3>
+
+ <form name="frmdata">	<table border="0" width="50%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td rowspan="2" width="30%" align="left">
+			
+				<img src="images/ra_cleric.jpg"/>
+			
+		</td>
+		<td class="unique">Realm Rank</td>	<td width="30%" align="left">&nbsp;&nbsp;<input name="frmrank" type="textbox" class="frmtext" size="3" value=1 onBlur="javascript:evalTotal();" onchange="javascript:showskills();" disabled="disabled">&nbsp;&nbsp;<a href="javascript:void(0)" onclick="incRR();" class="set"><img src="../images/plus.jpg" border="0"></a>&nbsp;&nbsp;<a href="javascript:decRR();" class="red"><img src="../images/minus.jpg" border="0"></a></td>
+		<td class="unique">Realm Level</td>	<td width="30%" align="left">&nbsp;&nbsp;<input name="frmlevel" type="textbox" class="frmtext" size="3" value=0 onBlur="javascript:evalTotal();" onchange="javascript:showskills();" disabled="disabled">&nbsp;&nbsp;<a href="javascript:void(0)" onclick="incRL();" class="set"><img src="../images/plus.jpg" border="0"></a>&nbsp;&nbsp;<a href="javascript:decRL();" class="red"><img src="../images/minus.jpg" border="0"></a></td>
+	</tr>
+	<tr>
+		<td class="unique">Total Points</td><td width="100" align="left">&nbsp;&nbsp;<input name="frmtotal" type="textbox" class="frmtext" size="3" disabled></td>
+		<td class="unique">Free Points</td>	<td width="100" align="left">&nbsp;&nbsp;<input name="frmfree" type="textbox" class="frmtext" size="3" disabled></td>
+	</tr>
+    
+	</table>
+    
+<br/>
+<textarea name="frmskills" class="frmtext4" cols="113" rows="10" readonly></textarea><br/><br/><br/><!--
+<script language="javascript" src="_js_showskills.js"></script>
+<script language="javascript" src="_js_checks.js"></script>
+<script language="javascript" src="_js_display.js"></script>--><script language="javascript" src="../javascripts/_js_showskills.js"></script><script language="javascript" src="../javascripts/_js_checks.js"></script><script language="javascript" src="../javascripts/_js_display.js"></script>
+</form>
+
+    
+    
+    
+ 
+	<SCRIPT>
+sRace($('#race').val())
+var specMult = 1.0	
+var pStat = 'PIE'
+var sStat = 'CON'
+var tStat = 'STR'
+
+
+for (i=1; i<Abilities.length; i++) {
+	if (Abilities[i].type == 2 || Abilities[i].type == 3) showSpell(Abilities[i]) 
+	if (Abilities[i].type == 5 && Abilities[i].train == 1) showStyle(Abilities[i]) 	
+}
+init();
+</SCRIPT>
+</div>
+
+</div>
+<a href="../index.html"><p style="text-align: center">Click to go back to class selection</p></a>
+<p align="center" style="text-align: center">Original concept : <a href="http://daoc.catacombs.com/">catacombs.com</a>. Original Uthgard version : <a href="http://www.genuapp.appspot.com/char/index.html">genuapp</a></p> <!-- end #container -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-41761431-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> 
+</div>
+    </body>
+
+</html>

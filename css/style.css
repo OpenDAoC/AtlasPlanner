@@ -1,0 +1,433 @@
+body {
+    font: 100% Verdana, Arial, Helvetica, sans-serif;
+    background: url("../images/content.jpg") repeat;
+    margin: 0; 
+    padding: 0;
+    text-align: center; 
+    color: #fff;
+}
+h1 {
+    background:#181818;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid #282828;
+    background: url('../images/menu_bg.gif');
+    margin: 0;
+  padding: 10px;
+  color: #bc9000;
+  text-align: center;
+}
+h1 a {
+    color: inherit;
+  text-decoration:none;
+}
+h1 a:hover {
+  text-decoration: underline;
+}
+p {
+    text-align: center;
+}
+a {
+    color: #ffd;
+}
+img {
+    vertical-align: middle;
+}
+#container {
+    width: 75em;
+    font-size: 0.8em;
+    margin: 0 auto; 
+    text-align: left; 
+    padding: 20px; 
+    background:#050505;
+    
+}
+/*--------- CLASS PICKER -----------*/
+#ClassPicker  {
+    border: 1px outset #282828;
+    background:#181818;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 10px auto;
+}
+#ClassPicker td {
+    text-align:center;
+    vertical-align:top;
+    border: 1px inset #282828;
+    width: 310px;  
+    padding: 5px;
+    background: url('../images/menu_bg.gif') top left;
+}
+/* General styles */
+h2 {
+    border-bottom: 1px solid #282828;
+    margin: 0;
+    padding: 10px;
+}
+h2.albion {
+    color:#f00;
+}
+h2.hibernia {
+    color:#0f0;
+}
+h2.midgard {
+    color:#00f;
+}
+h3 {
+    color:white;
+    text-align: left;
+    font-size: 1em;
+    color: white;
+}
+h3.starter-class {
+}
+h3.not-implemented {
+    color: red;
+}
+a.class-link {
+    display:block;
+    text-decoration: none;
+    background: url('../images/menu_item.gif');
+    background-size:cover;
+    color: #c90;
+}
+a.class-link:hover {
+    background-color: darkgray;
+    background: url('../images/menu_item_hover.gif');
+    background-size:cover;
+    color: white;
+}
+
+form, div.cbuilderHeader {
+    display: block;
+    border: 1px solid #282828;
+    background: #181818;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 0 auto;
+  background: url('../images/menu_bg.gif') top left;
+}
+.cbuilderHeader {
+    margin-top: 10px;
+}
+h2.builder {
+  border: 0;
+  display: inline-block;
+  width: 10em;
+  text-align:center;
+  vertical-align:middle;
+}
+#autotrain {
+    border: 1px solid #282828;
+    border-spacing:0;
+    margin: 5px 5px;
+  width: 55em;
+  display: inline-block;
+  vertical-align:middle;
+}
+#autotrain caption {
+    color: white;
+    white-space: nowrap;
+    cursor: pointer;
+  width: 55em;
+  text-align: center;
+}
+#autotrain td, 
+#autotrain th {
+  color:white;
+  margin: 0;
+  padding: 1px 15px;
+    background: url('../images/bg-item.png') top left;
+}
+#autotrain th {
+  text-align:right;
+  font-weight: normal;
+}
+#autotrain td {
+  text-align:center;
+}
+#autotrain tr:hover td {
+  background: url('../images/bg-item-hover.png') top left; 
+}
+#autotrain tr.autotrain-level td, 
+#autotrain tr.autotrain-bonus-total td {
+    cursor:pointer
+}
+
+/* CBUILDER */
+.tab-container {
+    display:none;
+    float:left;
+    overflow:hidden; 
+    margin: 10px 2px 0px 5px; 
+  background-color: #181818;
+    padding: 2px;
+  border: 1px outset #313131;
+  border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  border-bottom: none;
+}
+.tab-item  {
+  border: 1px inset #313131;
+  border-bottom: none;
+  float: left;
+    width: 120px; 
+    padding: 2px; 
+    text-align:center; 
+    cursor:pointer;
+  background-color: darkgray;
+  background: url('../images/menu_item.gif');
+  color: #c90;
+}
+.tab-item:hover {
+  background: url('../images/menu_item_hover.gif');
+  color: white;
+}
+
+.stats-skills-container {
+  border: 1px outset #313131;
+  background:#181818;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 0px auto;
+  color: #FFFFCC;
+}
+.stats-skills-container td.left-content,
+.stats-skills-container td.right-content {
+  vertical-align:top;
+  border: 1px inset #313131;
+  padding: 3px;
+  background: url('../images/content.jpg') top left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.stats-skills-container td.left-content {
+    width:205px;
+}
+.stats-skills-container td.right-content {
+  width:746px;
+}
+/* defined inline in cbuilder */ 
+select,input {
+  padding: 0px; 
+  border: 0px;
+  font-size: 11px;
+  text-align: center;
+}
+select {
+  height:15px;
+}
+div.input-block {
+    overflow: hidden;
+    border-bottom: 1px #bc9000 solid;
+}
+div#skillPointsSummary {
+    margin-top: 15px;
+    padding: 2px 0 4px 0;
+    border-top: 1px #bc9000 solid;
+    border-bottom: 1px #bc9000 solid;
+}
+div#skillPointsSummary input {
+  width: 44px;
+}
+h3.input-title {
+    float:left;
+    line-height:20px;
+    padding: 0;
+    margin: 0;
+}
+.input-data {
+    float:right;
+    line-height:20px;
+}
+#race {
+    width: 100px;
+}
+table#abilities {
+    margin-top: 15px;
+    width: 100%;
+  border-spacing:0;
+}
+table#abilities th {
+    border-bottom: 1px solid #bc9000; 
+    height:18px
+}
+table#abilities td {
+    white-space: nowrap;
+}
+table#abilities td.level {
+    text-align:center;
+    color: gray;
+}
+table#abilities td.level.enabled {
+    color: #c90;
+}
+table#abilities td.ability {
+  color: gray;
+}
+table#abilities td.ability.enabled {
+  color: #FFFFCC;
+}
+ul#attributes {
+    display: block;
+  list-style: none;
+    overflow: hidden;
+    padding: 0 5px;
+    margin: 3px auto 15px auto;
+}
+ul#attributes li {
+    float:left;
+    width: 70px;
+    text-align:center;
+    margin: 0px 4px;
+}
+ul#attributes li img {
+  padding-left: 1px;
+}
+input.input-attribute {
+    width: 25px;
+  height: 13px;
+  border: 0px;
+  font-size: 10px;
+  background-color: #FFF;
+}
+.stat {
+    font-weight: bold;
+}
+.stat.primary, 
+.stat.secondary,
+.stat.tertiary {
+    color: #c90;
+}
+.primary, 
+.secondary,
+.tertiary {
+    color: red;
+}
+
+.ibox {
+  width: 25px;
+  height: 13px;
+  border: 0px;
+  font-size: 10px;
+  background-color: #FFF;
+}
+
+.skills {
+    width:100%;
+    border: none;
+    border-spacing: 0;
+}
+.skills td  {
+    padding:0;
+    white-space: nowrap;
+}
+.skills td .prefix  {
+  width:15px;
+}
+.line-info {
+  position: absolute;
+  width: 389px;
+  top: 3px;
+  left: 3px;
+  padding: 2px 3px;
+  display: none;
+  z-index: 10;
+  background-color: lightgray;
+  white-space: normal;
+  color:#333333;
+  border:2px solid #000000;
+}
+.line-name:hover .line-info {
+  display: block;
+}
+.line-desc-fftrick, .line-info-fftrick{
+    position: relative;
+}
+.line-desc {
+    position: absolute;
+    width: 389px;
+    top: 16px;
+    left: 0;
+    display: none;
+    z-index: 10;
+    white-space: normal;
+}
+.skill-header {
+  margin-top: 4px;
+    /*background-color: #5B5B5B;#000033;*/
+    font-weight: bold;
+    padding: 2px;
+}
+.skill-header.albion span {
+    background-color: #5B0000;
+    margin: 0;
+}
+.skill-header.hibernia span {
+    background-color: #005B00;
+}
+.skill-header.midgard span {
+    background-color: #00005B;
+}
+.skill-name {
+    display: inline-block;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+    padding-left: 42px;
+    width: 310px;
+    text-align: left;
+}
+.skill-spec {
+  padding-left: 44px;
+  display: inline-block;
+    width: 185px;
+  text-align: left;
+}
+.skill-cost {
+  display: inline-block;
+    width: 80px;
+  text-align: left;
+}
+.skill-spent {
+  display: inline-block;
+    width: 110px;
+  text-align: left;
+}
+
+.ra-container {
+  margin: 0; 
+  background-color: #181818;
+  padding: 2px;
+  border: 1px outset #313131;
+  border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+}
+.ra-container div {
+  border: 1px inset #313131 !important;
+  margin: 0 !important;
+  clear: both; 
+}
+.ra-container h3 {
+    display:none;
+}
+.ra-container form {
+  border:0;
+}
+.ra-container td {
+    padding-right:2px;
+    padding-left:2px;
+}
+#ras td span {
+    display:inline-block;
+    float:right;
+}

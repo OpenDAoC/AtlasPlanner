@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  
+<head>
+        <title>Atlas Character Builder : Mentalist</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta name="keywords" content="Atlas, atlas freeshard, daoc, dark, age, camelot, builder, char, character, skill, plan, realm, ability, ra" />
+        <link rel="icon" type="image/png" href="https://www.atlasfreeshard.com/styles/pach/logo.png" sizes="32x32" />
+        <link rel="stylesheet" media="screen" href="../css/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../javascripts/_ra_list.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../javascripts/_ra_classes.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../javascripts/_js_override.js"></script>
+        <script type="text/javascript">
+          parts = location.href.split('?');
+          classID = 9;
+          $(document).ready(function() {
+            evalTotal();
+            clear();
+            showskills();
+            calcSpec(1);
+          });
+        </script>
+<script src="../javascripts/cbuilder2.js"></script>
+<script src="../javascripts/classes/mentalist.js"></script>
+
+    </head>
+    <body>
+         
+
+
+
+<div id="container">
+  <h1><a href="../index.html" title="Click to go back to class selection">Atlas Character Builder</a></h1>
+  <div class="cbuilderHeader">
+    <div class="head"> 
+      <h2 class="builder hibernia">Mentalist</h2>
+      <table id="autotrain">
+        
+        <caption title="No autotrain">No Autotrain</caption>
+      </table>
+    </div>
+    <div style="clear:both"></div>
+    </div>
+<div class="tab-container">
+  <div class="tab-item">Skills</div>
+  <div class="tab-item">Realm Abilities</div>
+</div>
+<table class="stats-skills-container">
+  <tbody>
+    <tr>
+      <td class="left-content">
+        <div class="input-block">
+          <h3 class="input-title">Race:</h3> 
+          <span class="input-data"> 
+          <input type="hidden" name="classid" value="8"> 
+          <select id="race" name="raceid" onchange="sRace(this.value)">
+              <option value="1">Celt</option>
+              <option value="2">Elf</option>
+              <option value="4">Lurikeen</option>
+              
+          </select>
+          </span>
+        </div>
+        <div class="input-block">
+          <h3 class="input-title">Current Level :</h3>
+          <span class="input-data"> 
+          <img onclick="bLevel(-1)" src="../images/minus.jpg" 
+              /><img onclick="bLevel(-5)" src="../images/minus.jpg"
+              /><input name="level" id="LEVEL" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50; calcSpec(this.value);" 
+              /><img src="../images/plus.jpg" onclick="bLevel(5)" border="0" 
+              /><img src="../images/plus.jpg" onclick="bLevel(1)" border="0" 
+              />
+          </span>
+        </div>
+        <div class="input-block">
+          <h3 class="input-title">Bonus Points :</h3>
+          <span class="input-data">  
+          <img onclick="bBonus(-1)" src="../images/minus.jpg" 
+             /><img style="" onclick="bBonus(-5)" src="../images/minus.jpg"
+                  /><input name="BONUS" onchange="bBonus(0)" id="BONUS" type="text" class="ibox" value="0"
+                  /><img onclick="bBonus(5)" src="../images/plus.jpg"
+                  /><img onclick="bBonus(1)" src="../images/plus.jpg"
+                  />
+          </span>
+        </div>
+        <div id="skillPointsSummary">
+          <input disabled="disabled" name="skill" id="SKILL" type="text" value="0" /> Total Skill Points
+          <input disabled="disabled" name="spent" id="SPENT" type="text" value="0" /> Skill Points Spent
+          <input disabled="disabled" name="LEFT" id="LEFT" type="text" value="0" /> Skill Points Left
+        </div>
+        <table id="abilities">
+          <thead>
+            <tr>
+              <th>LVL</td>
+              <th>ABILITIES</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="level" id="nav1t28">1</td>
+              <td class="ability">Way of the Sun</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav1t32">1</td>
+              <td class="ability">Way of the Moon</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t83">1</td>
+              <td class="ability">Staff</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t99">1</td>
+              <td class="ability">Cloth Armor</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t1">5</td>
+              <td class="ability">Quickcast</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t31">5</td>
+              <td class="ability">Illusions</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t35">5</td>
+              <td class="ability">Holism</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav1t40">5</td>
+              <td class="ability">Mentalism</b></td>
+            </tr>
+            <tr>
+              <td class="level" id="nav0t41">5</td>
+              <td class="ability">Mind Mastery</b></td>
+            </tr>
+          </tbody>
+        </table> 
+
+      </td>
+      <td class="right-content" valign="top">
+        <ul id="attributes">
+          <li>POINTS<input class="input-attribute" disabled="disabled" type="text" id="BASE" name="StartPoints" value="30"></li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('STR',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat ">STR</span><a href="javascript:void(0)" onclick="bAttribute('STR',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="STR" name="STR" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('CON',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat ">CON</span><a href="javascript:void(0)" onclick="bAttribute('CON',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="CON" name="CON" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('DEX',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat secondary">DEX</span><span class="secondary"> S</span><a href="javascript:void(0)" onclick="bAttribute('DEX',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="DEX" name="DEX" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('QUI',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat tertiary">QUI</span><span class="tertiary"> T</span><a href="javascript:void(0)" onclick="bAttribute('QUI',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="QUI" name="QUI" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('INT',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat primary">INT</span><span class="primary"> P</span><a href="javascript:void(0)" onclick="bAttribute('INT',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="INT" name="INT" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('PIE',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat ">PIE</span><a href="javascript:void(0)" onclick="bAttribute('PIE',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="PIE" name="PIE" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('EMP',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat ">EMP</span><a href="javascript:void(0)" onclick="bAttribute('EMP',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="EMP" name="EMP" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          <li>
+            <a href="javascript:void(0)" onclick="bAttribute('CHA',-1)"><img src="../images/minus.jpg" border="0"
+              ></a><span class="stat ">CHA</span><a href="javascript:void(0)" onclick="bAttribute('CHA',1)"><img src="../images/plus.jpg" border="0"></a>
+            <input type="text" id="CHA" name="CHA" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+          </li>
+          </ul>
+        
+        <table class="skills">
+          <!-- SPELLS:-->
+          <thead>
+            <th colspan="4" class="skill-header hibernia"><!-- 
+           --><span class="skill-name">Way of the Sun</span><!-- 
+           --><span class="skill-spec">&nbsp; 
+                Spec : 
+                <img onclick="bSkill(28,-1)" src="../images/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(28,-5)" src="../images/minus.jpg" align="absmiddle"
+                  /><input name="SKILL28" id="SKILL28" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(28,0);"
+                  /><img onclick="bSkill(28,5)" src="../images/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(28,1)" src="../images/plus.jpg" align="absmiddle" />
+                </span><!-- 
+           --><span class="skill-cost">&nbspCost : <span id="COST28">2</span></span><!-- 
+           --><span class="skill-spent">&nbspSpent : <span id="SPENT28">0</span></span><!-- 
+           --></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Damage<div class="line-info-fftrick"><div id="LINEINFO28002" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC28002" class="line-desc"></div></div><div id="LINE28002"></div></td>
+              <td align="right"><div id="LINED28002">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME28002"></div></td>
+              <td><div id="LINEDESC28002"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT28002"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Stun<div class="line-info-fftrick"><div id="LINEINFO28091" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC28091" class="line-desc"></div></div><div id="LINE28091"></div></td>
+              <td align="right"><div id="LINED28091">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME28091"></div></td>
+              <td><div id="LINEDESC28091"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT28091"></div></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr><th colspan="4">Way of the Sun Specialization - Illusions</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Damage<div class="line-info-fftrick"><div id="LINEINFO31002" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC31002" class="line-desc"></div></div><div id="LINE31002"></div></td>
+              <td align="right"><div id="LINED31002">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME31002"></div></td>
+              <td><div id="LINEDESC31002"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT31002"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Damage (AOE)<div class="line-info-fftrick"><div id="LINEINFO31019" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC31019" class="line-desc"></div></div><div id="LINE31019"></div></td>
+              <td align="right"><div id="LINED31019">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME31019"></div></td>
+              <td><div id="LINEDESC31019"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT31019"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Charm (Song)<div class="line-info-fftrick"><div id="LINEINFO31070" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC31070" class="line-desc"></div></div><div id="LINE31070"></div></td>
+              <td align="right"><div id="LINED31070">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME31070"></div></td>
+              <td><div id="LINEDESC31070"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT31070"></div></td>
+            </tr>
+          </tbody>
+          <thead>
+            <th colspan="4" class="skill-header hibernia"><!-- 
+           --><span class="skill-name">Way of the Moon</span><!-- 
+           --><span class="skill-spec">&nbsp; 
+                Spec : 
+                <img onclick="bSkill(32,-1)" src="../images/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(32,-5)" src="../images/minus.jpg" align="absmiddle"
+                  /><input name="SKILL32" id="SKILL32" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(32,0);"
+                  /><img onclick="bSkill(32,5)" src="../images/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(32,1)" src="../images/plus.jpg" align="absmiddle" />
+                </span><!-- 
+           --><span class="skill-cost">&nbspCost : <span id="COST32">2</span></span><!-- 
+           --><span class="skill-spent">&nbspSpent : <span id="SPENT32">0</span></span><!-- 
+           --></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Shield (Self)<div class="line-info-fftrick"><div id="LINEINFO32003" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC32003" class="line-desc"></div></div><div id="LINE32003"></div></td>
+              <td align="right"><div id="LINED32003">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME32003"></div></td>
+              <td><div id="LINEDESC32003"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT32003"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Damage Shield<div class="line-info-fftrick"><div id="LINEINFO32006" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC32006" class="line-desc"></div></div><div id="LINE32006"></div></td>
+              <td align="right"><div id="LINED32006">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME32006"></div></td>
+              <td><div id="LINEDESC32006"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT32006"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Bladeturn (Self)<div class="line-info-fftrick"><div id="LINEINFO32010" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC32010" class="line-desc"></div></div><div id="LINE32010"></div></td>
+              <td align="right"><div id="LINED32010">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME32010"></div></td>
+              <td><div id="LINEDESC32010"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT32010"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Absorb (Self)<div class="line-info-fftrick"><div id="LINEINFO32005" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC32005" class="line-desc"></div></div><div id="LINE32005"></div></td>
+              <td align="right"><div id="LINED32005">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME32005"></div></td>
+              <td><div id="LINEDESC32005"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT32005"></div></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr><th colspan="4">Way of the Moon Specialization - Holism</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Damage over Time<div class="line-info-fftrick"><div id="LINEINFO35020" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC35020" class="line-desc"></div></div><div id="LINE35020"></div></td>
+              <td align="right"><div id="LINED35020">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME35020"></div></td>
+              <td><div id="LINEDESC35020"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT35020"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Damage over Time (AOE)<div class="line-info-fftrick"><div id="LINEINFO35024" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC35024" class="line-desc"></div></div><div id="LINE35024"></div></td>
+              <td align="right"><div id="LINED35024">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME35024"></div></td>
+              <td><div id="LINEDESC35024"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT35024"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Buff (Power Regeneration)<div class="line-info-fftrick"><div id="LINEINFO35058" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC35058" class="line-desc"></div></div><div id="LINE35058"></div></td>
+              <td align="right"><div id="LINED35058">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME35058"></div></td>
+              <td><div id="LINEDESC35058"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT35058"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Heal over Time<div class="line-info-fftrick"><div id="LINEINFO35101" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC35101" class="line-desc"></div></div><div id="LINE35101"></div></td>
+              <td align="right"><div id="LINED35101">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME35101"></div></td>
+              <td><div id="LINEDESC35101"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT35101"></div></td>
+            </tr>
+          </tbody>
+          <thead>
+            <th colspan="4" class="skill-header hibernia"><!-- 
+           --><span class="skill-name">Mentalism</span><!-- 
+           --><span class="skill-spec">&nbsp; 
+                Spec : 
+                <img onclick="bSkill(40,-1)" src="../images/minus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(40,-5)" src="../images/minus.jpg" align="absmiddle"
+                  /><input name="SKILL40" id="SKILL40" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(40,0);"
+                  /><img onclick="bSkill(40,5)" src="../images/plus.jpg" align="absmiddle"
+                  /><img onclick="bSkill(40,1)" src="../images/plus.jpg" align="absmiddle" />
+                </span><!-- 
+           --><span class="skill-cost">&nbspCost : <span id="COST40">2</span></span><!-- 
+           --><span class="skill-spent">&nbspSpent : <span id="SPENT40">0</span></span><!-- 
+           --></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Damage over Time<div class="line-info-fftrick"><div id="LINEINFO40020" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC40020" class="line-desc"></div></div><div id="LINE40020"></div></td>
+              <td align="right"><div id="LINED40020">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME40020"></div></td>
+              <td><div id="LINEDESC40020"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT40020"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Heal<div class="line-info-fftrick"><div id="LINEINFO40081" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC40081" class="line-desc"></div></div><div id="LINE40081"></div></td>
+              <td align="right"><div id="LINED40081">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME40081"></div></td>
+              <td><div id="LINEDESC40081"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT40081"></div></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr><th colspan="4">Mentalism Specialization - Mind Mastery</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Mesmerise<div class="line-info-fftrick"><div id="LINEINFO41050" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC41050" class="line-desc"></div></div><div id="LINE41050"></div></td>
+              <td align="right"><div id="LINED41050">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME41050"></div></td>
+              <td><div id="LINEDESC41050"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT41050"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Major Heal<div class="line-info-fftrick"><div id="LINEINFO41082" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC41082" class="line-desc"></div></div><div id="LINE41082"></div></td>
+              <td align="right"><div id="LINED41082">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME41082"></div></td>
+              <td><div id="LINEDESC41082"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT41082"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Confusion<div class="line-info-fftrick"><div id="LINEINFO41049" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC41049" class="line-desc"></div></div><div id="LINE41049"></div></td>
+              <td align="right"><div id="LINED41049">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME41049"></div></td>
+              <td><div id="LINEDESC41049"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT41049"></div></td>
+            </tr>
+            <tr>
+              <td><div class="prefix"> </div></td>
+              <td class="line-name">Remove Mesmerisation<div class="line-info-fftrick"><div id="LINEINFO41054" class="line-info"></div></div></td>
+              <td width="70%"><div class="line-desc-fftrick"><div id="LINEDESC41054" class="line-desc"></div></div><div id="LINE41054"></div></td>
+              <td align="right"><div id="LINED41054">&nbsp;</div></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td valign="top"><div id="LINENAME41054"></div></td>
+              <td><div id="LINEDESC41054"></div></td>
+              <td valign="top" align="right"><div id="LINEEFFECT41054"></div></td>
+            </tr>
+          </tbody>
+            <!-- SPELLS END-->
+            <!--SKILLS WITH NO STYLES/SPELLS:-->
+            <!-- END OF SKILLS WITH NO STYLES/SPELLS-->
+            <!-- STYLES-->
+          <thead>
+        </table>
+        </table>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="ra-container">
+       <div style='border:1px solid #000000; margin-top:10px;'>
+
+ 
+
+<h3>Realm abilities:</h3>
+
+ <form name="frmdata">	<table border="0" width="50%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td rowspan="2" width="30%" align="left">
+			
+				<img src="images/ra_mentalist.jpg"/>
+			
+		</td>
+		<td class="unique">Realm Rank</td>	<td width="30%" align="left">&nbsp;&nbsp;<input name="frmrank" type="textbox" class="frmtext" size="3" value=1 onBlur="javascript:evalTotal();" onchange="javascript:showskills();" disabled="disabled">&nbsp;&nbsp;<a href="javascript:void(0)" onclick="incRR();" class="set"><img src="../images/plus.jpg" border="0"></a>&nbsp;&nbsp;<a href="javascript:decRR();" class="red"><img src="../images/minus.jpg" border="0"></a></td>
+		<td class="unique">Realm Level</td>	<td width="30%" align="left">&nbsp;&nbsp;<input name="frmlevel" type="textbox" class="frmtext" size="3" value=0 onBlur="javascript:evalTotal();" onchange="javascript:showskills();" disabled="disabled">&nbsp;&nbsp;<a href="javascript:void(0)" onclick="incRL();" class="set"><img src="../images/plus.jpg" border="0"></a>&nbsp;&nbsp;<a href="javascript:decRL();" class="red"><img src="../images/minus.jpg" border="0"></a></td>
+	</tr>
+	<tr>
+		<td class="unique">Total Points</td><td width="100" align="left">&nbsp;&nbsp;<input name="frmtotal" type="textbox" class="frmtext" size="3" disabled></td>
+		<td class="unique">Free Points</td>	<td width="100" align="left">&nbsp;&nbsp;<input name="frmfree" type="textbox" class="frmtext" size="3" disabled></td>
+	</tr>
+    
+	</table>
+    
+<br/>
+<textarea name="frmskills" class="frmtext4" cols="113" rows="10" readonly></textarea><br/><br/><br/><!--
+<script language="javascript" src="_js_showskills.js"></script>
+<script language="javascript" src="_js_checks.js"></script>
+<script language="javascript" src="_js_display.js"></script>--><script language="javascript" src="../javascripts/_js_showskills.js"></script><script language="javascript" src="../javascripts/_js_checks.js"></script><script language="javascript" src="../javascripts/_js_display.js"></script>
+</form>
+
+    
+    
+    
+ 
+	<SCRIPT>
+sRace($('#race').val())
+var specMult = 1.0	
+var pStat = 'INT'
+var sStat = 'DEX'
+var tStat = 'QUI'
+for (i=1; i<Abilities.length; i++) {
+	if (Abilities[i].type == 2 || Abilities[i].type == 3) showSpell(Abilities[i]) 
+	if (Abilities[i].type == 5 && Abilities[i].train == 1) showStyle(Abilities[i]) 	
+}
+init();
+</SCRIPT>
+</div>
+
+</div>
+<a href="../index.html"><p style="text-align: center">Click to go back to class selection</p></a>
+<p align="center" style="text-align: center">Original concept : <a href="http://daoc.catacombs.com/">catacombs.com</a>. Original Uthgard version : <a href="http://www.genuapp.appspot.com/char/index.html">genuapp</a></p> <!-- end #container -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-41761431-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> 
+</div>
+    </body>
+
+
+</html>
