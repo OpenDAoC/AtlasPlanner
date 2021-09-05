@@ -23,8 +23,7 @@ Abilities[14]=new abilityPT("Chain Armor",20,104,7,0,0,0)
 //Styles = new Array(0);
 
 Spells = new Array();
-
-Lines = new Array(42);
+Lines = new Array();
 
 var idx=1;
 Lines[2079]=new linePT('Minor Heal','Heals target for a very small amount of health. Casts quickly and uses little power.',2,0) 
@@ -100,6 +99,9 @@ Lines[77098]=new linePT('Spreadheal (Self)','Specialized healing spell that inte
 Spells[idx++]=new spellPT("Gift of the Host",30,77098,77,"187 HP ",77,"79 PP",'','3.5s','','','','') 
 Spells[idx++]=new spellPT("Boon of the Host",39,77098,77,"241 HP ",77,"95 PP",'','3.5s','','','','') 
 Spells[idx++]=new spellPT("Blessing of the Host",48,77098,77,"295 HP ",77,"110 PP",'','3.5s','','','','') 
+Lines[77099]=new linePT('Cure Nearsight','Attempts to cure target of nearsight.',77,0) 
+Spells[idx++]=new spellPT("Cure Nearsight I",25,77099,77,'',77,'','1500','6.0s','','','','') 
+Spells[idx++]=new spellPT("Cure Nearsight II",35,77099,77,'',77,'','1500','3.5s','','','','')
 Lines[3003]=new linePT('Shield','Adds to the recipient\'s Armor Factor (AF), resulting in better protection against some forms of attack. It acts in addition to any armor the target is wearing.',3,0) 
 Spells[idx++]=new spellPT("Aura of Shielding",2,3003,3,"12 AF ",3,"",'1000','3.0s','','','','') 
 Spells[idx++]=new spellPT("Greater Aura of Shielding",5,3003,3,"15 AF ",3,"",'1000','3.0s','','','','') 
