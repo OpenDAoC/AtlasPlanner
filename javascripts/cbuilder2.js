@@ -952,3 +952,4 @@ Styles[iStylePT++] = new stylePT(129, "Penetrating Arrow I", 30, "Chance to pene
 Styles[iStylePT++] = new stylePT(129, "Rapid Fire I", 35, "Release shot early; Damage % equal to Timer %", "", "", "Timer-based", "", "", "", 0, "");
 Styles[iStylePT++] = new stylePT(129, "Penetrating Arrow II", 40, "Chance to penetrate bladeturn for 75% damage", "", "", "Normal", "", "", "", 0, "");
 Styles[iStylePT++] = new stylePT(129, "Rapid Fire II", 45, "Release shot early; Damage % equal to Timer %", "", "", "Timer-based", "", "", "", 0, "");
+Styles[iStylePT++] = new stylePT(129, "Penetrating Arrow III", 50, "Chance to penetrate bladeturn for 100% damage", "", "", "Normal", "", "", "", 0, "");
