@@ -1,102 +1,105 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    
+
 <head>
-        <title>Atlas Character Builder : Scout</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="Cache-Control" content="no-cache" />
-        <meta name="keywords" content="Atlas, atlas freeshard, daoc, dark, age, camelot, builder, char, character, skill, plan, realm, ability, ra" />
-        <link rel="icon" type="image/png" href="https://www.atlasfreeshard.com/styles/pach/logo.png" sizes="32x32" />
-        <link rel="stylesheet" media="screen" href="../css/style.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-        <script type="text/javascript" charset="utf-8" src="../javascripts/_ra_list.js"></script>
-        <script type="text/javascript" charset="utf-8" src="../javascripts/_ra_classes.js"></script>
-        <script type="text/javascript" charset="utf-8" src="../javascripts/_js_override.js"></script>
-        <script type="text/javascript">
-          parts = location.href.split('?');
-          classID = 36;
-          $(document).ready(function() {
+    <title>Atlas Character Builder : Scout</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="keywords" content="Atlas, atlas freeshard, daoc, dark, age, camelot, builder, char, character, skill, plan, realm, ability, ra" />
+    <link rel="icon" type="image/png" href="https://www.atlasfreeshard.com/styles/pach/logo.png" sizes="32x32" />
+    <link rel="stylesheet" media="screen" href="../css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../javascripts/_ra_list.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../javascripts/_ra_classes.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../javascripts/_js_override.js"></script>
+    <script type="text/javascript">
+        parts = location.href.split('?');
+        classID = 36;
+        $(document).ready(function() {
             evalTotal();
             clear();
             showskills();
             calcSpec(1);
-          });
-        </script>
-<script src="../javascripts/cbuilder2.js"></script>
-<script src="../javascripts/classes/scout.js"></script>
+        });
+    </script>
+    <script src="../javascripts/cbuilder2.js"></script>
+    <script src="../javascripts/classes/scout.js"></script>
 
-    </head>
-    <body>
-         
+</head>
+
+<body>
 
 
 
-<div id="container">
-  <h1><a href="../index.html" title="Click to go back to class selection">Atlas Character Builder</a></h1>
-  <div class="cbuilderHeader">
-    <div class="head"> 
-      <h2 class="builder albion">Scout</h2>
-      <table id="autotrain">
-        <caption title="Autotrain table (click to toggle display)" onclick="javascript:$('#autotrain tbody').toggle()">Autotrains : Longbow</caption>
-        <tbody style="display:none">
-          <tr class="autotrain-level">
-            <th>Autotrain level</th>
-            <td>8</td>
-            <td>12</td>
-            <td>16</td>
-            <td>20</td>
-            <td>24</td>
-            <td>28</td>
-            <td>32</td>
-            <td>36</td>
-            <td>40</td>
-            <td>44</td>
-            <td>48</td>
-          </tr>
-          <tr class="autotrain-bonus">
-            <th>Bonus points granted</th>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-          </tr>
-          <tr class="autotrain-bonus-total">
-            <th>Summed</th>
-            <td>2</td>
-            <td>5</td>
-            <td>9</td>
-            <td>14</td>
-            <td>20</td>
-            <td>27</td>
-            <td>35</td>
-            <td>44</td>
-            <td>54</td>
-            <td>65</td>
-            <td>77</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div style="clear:both"></div>
-    </div>
-<div class="tab-container">
-  <div class="tab-item">Skills</div>
-  <div class="tab-item">Realm Abilities</div>
-</div>
-<table class="stats-skills-container">
-  <tbody>
-    <tr>
-      <td class="left-content">
-        <div class="input-block">
-          <h3 class="input-title">Race:</h3> 
-          <span class="input-data"> 
+
+    <div id="container">
+        <h1><a href="../index.html" title="Click to go back to class selection">Atlas Character Builder</a></h1>
+        <div class="cbuilderHeader">
+            <div class="head">
+                <h2 class="builder albion">Scout</h2>
+                <table id="autotrain">
+                    <caption title="Autotrain table (click to toggle display)" onclick="javascript:$('#autotrain tbody').toggle()">Autotrains: Longbow<br>
+                        <div style="color: red; font-weight:bold">Add the Summed autotrain points as Bonus Points</div>
+                    </caption>
+                    <tbody style="display:none">
+                        <tr class="autotrain-level">
+                            <th>Autotrain level</th>
+                            <td>8</td>
+                            <td>12</td>
+                            <td>16</td>
+                            <td>20</td>
+                            <td>24</td>
+                            <td>28</td>
+                            <td>32</td>
+                            <td>36</td>
+                            <td>40</td>
+                            <td>44</td>
+                            <td>48</td>
+                        </tr>
+                        <tr class="autotrain-bonus">
+                            <th>Bonus points granted</th>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr class="autotrain-bonus-total">
+                            <th>Summed</th>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>9</td>
+                            <td>14</td>
+                            <td>20</td>
+                            <td>27</td>
+                            <td>35</td>
+                            <td>44</td>
+                            <td>54</td>
+                            <td>65</td>
+                            <td>77</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div class="tab-container">
+            <div class="tab-item">Skills</div>
+            <div class="tab-item">Realm Abilities</div>
+        </div>
+        <table class="stats-skills-container">
+            <tbody>
+                <tr>
+                    <td class="left-content">
+                        <div class="input-block">
+                            <h3 class="input-title">Race:</h3>
+                            <span class="input-data"> 
           <input type="hidden" name="classid" value="8"> 
           <select id="race" name="raceid" onchange="sRace(this.value)">
               <option value="5">Avalonian</option>
@@ -106,10 +109,10 @@
               
           </select>
           </span>
-        </div>
-        <div class="input-block">
-          <h3 class="input-title">Current Level :</h3>
-          <span class="input-data"> 
+                        </div>
+                        <div class="input-block">
+                            <h3 class="input-title">Current Level :</h3>
+                            <span class="input-data"> 
           <img onclick="bLevel(-1)" src="../images/minus.jpg" 
               /><img onclick="bLevel(-5)" src="../images/minus.jpg"
               /><input name="level" id="LEVEL" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50; calcSpec(this.value);" 
@@ -117,10 +120,10 @@
               /><img src="../images/plus.jpg" onclick="bLevel(1)" border="0" 
               />
           </span>
-        </div>
-        <div class="input-block">
-          <h3 class="input-title">Bonus Points :</h3>
-          <span class="input-data">  
+                        </div>
+                        <div class="input-block">
+                            <h3 class="input-title">Bonus Points :</h3>
+                            <span class="input-data">  
           <img onclick="bBonus(-1)" src="../images/minus.jpg" 
              /><img style="" onclick="bBonus(-5)" src="../images/minus.jpg"
                   /><input name="BONUS" onchange="bBonus(0)" id="BONUS" type="text" class="ibox" value="0"
@@ -128,132 +131,148 @@
                   /><img onclick="bBonus(1)" src="../images/plus.jpg"
                   />
           </span>
-        </div>
-        <div id="skillPointsSummary">
-          <input disabled="disabled" name="skill" id="SKILL" type="text" value="0" /> Total Skill Points
-          <input disabled="disabled" name="spent" id="SPENT" type="text" value="0" /> Skill Points Spent
-          <input disabled="disabled" name="LEFT" id="LEFT" type="text" value="0" /> Skill Points Left
-        </div>
-        <table id="abilities">
-          <thead>
-            <tr>
-              <th>LVL</td>
-              <th>ABILITIES</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="level" id="nav0t83">1</td>
-              <td class="ability">Staff</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav1t85">1</td>
-              <td class="ability">Slash</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav1t89">1</td>
-              <td class="ability">Thrust</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav0t99">1</td>
-              <td class="ability">Cloth Armor</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav0t100">1</td>
-              <td class="ability">Leather Armor</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav0t113">1</td>
-              <td class="ability">Evade I</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav1t119">1</td>
-              <td class="ability">Stealth</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav1t97">5</td>
-              <td class="ability">Shields</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav0t102">5</td>
-              <td class="ability">Shields (Small)</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav1t129">5</td>
-              <td class="ability">Bow</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav0t101">10</td>
-              <td class="ability">Studded Armor</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav0t114">12</td>
-              <td class="ability">Evade II</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav0t115">20</td>
-              <td class="ability">Evade III</b></td>
-            </tr>
-            <tr>
-              <td class="level" id="nav0t182">30</td>
-              <td class="ability">Camouflage</b></td>
-            </tr>
-          </tbody>
-        </table> 
+                        </div>
+                        <div id="skillPointsSummary">
+                            <input disabled="disabled" name="skill" id="SKILL" type="text" value="0" /> Total Skill Points
+                            <input disabled="disabled" name="spent" id="SPENT" type="text" value="0" /> Skill Points Spent
+                            <input disabled="disabled" name="LEFT" id="LEFT" type="text" value="0" /> Skill Points Left
+                        </div>
+                        <table id="abilities">
+                            <thead>
+                                <tr>
+                                    <th>LVL</td>
+                    <th>ABILITIES</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="level" id="nav0t83">1</td>
+                                <td class="ability">Staff</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav1t85">1</td>
+                                <td class="ability">Slash</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav1t89">1</td>
+                                <td class="ability">Thrust</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav0t99">1</td>
+                                <td class="ability">Cloth Armor</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav0t100">1</td>
+                                <td class="ability">Leather Armor</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav0t113">1</td>
+                                <td class="ability">Evade I</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav1t119">1</td>
+                                <td class="ability">Stealth</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav1t97">5</td>
+                                <td class="ability">Shields</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav0t102">5</td>
+                                <td class="ability">Shields (Small)</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav1t129">5</td>
+                                <td class="ability">Bow</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav0t101">10</td>
+                                <td class="ability">Studded Armor</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav0t114">12</td>
+                                <td class="ability">Evade II</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav0t115">20</td>
+                                <td class="ability">Evade III</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="level" id="nav0t182">30</td>
+                                <td class="ability">Camouflage</b>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
 
-      </td>
-      <td class="right-content" valign="top">
-        <ul id="attributes">
-          <li>POINTS<input class="input-attribute" disabled="disabled" type="text" id="BASE" name="StartPoints" value="30"></li>
-          <li>
-            <a href="javascript:void()" onclick="bAttribute('STR',-1)"><img src="../images/minus.jpg" border="0"
-              ></a><span class="stat tertiary">STR</span><span class="tertiary"> T</span><a href="javascript:void()" onclick="bAttribute('STR',1)"><img src="../images/plus.jpg" border="0"></a>
-            <input type="text" id="STR" name="STR" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
-          </li>
-          <li>
-            <a href="javascript:void()" onclick="bAttribute('CON',-1)"><img src="../images/minus.jpg" border="0"
-              ></a><span class="stat primary">CON</span><span class="primary"> P</span><a href="javascript:void()" onclick="bAttribute('CON',1)"><img src="../images/plus.jpg" border="0"></a>
-            <input type="text" id="CON" name="CON" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
-          </li>
-          <li>
-            <a href="javascript:void()" onclick="bAttribute('DEX',-1)"><img src="../images/minus.jpg" border="0"
-              ></a><span class="stat secondary">DEX</span><span class="secondary"> S</span><a href="javascript:void()" onclick="bAttribute('DEX',1)"><img src="../images/plus.jpg" border="0"></a>
-            <input type="text" id="DEX" name="DEX" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
-          </li>
-          <li>
-            <a href="javascript:void()" onclick="bAttribute('QUI',-1)"><img src="../images/minus.jpg" border="0"
-              ></a><span class="stat ">QUI</span><a href="javascript:void()" onclick="bAttribute('QUI',1)"><img src="../images/plus.jpg" border="0"></a>
-            <input type="text" id="QUI" name="QUI" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
-          </li>
-          <li>
-            <a href="javascript:void()" onclick="bAttribute('INT',-1)"><img src="../images/minus.jpg" border="0"
-              ></a><span class="stat ">INT</span><a href="javascript:void()" onclick="bAttribute('INT',1)"><img src="../images/plus.jpg" border="0"></a>
-            <input type="text" id="INT" name="INT" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
-          </li>
-          <li>
-            <a href="javascript:void()" onclick="bAttribute('PIE',-1)"><img src="../images/minus.jpg" border="0"
-              ></a><span class="stat ">PIE</span><a href="javascript:void()" onclick="bAttribute('PIE',1)"><img src="../images/plus.jpg" border="0"></a>
-            <input type="text" id="PIE" name="PIE" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
-          </li>
-          <li>
-            <a href="javascript:void()" onclick="bAttribute('EMP',-1)"><img src="../images/minus.jpg" border="0"
-              ></a><span class="stat ">EMP</span><a href="javascript:void()" onclick="bAttribute('EMP',1)"><img src="../images/plus.jpg" border="0"></a>
-            <input type="text" id="EMP" name="EMP" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
-          </li>
-          <li>
-            <a href="javascript:void()" onclick="bAttribute('CHA',-1)"><img src="../images/minus.jpg" border="0"
-              ></a><span class="stat ">CHA</span><a href="javascript:void()" onclick="bAttribute('CHA',1)"><img src="../images/plus.jpg" border="0"></a>
-            <input type="text" id="CHA" name="CHA" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
-          </li>
-          </ul>
-        
-        <table class="skills">
-          <!-- SPELLS:-->
-            <!-- SPELLS END-->
-            <!--SKILLS WITH NO STYLES/SPELLS:-->
-          <thead>
-            <th colspan="4" class="skill-header albion"><!-- 
-           --><span class="skill-name">Stealth</span><!-- 
+                        </td>
+                        <td class="right-content" valign="top">
+                            <ul id="attributes">
+                                <li>POINTS<input class="input-attribute" disabled="disabled" type="text" id="BASE" name="StartPoints" value="30"></li>
+                                <li>
+                                    <a href="javascript:void()" onclick="bAttribute('STR',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat tertiary">STR</span><span class="tertiary"> T</span>
+                                    <a href="javascript:void()" onclick="bAttribute('STR',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <input type="text" id="STR" name="STR" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+                                </li>
+                                <li>
+                                    <a href="javascript:void()" onclick="bAttribute('CON',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat primary">CON</span><span class="primary"> P</span>
+                                    <a href="javascript:void()" onclick="bAttribute('CON',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <input type="text" id="CON" name="CON" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+                                </li>
+                                <li>
+                                    <a href="javascript:void()" onclick="bAttribute('DEX',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat secondary">DEX</span><span class="secondary"> S</span>
+                                    <a href="javascript:void()" onclick="bAttribute('DEX',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <input type="text" id="DEX" name="DEX" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+                                </li>
+                                <li>
+                                    <a href="javascript:void()" onclick="bAttribute('QUI',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat ">QUI</span>
+                                    <a href="javascript:void()" onclick="bAttribute('QUI',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <input type="text" id="QUI" name="QUI" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+                                </li>
+                                <li>
+                                    <a href="javascript:void()" onclick="bAttribute('INT',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat ">INT</span>
+                                    <a href="javascript:void()" onclick="bAttribute('INT',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <input type="text" id="INT" name="INT" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+                                </li>
+                                <li>
+                                    <a href="javascript:void()" onclick="bAttribute('PIE',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat ">PIE</span>
+                                    <a href="javascript:void()" onclick="bAttribute('PIE',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <input type="text" id="PIE" name="PIE" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+                                </li>
+                                <li>
+                                    <a href="javascript:void()" onclick="bAttribute('EMP',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat ">EMP</span>
+                                    <a href="javascript:void()" onclick="bAttribute('EMP',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <input type="text" id="EMP" name="EMP" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+                                </li>
+                                <li>
+                                    <a href="javascript:void()" onclick="bAttribute('CHA',-1)"><img src="../images/minus.jpg" border="0"></a><span class="stat ">CHA</span>
+                                    <a href="javascript:void()" onclick="bAttribute('CHA',1)"><img src="../images/plus.jpg" border="0"></a>
+                                    <input type="text" id="CHA" name="CHA" class="input-attribute" onmousedown="tempValue=this.value" onchange="this.value = tempValue">
+                                </li>
+                            </ul>
+
+                            <table class="skills">
+                                <!-- SPELLS:-->
+                                <!-- SPELLS END-->
+                                <!--SKILLS WITH NO STYLES/SPELLS:-->
+                                <thead>
+                                    <th colspan="4" class="skill-header albion">
+                                        <!-- 
+           --><span class="skill-name">Stealth</span>
+                                        <!-- 
             --><span class="skill-spec">
                 Spec : 
                 <img onclick="bSkill(119,-1)" src="../images/minus.jpg" align="absmiddle"
@@ -261,16 +280,22 @@
                   /><input name="SKILL119" id="SKILL119" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(119,0);"
                   /><img onclick="bSkill(119,5)" src="../images/plus.jpg" align="absmiddle"
                   /><img onclick="bSkill(119,1)" src="../images/plus.jpg" align="absmiddle" />
-                </span><!-- 
-            --><span class="skill-cost">Cost : <span id="COST119">2</span></span><!-- 
-            --><span class="skill-spent">Spent : <span id="SPENT119">0</span></span><!-- 
-           --></th>
-          </thead>
-            <!-- END OF SKILLS WITH NO STYLES/SPELLS-->
-            <!-- STYLES-->
-          <thead>
-            <th colspan="4" class="skill-header albion"><!-- 
-           --><span class="skill-name">Slash</span><!-- 
+                </span>
+                                        <!-- 
+            --><span class="skill-cost">Cost : <span id="COST119">2</span></span>
+                                        <!-- 
+            --><span class="skill-spent">Spent : <span id="SPENT119">0</span></span>
+                                        <!-- 
+           -->
+                                    </th>
+                                </thead>
+                                <!-- END OF SKILLS WITH NO STYLES/SPELLS-->
+                                <!-- STYLES-->
+                                <thead>
+                                    <th colspan="4" class="skill-header albion">
+                                        <!-- 
+           --><span class="skill-name">Slash</span>
+                                        <!-- 
             --><span class="skill-spec">
                 Spec : 
                 <img onclick="bSkill(85,-1)" src="../images/minus.jpg" align="absmiddle"
@@ -278,25 +303,40 @@
                   /><input name="SKILL85" id="SKILL85" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(85,0);"
                   /><img onclick="bSkill(85,5)" src="../images/plus.jpg" align="absmiddle"
                   /><img onclick="bSkill(85,1)" src="../images/plus.jpg" align="absmiddle" />
-                </span><!-- 
-            --><span class="skill-cost">Cost : <span id="COST85">2</span></span><!-- 
-            --><span class="skill-spent">Spent : <span id="SPENT85">0</span></span><!-- 
-           --></th>
-          </thead>
-          <tbody>
-            <tr>
-              <td><div class="prefix"> </div></td>
-              <td class="line-name">Slash Styles</td>
-              <td width="100%" colspan="2"><div class="line-desc-fftrick"><div id="STYLEDESC85" class="line-desc"></div></div><div id="STYLE85"></div></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td valign="top" ><div id="STYLENAME85"></div></td>
-              <td colspan="2" ></td>
-            </tr>
-          </tbody>
-            <th colspan="4" class="skill-header albion"><!-- 
-           --><span class="skill-name">Thrust</span><!-- 
+                </span>
+                                        <!-- 
+            --><span class="skill-cost">Cost : <span id="COST85">2</span></span>
+                                        <!-- 
+            --><span class="skill-spent">Spent : <span id="SPENT85">0</span></span>
+                                        <!-- 
+           -->
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="prefix"> </div>
+                                        </td>
+                                        <td class="line-name">Slash Styles</td>
+                                        <td width="100%" colspan="2">
+                                            <div class="line-desc-fftrick">
+                                                <div id="STYLEDESC85" class="line-desc"></div>
+                                            </div>
+                                            <div id="STYLE85"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td valign="top">
+                                            <div id="STYLENAME85"></div>
+                                        </td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                </tbody>
+                                <th colspan="4" class="skill-header albion">
+                                    <!-- 
+           --><span class="skill-name">Thrust</span>
+                                    <!-- 
             --><span class="skill-spec">
                 Spec : 
                 <img onclick="bSkill(89,-1)" src="../images/minus.jpg" align="absmiddle"
@@ -304,25 +344,40 @@
                   /><input name="SKILL89" id="SKILL89" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(89,0);"
                   /><img onclick="bSkill(89,5)" src="../images/plus.jpg" align="absmiddle"
                   /><img onclick="bSkill(89,1)" src="../images/plus.jpg" align="absmiddle" />
-                </span><!-- 
-            --><span class="skill-cost">Cost : <span id="COST89">2</span></span><!-- 
-            --><span class="skill-spent">Spent : <span id="SPENT89">0</span></span><!-- 
-           --></th>
-          </thead>
-          <tbody>
-            <tr>
-              <td><div class="prefix"> </div></td>
-              <td class="line-name">Thrust Styles</td>
-              <td width="100%" colspan="2"><div class="line-desc-fftrick"><div id="STYLEDESC89" class="line-desc"></div></div><div id="STYLE89"></div></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td valign="top" ><div id="STYLENAME89"></div></td>
-              <td colspan="2" ></td>
-            </tr>
-          </tbody>
-            <th colspan="4" class="skill-header albion"><!-- 
-           --><span class="skill-name">Shields</span><!-- 
+                </span>
+                                    <!-- 
+            --><span class="skill-cost">Cost : <span id="COST89">2</span></span>
+                                    <!-- 
+            --><span class="skill-spent">Spent : <span id="SPENT89">0</span></span>
+                                    <!-- 
+           -->
+                                </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="prefix"> </div>
+                                        </td>
+                                        <td class="line-name">Thrust Styles</td>
+                                        <td width="100%" colspan="2">
+                                            <div class="line-desc-fftrick">
+                                                <div id="STYLEDESC89" class="line-desc"></div>
+                                            </div>
+                                            <div id="STYLE89"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td valign="top">
+                                            <div id="STYLENAME89"></div>
+                                        </td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                </tbody>
+                                <th colspan="4" class="skill-header albion">
+                                    <!-- 
+           --><span class="skill-name">Shields</span>
+                                    <!-- 
             --><span class="skill-spec">
                 Spec : 
                 <img onclick="bSkill(97,-1)" src="../images/minus.jpg" align="absmiddle"
@@ -330,25 +385,40 @@
                   /><input name="SKILL97" id="SKILL97" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(97,0);"
                   /><img onclick="bSkill(97,5)" src="../images/plus.jpg" align="absmiddle"
                   /><img onclick="bSkill(97,1)" src="../images/plus.jpg" align="absmiddle" />
-                </span><!-- 
-            --><span class="skill-cost">Cost : <span id="COST97">2</span></span><!-- 
-            --><span class="skill-spent">Spent : <span id="SPENT97">0</span></span><!-- 
-           --></th>
-          </thead>
-          <tbody>
-            <tr>
-              <td><div class="prefix"> </div></td>
-              <td class="line-name">Shields Styles</td>
-              <td width="100%" colspan="2"><div class="line-desc-fftrick"><div id="STYLEDESC97" class="line-desc"></div></div><div id="STYLE97"></div></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td valign="top" ><div id="STYLENAME97"></div></td>
-              <td colspan="2" ></td>
-            </tr>
-          </tbody>
-            <th colspan="4" class="skill-header albion"><!-- 
-           --><span class="skill-name">Bow</span><!-- 
+                </span>
+                                    <!-- 
+            --><span class="skill-cost">Cost : <span id="COST97">2</span></span>
+                                    <!-- 
+            --><span class="skill-spent">Spent : <span id="SPENT97">0</span></span>
+                                    <!-- 
+           -->
+                                </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="prefix"> </div>
+                                        </td>
+                                        <td class="line-name">Shields Styles</td>
+                                        <td width="100%" colspan="2">
+                                            <div class="line-desc-fftrick">
+                                                <div id="STYLEDESC97" class="line-desc"></div>
+                                            </div>
+                                            <div id="STYLE97"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td valign="top">
+                                            <div id="STYLENAME97"></div>
+                                        </td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                </tbody>
+                                <th colspan="4" class="skill-header albion">
+                                    <!-- 
+           --><span class="skill-name">Bow</span>
+                                    <!-- 
             --><span class="skill-spec">
                 Spec : 
                 <img onclick="bSkill(129,-1)" src="../images/minus.jpg" align="absmiddle"
@@ -356,94 +426,128 @@
                   /><input name="SKILL129" id="SKILL129" type="text" class="ibox" value="1" onchange="if (this.value &lt; 1) this.value=1; if (this.value &gt; 50) this.value=50;bSkill(129,0);"
                   /><img onclick="bSkill(129,5)" src="../images/plus.jpg" align="absmiddle"
                   /><img onclick="bSkill(129,1)" src="../images/plus.jpg" align="absmiddle" />
-                </span><!-- 
-            --><span class="skill-cost">Cost : <span id="COST129">2</span></span><!-- 
-            --><span class="skill-spent">Spent : <span id="SPENT129">0</span></span><!-- 
-           --></th>
-          </thead>
-          <tbody>
-            <tr>
-              <td><div class="prefix"> </div></td>
-              <td class="line-name">Bow Styles</td>
-              <td width="100%" colspan="2"><div class="line-desc-fftrick"><div id="STYLEDESC129" class="line-desc"></div></div><div id="STYLE129"></div></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td valign="top" ><div id="STYLENAME129"></div></td>
-              <td colspan="2" ></td>
-            </tr>
-          </tbody>
+                </span>
+                                    <!-- 
+            --><span class="skill-cost">Cost : <span id="COST129">2</span></span>
+                                    <!-- 
+            --><span class="skill-spent">Spent : <span id="SPENT129">0</span></span>
+                                    <!-- 
+           -->
+                                </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="prefix"> </div>
+                                        </td>
+                                        <td class="line-name">Bow Styles</td>
+                                        <td width="100%" colspan="2">
+                                            <div class="line-desc-fftrick">
+                                                <div id="STYLEDESC129" class="line-desc"></div>
+                                            </div>
+                                            <div id="STYLE129"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td valign="top">
+                                            <div id="STYLENAME129"></div>
+                                        </td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
         </table>
+
+        </td>
+        </tr>
+        </tbody>
         </table>
+        <div class="ra-container">
+            <div style='border:1px solid #000000; margin-top:10px;'>
 
-      </td>
-    </tr>
-  </tbody>
-</table>
-<div class="ra-container">
-      <div style='border:1px solid #000000; margin-top:10px;'>
 
-      
- 
 
-<h3>Realm abilities:</h3>
 
- <form name="frmdata">	<table border="0" width="50%" cellpadding="0" cellspacing="0">
-	<tr>
-		<td rowspan="2" width="30%" align="left">
-			
-				<img src="images/ra_scout.jpg"/>
-			
-		</td>
-		<td class="unique">Realm Rank</td>	<td width="30%" align="left">&nbsp;&nbsp;<input name="frmrank" type="textbox" class="frmtext" size="3" value=1 onBlur="javascript:evalTotal();" onchange="javascript:showskills();" disabled="disabled">&nbsp;&nbsp;<a href="javascript:void()" onclick="incRR();" class="set"><img src="../images/plus.jpg" border="0"></a>&nbsp;&nbsp;<a href="javascript:decRR();" class="red"><img src="../images/minus.jpg" border="0"></a></td>
-		<td class="unique">Realm Level</td>	<td width="30%" align="left">&nbsp;&nbsp;<input name="frmlevel" type="textbox" class="frmtext" size="3" value=0 onBlur="javascript:evalTotal();" onchange="javascript:showskills();" disabled="disabled">&nbsp;&nbsp;<a href="javascript:void()" onclick="incRL();" class="set"><img src="../images/plus.jpg" border="0"></a>&nbsp;&nbsp;<a href="javascript:decRL();" class="red"><img src="../images/minus.jpg" border="0"></a></td>
-	</tr>
-	<tr>
-		<td class="unique">Total Points</td><td width="100" align="left">&nbsp;&nbsp;<input name="frmtotal" type="textbox" class="frmtext" size="3" disabled></td>
-		<td class="unique">Free Points</td>	<td width="100" align="left">&nbsp;&nbsp;<input name="frmfree" type="textbox" class="frmtext" size="3" disabled></td>
-	</tr>
-    
-	</table>
-    
-<br/>
-<textarea name="frmskills" class="frmtext4" cols="113" rows="10" readonly></textarea><br/><br/><br/><!--
+                <h3>Realm abilities:</h3>
+
+                <form name="frmdata">
+                    <table border="0" width="50%" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td rowspan="2" width="30%" align="left">
+
+                                <img src="images/ra_scout.jpg" />
+
+                            </td>
+                            <td class="unique">Realm Rank</td>
+                            <td width="30%" align="left">&nbsp;&nbsp;<input name="frmrank" type="textbox" class="frmtext" size="3" value=1 onBlur="javascript:evalTotal();" onchange="javascript:showskills();" disabled="disabled">&nbsp;&nbsp;
+                                <a href="javascript:void()" onclick="incRR();" class="set"><img src="../images/plus.jpg" border="0"></a>&nbsp;&nbsp;
+                                <a href="javascript:decRR();" class="red"><img src="../images/minus.jpg" border="0"></a>
+                            </td>
+                            <td class="unique">Realm Level</td>
+                            <td width="30%" align="left">&nbsp;&nbsp;<input name="frmlevel" type="textbox" class="frmtext" size="3" value=0 onBlur="javascript:evalTotal();" onchange="javascript:showskills();" disabled="disabled">&nbsp;&nbsp;
+                                <a href="javascript:void()" onclick="incRL();" class="set"><img src="../images/plus.jpg" border="0"></a>&nbsp;&nbsp;
+                                <a href="javascript:decRL();" class="red"><img src="../images/minus.jpg" border="0"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="unique">Total Points</td>
+                            <td width="100" align="left">&nbsp;&nbsp;<input name="frmtotal" type="textbox" class="frmtext" size="3" disabled></td>
+                            <td class="unique">Free Points</td>
+                            <td width="100" align="left">&nbsp;&nbsp;<input name="frmfree" type="textbox" class="frmtext" size="3" disabled></td>
+                        </tr>
+
+                    </table>
+
+                    <br/>
+                    <textarea name="frmskills" class="frmtext4" cols="113" rows="10" readonly></textarea><br/><br/><br/>
+                    <!--
 <script language="javascript" src="_js_showskills.js"></script>
 <script language="javascript" src="_js_checks.js"></script>
-<script language="javascript" src="_js_display.js"></script>--><script language="javascript" src="../javascripts/_js_showskills.js"></script><script language="javascript" src="../javascripts/_js_checks.js"></script><script language="javascript" src="../javascripts/_js_display.js"></script>
-</form>
+<script language="javascript" src="_js_display.js"></script>-->
+                    <script language="javascript" src="../javascripts/_js_showskills.js"></script>
+                    <script language="javascript" src="../javascripts/_js_checks.js"></script>
+                    <script language="javascript" src="../javascripts/_js_display.js"></script>
+                </form>
 
-    
-    
-    
- 
-	<SCRIPT>
-sRace($('#race').val())
-var specMult = 2.0	
-var pStat = 'DEX'
-var sStat = 'QUI'
-var tStat = 'STR'
-for (i=1; i<Abilities.length; i++) {
-	if (Abilities[i].type == 2 || Abilities[i].type == 3) showSpell(Abilities[i]) 
-	if (Abilities[i].type == 5 && Abilities[i].train == 1) showStyle(Abilities[i]) 	
-}
-init();
-</SCRIPT>
-</div>
 
-</div>
-<a href="../index.html"><p style="text-align: center">Click to go back to class selection</p></a>
-<p align="center" style="text-align: center; font-size: 9px;">Original Uthgard version: <a href="http://www.genuapp.appspot.com/char/index.html">genuapp</a></p> <!-- end #container -->
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E12F83714K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-E12F83714K');
-</script>
-</div>
-    </body>
+
+                <SCRIPT>
+                    sRace($('#race').val())
+                    var specMult = 2.0
+                    var pStat = 'DEX'
+                    var sStat = 'QUI'
+                    var tStat = 'STR'
+                    for (i = 1; i < Abilities.length; i++) {
+                        if (Abilities[i].type == 2 || Abilities[i].type == 3) showSpell(Abilities[i])
+                        if (Abilities[i].type == 5 && Abilities[i].train == 1) showStyle(Abilities[i])
+                    }
+                    init();
+                </SCRIPT>
+            </div>
+
+        </div>
+        <a href="../index.html">
+            <p style="text-align: center">Click to go back to class selection</p>
+        </a>
+        <p align="center" style="text-align: center; font-size: 9px;">Original Uthgard version: <a href="http://www.genuapp.appspot.com/char/index.html">genuapp</a></p>
+        <!-- end #container -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E12F83714K"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-E12F83714K');
+        </script>
+    </div>
+</body>
 
 </html>
