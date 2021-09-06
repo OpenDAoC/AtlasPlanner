@@ -1,31 +1,74 @@
-sSTR[999]=0;sCON[999]=0;sDEX[999]=0;sQUI[999]=0;sINT[999]=0;sPIE[999]=0;sEMP[999]=0;sCHA[999]=0; 
-sSTR[998]=0;sCON[998]=0;sDEX[998]=0;sQUI[998]=0;sINT[998]=0;sPIE[998]=0;sEMP[998]=0;sCHA[998]=0; 
-sSTR[9]=60;sCON[9]=80;sDEX[9]=50;sQUI[9]=50;sINT[9]=60;sPIE[9]=60;sEMP[9]=60;sCHA[9]=60; 
-sSTR[11]=70;sCON[11]=70;sDEX[11]=50;sQUI[11]=50;sINT[11]=60;sPIE[11]=60;sEMP[11]=60;sCHA[11]=60; 
-sSTR[12]=100;sCON[12]=70;sDEX[12]=35;sQUI[12]=35;sINT[12]=60;sPIE[12]=60;sEMP[12]=60;sCHA[12]=60; 
-sSTR[15]=55;sCON[15]=45;sDEX[15]=65;sQUI[15]=75;sINT[15]=60;sPIE[15]=60;sEMP[15]=60;sCHA[15]=60; 
+sSTR[999] = 0;
+sCON[999] = 0;
+sDEX[999] = 0;
+sQUI[999] = 0;
+sINT[999] = 0;
+sPIE[999] = 0;
+sEMP[999] = 0;
+sCHA[999] = 0;
+sSTR[998] = 0;
+sCON[998] = 0;
+sDEX[998] = 0;
+sQUI[998] = 0;
+sINT[998] = 0;
+sPIE[998] = 0;
+sEMP[998] = 0;
+sCHA[998] = 0;
+sSTR[9] = 60;
+sCON[9] = 80;
+sDEX[9] = 50;
+sQUI[9] = 50;
+sINT[9] = 60;
+sPIE[9] = 60;
+sEMP[9] = 60;
+sCHA[9] = 60;
+sSTR[11] = 70;
+sCON[11] = 70;
+sDEX[11] = 50;
+sQUI[11] = 50;
+sINT[11] = 60;
+sPIE[11] = 60;
+sEMP[11] = 60;
+sCHA[11] = 60;
+sSTR[12] = 100;
+sCON[12] = 70;
+sDEX[12] = 35;
+sQUI[12] = 35;
+sINT[12] = 60;
+sPIE[12] = 60;
+sEMP[12] = 60;
+sCHA[12] = 60;
+sSTR[15] = 55;
+sCON[15] = 45;
+sDEX[15] = 65;
+sQUI[15] = 75;
+sINT[15] = 60;
+sPIE[15] = 60;
+sEMP[15] = 60;
+sCHA[15] = 60;
 
-Abilities = new Array(19)		
-Abilities[1]=new abilityPT("Staff",0,83,5,0,0,0)
-Abilities[2]=new abilityPT("Cloth Armor",0,99,7,0,0,0)
-Abilities[3]=new abilityPT("Leather Armor",0,100,7,0,0,0)
-Abilities[4]=new abilityPT("Studded Armor",0,101,7,0,0,0)
-Abilities[5]=new abilityPT("Parry",0,107,4,1,0,0)
-Abilities[6]=new abilityPT("Sword",0,130,5,1,0,0)
-Abilities[7]=new abilityPT("Axe",0,131,5,1,0,0)
-Abilities[8]=new abilityPT("Hammer",0,137,5,1,0,0)
-Abilities[9]=new abilityPT("Shields (Small)",2,102,7,0,0,0)
-Abilities[10]=new abilityPT("Evade I",5,113,4,0,0,0)
-Abilities[11]=new abilityPT("Left Axe",5,132,5,1,0,0)
-Abilities[12]=new abilityPT("Berserk I",5,133,4,0,0,0)
-Abilities[13]=new abilityPT("Protect I",10,109,4,0,0,0)
-Abilities[14]=new abilityPT("Evade II",10,114,4,0,0,0)
-Abilities[15]=new abilityPT("Berserk II",10,134,4,0,0,0)
-Abilities[16]=new abilityPT("Berserk III",15,135,4,0,0,0)
-Abilities[17]=new abilityPT("Evade III",20,115,4,0,0,0)
-Abilities[18]=new abilityPT("Berserk IV",20,136,4,0,0,0)
-Abilities[19]=new abilityPT("Advanced Evade",35,173,4,0,0,0)
-	
+Abilities = new Array(20)
+Abilities[1] = new abilityPT("Staff", 0, 83, 5, 0, 0, 0)
+Abilities[2] = new abilityPT("Cloth Armor", 0, 99, 7, 0, 0, 0)
+Abilities[3] = new abilityPT("Leather Armor", 0, 100, 7, 0, 0, 0)
+Abilities[4] = new abilityPT("Studded Armor", 0, 101, 7, 0, 0, 0)
+Abilities[5] = new abilityPT("Parry", 0, 107, 4, 1, 0, 0)
+Abilities[6] = new abilityPT("Sword", 0, 130, 5, 1, 0, 0)
+Abilities[7] = new abilityPT("Axe", 0, 131, 5, 1, 0, 0)
+Abilities[8] = new abilityPT("Hammer", 0, 137, 5, 1, 0, 0)
+Abilities[9] = new abilityPT("Shields (Small)", 2, 102, 7, 0, 0, 0)
+Abilities[10] = new abilityPT("Evade I", 5, 113, 4, 0, 0, 0)
+Abilities[11] = new abilityPT("Left Axe", 5, 132, 5, 1, 0, 0)
+Abilities[12] = new abilityPT("Berserk I", 5, 133, 4, 0, 0, 0)
+Abilities[13] = new abilityPT("Protect I", 10, 109, 4, 0, 0, 0)
+Abilities[14] = new abilityPT("Evade II", 10, 114, 4, 0, 0, 0)
+Abilities[15] = new abilityPT("Berserk II", 10, 134, 4, 0, 0, 0)
+Abilities[16] = new abilityPT("Berserk III", 15, 135, 4, 0, 0, 0)
+Abilities[17] = new abilityPT("Evade III", 20, 115, 4, 0, 0, 0)
+Abilities[18] = new abilityPT("Berserk IV", 20, 136, 4, 0, 0, 0)
+Abilities[19] = new abilityPT("Advanced Evade", 35, 173, 4, 0, 0, 0)
+Abilities[20] = new abilityPT("Charge", 40, 196, 0, 0, 0, 0)
+
 //Styles = new Array(61);
 //Styles[1]=new stylePT(131,"Splitter",2,"","High","Starter","","","","",0,"")
 //Styles[2]=new stylePT(131,"Cleave",4,"Slowed","Low","Medium","Medium Bonus","","","You parry",0,"Decreases the target\'s combat speed.  Duration 20 seconds")
