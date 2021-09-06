@@ -1,6 +1,10 @@
 body {
     font: 100% Verdana, Arial, Helvetica, sans-serif;
-    background: url("../images/content.jpg") repeat;
+    background: url("../images/AtlasWPNoLogo-min.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     margin: 0;
     padding: 0;
     text-align: center;
