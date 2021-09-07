@@ -5,7 +5,7 @@ sSTR[6]=60;sCON[6]=60;sDEX[6]=60;sQUI[6]=60;sINT[6]=60;sPIE[6]=60;sEMP[6]=60;sCH
 sSTR[7]=70;sCON[7]=70;sDEX[7]=50;sQUI[7]=50;sINT[7]=60;sPIE[7]=60;sEMP[7]=60;sCHA[7]=60; 
 sSTR[8]=50;sCON[8]=50;sDEX[8]=80;sQUI[8]=60;sINT[8]=60;sPIE[8]=60;sEMP[8]=60;sCHA[8]=60; 
 
-Abilities = new Array(20)		
+Abilities = new Array()		
 Abilities[1]=new abilityPT("Staff",0,83,5,0,0,0)
 Abilities[2]=new abilityPT("Slash",0,85,5,1,0,0)
 Abilities[3]=new abilityPT("Crush",0,87,5,1,0,0)
@@ -26,6 +26,10 @@ Abilities[17]=new abilityPT("Protect II",14,111,4,0,0,0)
 Abilities[18]=new abilityPT("Parry",15,107,4,1,0,0)
 Abilities[19]=new abilityPT("Protect III",19,112,4,0,0,0)
 Abilities[20]=new abilityPT("Plate Armor",20,106,7,0,0,0)
+Abilities[21]=new abilityPT("Guard I",5,190,7,0,0,0)
+Abilities[22]=new abilityPT("Engage",7,191,7,0,0,0)
+Abilities[23]=new abilityPT("Guard II",10,192,7,0,0,0)
+Abilities[24]=new abilityPT("Guard III",15,193,7,0,0,0)
 	
 
 Spells = new Array(58)
