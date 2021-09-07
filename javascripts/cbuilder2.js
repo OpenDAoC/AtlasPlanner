@@ -202,7 +202,7 @@ function moLine(line, id) {
         if (Spells[id].area != "") output += "<b style='color:333333'>AREA</b>&nbsp;" + Spells[id].area + "<br/> "
         if (Spells[id].duration != "") output += "<b style='color:333333'>DURATION</b>&nbsp;" + Spells[id].duration + "<br/> "
 
-        if (Spells[id].cast != "") output += "<b style='color:333333'>CASTTIME</b>&nbsp;" + Spells[id].cast + "<br/> "
+        if (Spells[id].cast != "") output += "<b style='color:333333'>CAST TIME</b>&nbsp;" + Spells[id].cast + "<br/> "
         if (Spells[id].recast != "") output += "<b style='color:333333'>RECAST</b>&nbsp;" + Spells[id].recast + "<br/> "
         output += "</div>";
         myGetObject("LINENAME" + line).innerHTML = "";
