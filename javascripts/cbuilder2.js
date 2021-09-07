@@ -231,13 +231,13 @@ function moStyle(abilityid, activeid) {
         s1Revert = myGetObject("STYLENAME" + abilityid).innerHTML;
         s2Revert = myGetObject("STYLEDESC" + abilityid).innerHTML;
         output = "<table bgcolor='lightgray' cellspacing=0 cellpadding=0 style='width:15em; border:2px solid #000000; background-color:lightgray; color:#000; z-index: 100000; position:absolute;   text-align: center; visibility:visible;'  ><tr><td width=100%  style='white-space: normal;'>" + "<b style='color:333333  '>" + Styles[activeid].name + "</b>";
-        if (Styles[activeid].opening != "") output += "<br><b style='color:444444'>Opening&nbsp;:&nbsp;</b>" + Styles[activeid].opening + " ";
-        output += "<br><b style='color:444444'>Fatigue&nbsp;:&nbsp;</b>" + Styles[activeid].fat + " ";
-        if (Styles[activeid].dmg != "") output += "<br><b style='color:444444'>Damage&nbsp;:&nbsp;</b>" + Styles[activeid].dmg + " ";
-        if (Styles[activeid].abonus != "") output += "<br><b style='color:444444'>Attack&nbsp;:&nbsp;</b>" + Styles[activeid].abonus + " ";
-        if (Styles[activeid].dpenalty != "") output += "<br><b style='color:444444'>Defense&nbsp;:&nbsp;</b>" + Styles[activeid].dpenalty + " ";
-        if (Styles[activeid].dbonus != "") output += "<br><b style='color:444444'>Defense&nbsp;:&nbsp;</b>" + Styles[activeid].dbonus + " ";
-        if (Styles[activeid].special != "") output += "<br><b style='color:444444'>Special&nbsp;:&nbsp;</b>" + Styles[activeid].special + " ";
+        if (Styles[activeid].opening != "") output += "<br><b style='color:444444'>Opening:&nbsp;</b>" + Styles[activeid].opening + " ";
+        output += "<br><b style='color:444444'>Fatigue:&nbsp;</b>" + Styles[activeid].fat + " ";
+        if (Styles[activeid].dmg != "") output += "<br><b style='color:444444'>Damage:&nbsp;</b>" + Styles[activeid].dmg + " ";
+        if (Styles[activeid].abonus != "") output += "<br><b style='color:444444'>Attack:&nbsp;</b>" + Styles[activeid].abonus + " ";
+        if (Styles[activeid].dpenalty != "") output += "<br><b style='color:444444'>Defense:&nbsp;</b>" + Styles[activeid].dpenalty + " ";
+        if (Styles[activeid].dbonus != "") output += "<br><b style='color:444444'>Defense:&nbsp;</b>" + Styles[activeid].dbonus + " ";
+        if (Styles[activeid].special != "") output += "<br><b style='color:444444'>Special:&nbsp;</b>" + Styles[activeid].special + " ";
         if (Styles[activeid].specialdesc != "") output += "<br><b style='color:444444'></b>" + Styles[activeid].specialdesc + " ";
 
 
