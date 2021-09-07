@@ -42,41 +42,41 @@ function abilityPT(name, lvl, id, type, train, mastery, child, mo1, mo2) {
 }
 
 function BuildStylePT(spec, lvl, name, opening, special, fat, dmg, abonus, defense, followup, specialdesc, gr) {
-    var id = (spec == "Crush" ? 87 :
-        spec == "Slash" ? 85 :
-        spec == "Thrust" ? 89 :
-        spec == "Shield" ? 97 :
-        spec == "Polearm" ? 91 :
-        spec == "2-Hand" ? 93 :
-        spec == "Dual Wield" ? 118 :
-        spec == "Staff" ? 83 :
-        spec == "Crit Strike" ? 142 :
-        spec == "Flexible" ? 167 :
-        spec == "Blades" ? 123 :
-        spec == "Blunt" ? 122 :
-        spec == "Pierce" ? 125 :
-        spec == "Celtic Spear" ? 127 :
-        spec == "Celtic Dual" ? 147 :
-        spec == "Large Weapons" ? 128 :
-        spec == "Scythe" ? 168 :
-        spec == "HandToHand" ? 169 :
-        spec == "Sword" ? 130 :
-        spec == "Axe" ? 131 :
-        spec == "Hammer" ? 137 :
-        spec == "Left Axe" ? 132 :
-        spec == "Spear" ? 139 :
-        spec == "Bow" ? 129 :
+    var id = (spec == "Crush" ? 87:
+        spec == "Slash" ? 85:
+        spec == "Thrust" ? 89:
+        spec == "Shield" ? 97:
+        spec == "Polearm" ? 91:
+        spec == "2-Hand" ? 93:
+        spec == "Dual Wield" ? 118:
+        spec == "Staff" ? 83:
+        spec == "Crit Strike" ? 142:
+        spec == "Flexible" ? 167:
+        spec == "Blades" ? 123:
+        spec == "Blunt" ? 122:
+        spec == "Pierce" ? 125:
+        spec == "Celtic Spear" ? 127:
+        spec == "Celtic Dual" ? 147:
+        spec == "Large Weapons" ? 128:
+        spec == "Scythe" ? 168:
+        spec == "HandToHand" ? 169:
+        spec == "Sword" ? 130:
+        spec == "Axe" ? 131:
+        spec == "Hammer" ? 137:
+        spec == "Left Axe" ? 132:
+        spec == "Spear" ? 139:
+        spec == "Bow" ? 129:
         -1
     );
 
     if (id == -1) {
-        console.log('Error : unrecognized spec : ' + spec);
+        console.log('Error: unrecognized spec: ' + spec);
         return;
     }
     lvl = eval(lvl);
     if (specialdesc != "") specialdesc += "<br>";
-    if (followup != "") specialdesc += "<b>Follow-up : </b>" + followup;
-    dmg = (gr == "unknown" ? "not tested" : " [GR:" + gr.replace(',', '.') + "]");
+    if (followup != "") specialdesc += "<b>Follow-up: </b>" + followup;
+    dmg = (gr == "unknown" ? "not tested": " [GR:" + gr.replace(',', '.') + "]");
     dbonus = dpenalty = "";
     if (defense.toLowerCase().indexOf('bonus') == -1) {
         dpenalty = defense;
@@ -324,7 +324,7 @@ function showSpell(ability) {
             } else skilllvl = l;
             oline = Spells[x].line
             if (Spells[x].lvl > l || lvl > l) iline += "<font bgcolor='lightgray' style=' ' onmouseout='this.style.color=moLine(" + oline + ",-1);' " +
-                (ability.type == 3 ? "onclick='bQuickSkillTo(" + ability.mastery + "," + Spells[x].lvl + ")'" : "") +
+                (ability.type == 3 ? "onclick='bQuickSkillTo(" + ability.mastery + "," + Spells[x].lvl + ")'": "") +
                 "onmouseover='this.style.color=moLine(" + oline + "," + x + ")'>" + Spells[x].lvl + " </font>"
             else {
                 if (ability.type == 3 && parseInt(myGetObject("SKILL" + ability.mastery).value) < Spells[x].lvl) iline += "<font bgcolor='lightgray' style='' onmouseout='moLine(" + oline + ",-1)' " +
@@ -337,7 +337,7 @@ function showSpell(ability) {
                         curlinelvl = Spells[x].lvl;
                         activeid = x;
                         iline += "<font bgcolor='lightgray' style=' ' color=blue onmouseout='this.style.color=moLine(" + oline + ",-1)' " +
-                            (ability.type == 3 ? "onclick='bQuickSkillTo(" + ability.mastery + "," + Spells[x].lvl + ")'" : "") +
+                            (ability.type == 3 ? "onclick='bQuickSkillTo(" + ability.mastery + "," + Spells[x].lvl + ")'": "") +
                             "onmouseover='this.style.color=moLine(" + oline + "," + x + ")'>" + Spells[x].lvl + " </font>"
                     }
                 }
@@ -366,7 +366,7 @@ function showSpell(ability) {
 
 function calcSpec(lvl) {
     intLevel = Math.floor(lvl);
-    lowLevel = lvl < 5 ? lvl : 5
+    lowLevel = lvl < 5 ? lvl: 5
     specTotal = 0;
 
     for (i = 2; i <= lowLevel; i++)
@@ -441,20 +441,20 @@ function sdToggle(item, value) {
 }
 
 function bQuickLevelTo(l) {
-    l = (l <= 40 ? l : 40 + (l - 40) * 2);
+    l = (l <= 40 ? l: 40 + (l - 40) * 2);
     if (l < 1) l = 1;
     if (l > 60) l = 60;
-    l = l <= 40 ? l : 40 + (l - 40) / 2;
+    l = l <= 40 ? l: 40 + (l - 40) / 2;
     myGetObject("LEVEL").value = l;
     calcSpec(l);
 }
 
 function bLevel(inc) {
     l = parseFloat(myGetObject("LEVEL").value);
-    l = (l <= 40 ? l : 40 + (l - 40) * 2) + inc;
+    l = (l <= 40 ? l: 40 + (l - 40) * 2) + inc;
     if (l < 1) l = 1;
     if (l > 60) l = 60;
-    l = l <= 40 ? l : 40 + (l - 40) / 2;
+    l = l <= 40 ? l: 40 + (l - 40) / 2;
     myGetObject("LEVEL").value = l;
     calcSpec(l);
 }
