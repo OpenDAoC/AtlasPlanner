@@ -4,7 +4,7 @@ sSTR[6]=60;sCON[6]=60;sDEX[6]=60;sQUI[6]=60;sINT[6]=60;sPIE[6]=60;sEMP[6]=60;sCH
 sSTR[13]=50;sCON[13]=60;sDEX[13]=70;sQUI[13]=50;sINT[13]=70;sPIE[13]=60;sEMP[13]=60;sCHA[13]=60; 
 sSTR[8]=50;sCON[8]=50;sDEX[8]=80;sQUI[8]=60;sINT[8]=60;sPIE[8]=60;sEMP[8]=60;sCHA[8]=60; 
 
-Abilities = new Array(19)		
+Abilities = new Array()		
 Abilities[1]=new abilityPT("Staff",0,83,5,0,0,0)
 Abilities[2]=new abilityPT("Slash",0,85,5,1,0,0)
 Abilities[3]=new abilityPT("Crush",0,87,5,1,0,0)
