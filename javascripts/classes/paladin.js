@@ -26,10 +26,6 @@ Abilities[17]=new abilityPT("Protect II",14,111,4,0,0,0)
 Abilities[18]=new abilityPT("Parry",15,107,4,1,0,0)
 Abilities[19]=new abilityPT("Protect III",19,112,4,0,0,0)
 Abilities[20]=new abilityPT("Plate Armor",20,106,7,0,0,0)
-Abilities[21]=new abilityPT("Guard I",5,190,7,0,0,0)
-Abilities[22]=new abilityPT("Engage",7,191,7,0,0,0)
-Abilities[23]=new abilityPT("Guard II",10,192,7,0,0,0)
-Abilities[24]=new abilityPT("Guard III",15,193,7,0,0,0)
 	
 
 Spells = new Array(58)
