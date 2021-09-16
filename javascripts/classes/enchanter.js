@@ -172,5 +172,5 @@ Spells[127]=new spellPT("Enchanted Armor",29,39099,39,"53 HP ",39,"18 PP",'1500'
 Spells[128]=new spellPT("Shimmering Armor",38,39099,39,"90 HP ",39,"24 PP",'1500','3.0s','','','20m','') 
 Spells[129]=new spellPT("Splendorous Armor",49,39099,39,"126 HP ",39,"32 PP",'1500','3.0s','','','20m','') 
 Lines[39152]=new linePT('Buff (Pet, Piercing Magic)','Effectiveness of your pet\'s spells is increased. Against higher level opponents than your pet, this should reduce the chance of a full resist. If used against lower level opponents, damage done will go up.',39,0) 
-Spells[130]=new spellPT("Beguiling Will",40,39152,39,"",39,"",'1000','3.0s','','','20m','') 
-Spells[131]=new spellPT("Insidious Will",50,39152,39,"",39,"",'1000','3.0s','','','20m','') 
+Spells[130]=new spellPT("Beguiling Will",40,39152,39,"15%",39,"",'1000','3.0s','','','20m','') 
+Spells[131]=new spellPT("Insidious Will",50,39152,39,"40%",39,"",'1000','3.0s','','','20m','') 
