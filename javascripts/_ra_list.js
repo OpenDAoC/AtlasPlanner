@@ -34,7 +34,7 @@ function buildRA(name,type,req,reqlvl,cost1,cost2,cost3,cost4,cost5,description,
 	this.enomath=enomath
 }
 
-arrData=new Array(99);
+arrData=new Array();
 
 arrData[1] = new buildRA('Augmented Strength','P',0,0,1,3,6,10,14,'Increased Strength',0,false,6,'str','+',false);
 arrData[2] = new buildRA('Mastery of Arms','P',1,3,1,3,6,10,14,'Increased Attack Speed',0,true,3,'% melee attack delay (min 1.5)','-',false);
@@ -148,3 +148,5 @@ arrData[96]= new buildRA('Strike the Soul','A',0,0,10,0,0,0,0,'Resist debuff',0,
 arrData[97]= new buildRA('Ravager','A',0,0,10,0,0,0,0,'Style',0,false,'','???','',true);
 arrData[98]= new buildRA('Resilience of Death','A',0,0,10,0,0,0,0,'AE Pet Buff',0,false,'','+100 Con, 500 radius','',true);
 arrData[99]= new buildRA('Prevent Flight','A',0,0,14,0,0,0,0,'Snare fleeing target',0,false,'','35% chance to 50% snare for 10secs','',true);
+
+arrData[100]= new buildRA('Determination','P',0,0,1,2,3,0,0,'Reduced duration of mesmerize, stun and snare',0,false,15,'% mez/stun/root duration','-',false);
