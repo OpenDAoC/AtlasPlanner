@@ -106,7 +106,6 @@ arrData[57]= new buildRA('Mystic Crystal Lore','A',0,0,3,6,10,0,0,'Minor Mana Re
 arrData[58]= new buildRA('Raging Power','A',57,2,10,0,0,0,0,' Major Mana Restoration - 30min RUT',0,true,100,'% power restored, 30min timer','',true);
 
 arrData[59]= new buildRA('Purge','A',0,0,10,0,0,0,0,'Dispel All Negative Effects - 30min RUT',0,false,'','Dispel Negative Effects, 30min timer','',true);
-arrData[100]= new buildRA('Purge','A',0,0,4,0,0,0,0,'Dispel All Negative Effects - 30min RUT',0,false,'','Dispel Negative Effects, 30min timer','',true);
 arrData[60]= new buildRA('Reflex Attack','A',0,0,14,0,0,0,0,'Short Duration counter all melee attacks',0,false,'','?','',true);
 arrData[61]= new buildRA('Viper','A',0,0,14,0,0,0,0,'Short Duration (30s) double damage from all DOTs - 30min RUT',0,false,'','Double damage from poisons, 30min timer, 30sec duration','',true);
 arrData[62]= new buildRA('True Sight','A',0,0,10,0,0,0,0,'Short Duration (60s) detect all Hidden - 30min RUT',0,false,'','Detect all stealthed, 30min timer, 60sec duration','',true);
