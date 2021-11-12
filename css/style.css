@@ -525,3 +525,45 @@ input.input-attribute {
     display: inline-block;
     float: right;
 }
+
+/* menu */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu li {
+    float: left;
+    background-color: #005B00;
+    border: none;
+}
+
+.menu li a {
+    display: block;
+    color: #bc9000;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+
+
+.menu li a:hover {
+    background-color: #111;
+  }
+
+.menu {
+    background: url('../images/menu_bg.gif');
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid #282828;
+    height: 45px;
+    margin-bottom: 10px;
+}
